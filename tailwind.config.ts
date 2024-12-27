@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        'slide-in-menu': 'slideInMenu 0.5s',
+        'slide-in-menu': 'slideInMenu 0.15s',
       },
       keyframes: {
         slideInMenu: {

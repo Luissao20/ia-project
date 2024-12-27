@@ -19,17 +19,17 @@ const listItems = [
     <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
   </li>,
   <li key={2} className="flex flex-col gap-3">
-  <Image
-    src='/casestudy1.png'
-    width={400}
-    height={200}
-    alt="Case 1"
-  />
-  <h4 className="text-2xl">Company 1</h4>
-  <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-  <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
-</li>,
-<li key={3} className="flex flex-col gap-3">
+    <Image
+      src='/casestudy1.png'
+      width={400}
+      height={200}
+      alt="Case 1"
+    />
+    <h4 className="text-2xl">Company 1</h4>
+    <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
+    <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
+  </li>,
+  <li key={3} className="flex flex-col gap-3">
     <Image
       src='/casestudy1.png'
       width={400}
