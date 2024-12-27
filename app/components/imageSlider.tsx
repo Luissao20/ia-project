@@ -1,12 +1,10 @@
 'use client'
 
-import { useState } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
 import 'swiper/swiper-bundle.css';
-import 'swiper/css/navigation';
 
 const listItems = [
   <li key={1} className="flex flex-col gap-3">
@@ -44,26 +42,20 @@ const listItems = [
   </li>,
 ];
 
+
 export default function ImageSlider() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleSlideChange = (swiper: any) => {
-    setActiveIndex(swiper.realIndex);
-  };
-
   return (
     <Swiper
       modules={[Navigation]}
       spaceBetween={30}
       slidesPerView={1}
       navigation
-      onSlideChange={handleSlideChange}
     >
       {listItems.map((item, index) => (
         <SwiperSlide key={index} className='p-5'>
-          <div className="p-4 bg-white rounded-lg shadow">
+          <ul className="p-4 bg-white rounded-lg shadow">
             {item}
-          </div>
+          </ul>
         </SwiperSlide>
       ))}
     </Swiper>
