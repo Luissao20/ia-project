@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "next": "15.1.2",
+    "particles.js": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-swiper": "^0.1.5",
-    "swiper": "^11.1.15"
+    "react-tsparticles": "^2.12.2",
+    "swiper": "^11.1.15",
+    "tsparticles": "^3.7.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
