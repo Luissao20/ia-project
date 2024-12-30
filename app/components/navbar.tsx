@@ -1,7 +1,19 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
+import SlideMenu from "./slideInMenu";
+import { useState } from "react";
+
 
 export default function Navbar() {
+  const [togglemenu, setToggleMenu] = useState(false);
+
+  const handleClick = () => {
+    setToggleMenu(!togglemenu);
+  }
+
+
   return (
     <nav className="flex lg:pr-20 lg:h-[14vh] lg:flex lg:items-center lg:justify-between lg:p-5 lg:bg-[#000000] bg-[#000000] lg:sticky lg:top-0 lg:z-10 space-x-4 lg:overflow-hidden lg:transition-all lg:max-h-full lg:flex-row">
       <Link href="/">
@@ -41,12 +53,14 @@ export default function Navbar() {
         </li>
       </ul>
       <Image
+        onClick={handleClick}
         src='/burguer-menu2.svg'
         alt="Burger Menu"
         width={40}
         height={40}
         className="lg:hidden"
       />
-    </nav >
+      {togglemenu && <SlideMenu handleClick={handleClick} />}
+    </nav>
   );
 }

@@ -9,9 +9,9 @@ export default function Header() {
           className="-z-10"
         />
       <div className="flex flex-col gap-5">
-        <h1 className="text-4xl font-bold">Increase the productivity of your business with AI solutions</h1>
+        <h1 className="text-4xl font-bold">Empowering Your Business with Smarter AI Agents</h1>
         <h2 className="text-2xl">Automate repetitive tasks, minimize errors, and scale your business efficiently.</h2>
-        <button className="text-3xl bg-[#000386] text-white p-5 rounded-3xl">Request demo</button>
+        <button className="text-3xl bg-[#000386] text-white p-5 rounded-3xl">Try for free</button>
       </div>
     </section>
   );
