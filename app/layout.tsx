@@ -25,7 +25,6 @@ export default function RootLayout({
         className={`${geistSans.className} antialiased`}
       >
         <Navbar />
-        <script src="../finisher-header.es5.min.js" type="text/javascript"></script>
         {children}
         <Footer />
       </body>
