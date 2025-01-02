@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SlideMenu from "./slideInMenu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Navbar() {
@@ -13,8 +13,27 @@ export default function Navbar() {
     setToggleMenu(!togglemenu);
   }
 
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      } lastScrollTop = scrollTop;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex lg:pr-20 lg:h-[14vh] lg:flex lg:items-center lg:justify-between bg-white lg:p-5 lg:sticky lg:top-0 lg:z-10 space-x-4 lg:max-h-full lg:flex-row lg:overflow-hidden">
+    <nav id="navbar" className={hidden ? "lg:relative lg:overflow-hidden flex lg:pr-20 lg:h-[14vh] lg:flex lg:items-center lg:justify-between lg:shadow-lg lg:max-h-full lg:rounded-b-2xl bg-white lg:p-5 lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 -translate-y-full" : "lg:relative flex lg:pr-20 lg:h-[14vh] lg:max-h-full lg:overflow-hidden lg:flex lg:items-center lg:justify-between bg-white lg:p-5 lg:shadow-lg lg:rounded-b-2xl lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 translate-y-0"}>
       <Link href="/">
         <div className="flex p-8 relative w-40 lg:w-48">
           <Image

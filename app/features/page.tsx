@@ -3,7 +3,7 @@ import Carousel from "../components/carousel";
 export default function Home() {
   return (
     <section className="lg:flex lg:flex-col lg:items-center lg:p-10 lg:gap-10 lg:pt-10 lg:h-full">
-      <h2 className="text-5xl font-bold">Innovate, Automate, Dominate.</h2>
+      <h2 className="text-5xl font-bold pt-20">Innovate, Automate, Dominate.</h2>
       <p className="text-3xl p-40">Agentify.ai is more than just an automation tool. It is the perfect ally for your business and the guide to efficiency and the future.</p>
       <div className="lg:flex lg:flex-col lg:gap-10">
         <div className="lg:box-content lg:bg-[url(../public/casestudy1.png)] lg:bg-cover lg:bg-no-repeat lg:bg-fixed lg:h-full lg:p-10">
