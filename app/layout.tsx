@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
+import ClientComponent from "./clientComponent";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+
 
 const geistSans = Rubik({
   subsets: ["latin"],
@@ -24,6 +26,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.className} antialiased`}
       >
+        <ClientComponent />
         <Navbar />
         {children}
         <Footer />

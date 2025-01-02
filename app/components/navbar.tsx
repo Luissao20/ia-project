@@ -13,9 +13,8 @@ export default function Navbar() {
     setToggleMenu(!togglemenu);
   }
 
-
   return (
-    <nav className="flex lg:pr-20 lg:h-[14vh] lg:flex lg:items-center lg:justify-between lg:p-5 lg:bg-[#000000] bg-[#000000] lg:sticky lg:top-0 lg:z-10 space-x-4 lg:overflow-hidden lg:transition-all lg:max-h-full lg:flex-row">
+    <nav className="flex lg:pr-20 lg:h-[14vh] lg:flex lg:items-center lg:justify-between bg-white lg:p-5 lg:sticky lg:top-0 lg:z-10 space-x-4 lg:max-h-full lg:flex-row lg:overflow-hidden">
       <Link href="/">
         <div className="flex p-8 relative w-40 lg:w-48">
           <Image
@@ -29,7 +28,7 @@ export default function Navbar() {
           />
         </div>
       </Link>
-      <ul className="lg:flex lg:gap-10 lg:text-2xl lg:text-cyan-500 lg:items-center lg:justify-center">
+      <ul className="lg:flex lg:gap-10 lg:text-3xl lg:text-cyan-800 lg:items-center lg:justify-center">
         <li>
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/">Home</Link>
         </li>
@@ -49,7 +48,7 @@ export default function Navbar() {
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/contact">Contact</Link>
         </li>
         <li>
-          <button className="lg:p-3 lg:text-white lg:text-xl lg:border-2 lg:rounded-2xl lg:border-[#594A28] lg:transition lg:duration-500 lg:hover:bg-cyan-500 lg:hover:scale-125 hidden lg:block">Get Started</button>
+          <button className="lg:p-3 lg:text-cyan-800 lg:text-2xl lg:border-2 lg:rounded-2xl lg:border-[#594A28] lg:transition lg:duration-500 lg:hover:scale-125 hidden lg:block">Get Started</button>
         </li>
       </ul>
       <Image
