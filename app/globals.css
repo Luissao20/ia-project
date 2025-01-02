@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.electric-border { 
+    position: absolute; 
+    top: -2px; 
+    left: -2px; 
+    right: -2px; 
+    bottom: -2px; 
+    background: linear-gradient(45deg, #42a5f5, #478ed1, #03a9f4, #1e88e5); 
+    background-size: 400% 400%; 
+    border-radius: 10px; 
+    z-index: -1; 
+    animation: electric-border 4s linear infinite; 
+} 

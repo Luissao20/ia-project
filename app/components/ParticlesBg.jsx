@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect } from 'react';
-import 'particles.js/particles';
 
 const ParticlesBackground = () => {
   useEffect(() => {
