@@ -11,6 +11,7 @@ export default {
       animation: {
         'slide-in-menu': 'slideInMenu 0.15s',
         'electric-border': 'electric-border 4s linear infinite',
+        'spin-slow' : "spin 3s linear infinite",
       },
       keyframes: {
         slideInMenu: {
