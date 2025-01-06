@@ -38,8 +38,8 @@ const InfoSection: React.FC = () => {
     return (
         <div className="flex flex-col p-20 items-center">
             <div className='text-black flex flex-col items-center p-10 gap-10 pb-32' data-aos="fade-up">
-                <h2 className='text-4xl font-bold'>Take a look into how we work</h2>
-                <p className='text-3xl'>Automate your processes to increase productivity and regain control of your time.</p>
+                <h2 className='text-4xl font-bold select-none'>Take a look into how we work</h2>
+                <p className='text-3xl select-none'>Automate your processes to increase productivity and regain control of your time.</p>
             </div>
             <div className='flex items-center justify-center' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div className="w-[400px] h-[400px] relative flex flex-col items-start gap-5">
@@ -65,8 +65,8 @@ const InfoSection: React.FC = () => {
                 <div className="w-[1200px] p-10 ml-20">
                     {selectedTitle === null && (
                         <div className="flex items-center justify-center h-full gap-5">
-                            <span className="ml-2 text-gray-500 text-4xl">&#8592;</span>
-                            <span className="text-gray-500 text-3xl">Click to show more</span>
+                            <span className="ml-2 text-gray-300 text-4xl">&#8592;</span>
+                            <span className="text-gray-300 text-3xl select-none">Click to show more</span>
                         </div>
                     )}
                     {selectedTitle !== null && (
@@ -76,8 +76,8 @@ const InfoSection: React.FC = () => {
                             animate={{ opacity: isVisible ? 1 : 0 }}
                             transition={{ duration: 0.75 }}
                         >
-                            <h2 className="text-3xl font-bold"> {infoData[selectedTitle].title} </h2>
-                            <p className="mt-5 text-2xl">{infoData[selectedTitle].content}</p>
+                            <h2 className="text-3xl font-bold select-none"> {infoData[selectedTitle].title} </h2>
+                            <p className="mt-5 text-2xl select-none">{infoData[selectedTitle].content}</p>
                         </motion.div>
                     )}
                 </div>

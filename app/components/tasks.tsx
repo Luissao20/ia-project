@@ -10,7 +10,7 @@ export default function Tasks() {
                         <h2 className="p-10 text-center text-5xl text-white pb-10 font-bold select-none" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">Do you have repititive tasks?<br />
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 select-none">Let's Automate!</span>
                         </h2>
-                        <h3 className="text-xl text-white max-w-3xl text-justify">Don't waste your time preparing documents, completing spreadsheets, copying data or writing the same emails every day. You are in the business of providing exceptional results to your clients and continually improving the experience you offer them.</h3>
+                        <h3 className="text-xl text-white max-w-3xl text-justify select-none">Don't waste your time preparing documents, completing spreadsheets, copying data or writing the same emails every day. You are in the business of providing exceptional results to your clients and continually improving the experience you offer them.</h3>
                         <div>
                             <AnimatedList />
                         </div>
