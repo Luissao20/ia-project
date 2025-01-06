@@ -33,9 +33,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id="navbar" className={hidden ? "lg:relative lg:overflow-hidden flex lg:pr-20 lg:h-[14vh] lg:flex lg:items-center lg:justify-between lg:shadow-lg lg:max-h-full lg:rounded-b-2xl bg-white lg:p-5 lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 -translate-y-full" : "lg:relative flex lg:pr-20 lg:h-[14vh] lg:max-h-full lg:overflow-hidden lg:flex lg:items-center lg:justify-between bg-white lg:p-5 lg:shadow-lg lg:rounded-b-2xl lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 translate-y-0"}>
+    <nav id="navbar" className={hidden ? "lg:relative lg:overflow-hidden flex lg:pr-48 lg:h-[14vh] lg:flex lg:items-center lg:justify-between lg:shadow-lg lg:max-h-full lg:rounded-b-2xl bg-white lg:p-5 lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 -translate-y-full" : "lg:relative flex lg:pr-48 lg:h-[14vh] lg:max-h-full lg:overflow-hidden lg:flex lg:items-center lg:justify-between bg-white lg:p-5 lg:shadow-lg lg:rounded-b-2xl lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 translate-y-0"}>
       <Link href="/">
-        <div className="flex p-8 relative w-40 lg:w-48">
+        <div className="flex p-8 relative w-40 lg:w-48 lg:ml-56">
           <Image
             src='/logo_final.png'
             alt="Logo"
@@ -47,7 +47,7 @@ export default function Navbar() {
           />
         </div>
       </Link>
-      <ul className="lg:flex lg:gap-10 lg:text-3xl lg:text-cyan-800 lg:items-center lg:justify-center">
+      <ul className="lg:flex lg:gap-3 lg:text-2xl lg:text-cyan-800 lg:items-center lg:justify-center">
         <li>
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/">Home</Link>
         </li>
@@ -55,7 +55,7 @@ export default function Navbar() {
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/features">Features</Link>
         </li>
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/cases">Use Cases</Link>
+          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/use-cases">Use Cases</Link>
         </li>
         <li>
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/pricing">Pricing</Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/contact">Contact</Link>
         </li>
         <li>
-          <button className="lg:p-3 lg:text-cyan-800 lg:text-2xl lg:border-2 lg:rounded-2xl lg:border-[#594A28] lg:transition lg:duration-500 lg:hover:scale-125 hidden lg:block">Get Started</button>
+          <button className="lg:p-3 lg:text-cyan-800 lg:text-2xl lg:border-2 lg:rounded-2xl lg:border-[#594A28] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-cyan-900 lg:hover:text-white hidden lg:block">Get Started</button>
         </li>
       </ul>
       <Image

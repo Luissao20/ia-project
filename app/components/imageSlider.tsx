@@ -17,7 +17,7 @@ const listItems = [
     />
     <h4 className="text-2xl">Company 1</h4>
     <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-    <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
+    <button className="bg-sky-800 lg:rounded-2xl text-white text-xl p-5 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:easy-in-out">Keep Reading</button>
   </li>,
   <li key={2} className="flex flex-col gap-3 lg:relative">
     <Image
@@ -29,7 +29,7 @@ const listItems = [
     />
     <h4 className="text-2xl">Company 2</h4>
     <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-    <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
+    <button className="bg-sky-800 lg:rounded-2xl text-white text-xl p-5 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:easy-in-out">Keep Reading</button>
   </li>,
   <li key={3} className="flex flex-col gap-3 lg:relative">
     <Image
@@ -41,7 +41,7 @@ const listItems = [
     />
     <h4 className="text-2xl">Company 3</h4>
     <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-    <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
+    <button className="bg-sky-800 lg:rounded-2xl text-white text-xl p-5 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:easy-in-out">Keep Reading</button>
   </li>,
   <li key={4} className="flex flex-col gap-3 lg:relative">
     <Image
@@ -53,7 +53,7 @@ const listItems = [
     />
     <h4 className="text-2xl">Company 4</h4>
     <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-    <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
+    <button className="bg-sky-800 lg:rounded-2xl text-white text-xl p-5 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:easy-in-out">Keep Reading</button>
   </li>,
   <li key={5} className="flex flex-col gap-3 lg:relative">
     <Image
@@ -65,7 +65,7 @@ const listItems = [
     />
     <h4 className="text-2xl">Company 5</h4>
     <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-    <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
+    <button className="bg-sky-800 lg:rounded-2xl text-white text-xl p-5 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:easy-in-out">Keep Reading</button>
   </li>,
 ];
 
@@ -80,7 +80,7 @@ export default function ImageSlider() {
     >
       {listItems.map((item, index) => (
         <SwiperSlide key={index} className='p-5'>
-          <ul className="p-4 bg-white rounded-lg shadow">
+          <ul className="p-5 bg-cyan-700 rounded-lg shadow" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             {item}
           </ul>
         </SwiperSlide>
