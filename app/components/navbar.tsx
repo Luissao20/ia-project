@@ -55,7 +55,7 @@ export default function Navbar() {
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/features">Features</Link>
         </li>
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/use-cases">Use Cases</Link>
+          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/case-studies">Case Studies</Link>
         </li>
         <li>
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/pricing">Pricing</Link>

@@ -1,4 +1,8 @@
+'use client'
+
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Services() {
   return (
@@ -6,7 +10,7 @@ export default function Services() {
       <h2 className="text-4xl font-bold" data-aos="fade-up">Our Automations:</h2>
       <h3 className="text-3xl text-center" data-aos="fade-up">If you can imagine it, we can achieve it</h3>
       <ul className="flex flex-col gap-10 lg:grid lg:grid-cols-5 lg:p-10 text-white" data-aos="zoom-in-down">
-        <li className="bg-cyan-700 p-2 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-2 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/chatbot.png'
@@ -17,20 +21,22 @@ export default function Services() {
             />
           </div>
           <div className="flex flex-col gap-2 lg:p-5 items-start">
-            <h4 className="text-2xl font-bold select-none">Customizable AI Agents</h4>
+            <h4 className="text-2xl font-bold select-none">AI Agents Customization</h4>
             {/*<p className="text-xl lg:text-justify">Automate tasks and free up time with our smart chatbots. Let them do the hard work.</p>*/}
-            <button className="bg-sky-800 text-white text-xl p-5 flex justify-center items-center gap-3 lg:rounded-2xl transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              Explore
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <Link href="/features#ai">
+              <button className="bg-sky-800 text-white text-xl p-5 flex justify-center items-center gap-3 lg:rounded-2xl transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                Explore
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/metrics.png'
@@ -54,7 +60,7 @@ export default function Services() {
             </button>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/robotic-bg2.jpg'
@@ -79,7 +85,7 @@ export default function Services() {
             </button>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/robotic-bg2.jpg'
@@ -93,7 +99,7 @@ export default function Services() {
           <div className="flex flex-col gap-2 lg:p-5 items-start">
             <h4 className="text-2xl font-bold select-none">Employee Orboarding</h4>
             {/*<p className="text-xl lg:text-justify">Simplify communication, improve customer experience with innovative solutions.</p>*/}
-            <button className="bg-sky-800 text-white text-xl p-5 flex justify-center items-center gap-3 lg:rounded-2xl transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+            <button className="bg-sky-800 text-white text-xl p-5 flex justify-center items-center gap-3 lg:rounded-2xl transition duration-300 hover:scale-[1.05] hover:easy-in-out ">
               Explore
               <Image
                 src='/arrow-right-large-svgrepo-com.svg'
@@ -104,7 +110,7 @@ export default function Services() {
             </button>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/robotic-bg2.jpg'
@@ -129,7 +135,7 @@ export default function Services() {
             </button>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/robotic-bg2.jpg'
@@ -154,7 +160,7 @@ export default function Services() {
             </button>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/robotic-bg2.jpg'
@@ -179,7 +185,7 @@ export default function Services() {
             </button>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/robotic-bg2.jpg'
@@ -204,7 +210,7 @@ export default function Services() {
             </button>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/robotic-bg2.jpg'
@@ -229,7 +235,7 @@ export default function Services() {
             </button>
           </div>
         </li>
-        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28]">
+        <li className="bg-cyan-700 p-5 flex flex-col gap-3 lg:flex lg:flex-col lg:items-center lg:p-4 lg:justify-center lg:w-[350px] lg:h-[300px] lg:rounded-2xl border border-[#594A28] transition easy-in-out duration-200 hover:-translate-y-6 hover:shadow-[0_35px_40px_rgba(8,8,8,0.6)]">
           <div className="lg:flex lg:relative lg:w-[200px] lg:h-[100px]">
             <Image
               src='/robotic-bg2.jpg'
@@ -255,7 +261,13 @@ export default function Services() {
           </div>
         </li>
       </ul>
-      {/*<button className="bg-sky-800 transition duration-300 hover:scale-110 hover:easy-in-out text-white text-xl p-5 lg:rounded-2xl">See more</button>*/}
+      <div className="flex gap-5 items-center border border-[#594A28] p-10 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500">
+        <span className="text-3xl text-white">Need an Automation?</span>
+        <motion.div animate= {{x: [0, 10, -10, 10, 0]}} transition= {{ duration: 2, repeat: Infinity }}>
+          <Image src="/arrow_r.svg" alt="arrow_right" width={30} height={20} />
+        </motion.div>
+        <button className="bg-sky-800 border border-cyan-500 transition duration-300 hover:scale-110 hover:easy-in-out hover:border hover:border-[#594A28] text-white text-xl p-5 lg:rounded-2xl w-[200px]">Book a call</button>
+      </div>
     </section>
   );
 }
