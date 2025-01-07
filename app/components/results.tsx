@@ -1,3 +1,5 @@
+'use client'
+
 import ImageSlider from "./imageSlider";
 
 export default function Results() {

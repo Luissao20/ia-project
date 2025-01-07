@@ -58,7 +58,6 @@ const InfoSection: React.FC = () => {
                                     height={20}
                                 />
                             </div>
-
                         </button>
                     ))}
                 </div>
@@ -82,7 +81,6 @@ const InfoSection: React.FC = () => {
                     )}
                 </div>
             </div>
-
         </div>
     );
 };
