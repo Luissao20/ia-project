@@ -1,14 +1,13 @@
 'use client'
 
 import { motion } from "framer-motion";
-import Carousel from "../components/carousel";
-import LogoSlider from "../components/logoSlider";
+import Carousel from "./components/carousel";
+import LogoSlider from "./components/logoSlider";
 import { useEffect, useRef, useState } from "react";
-import AutomationList from "../components/automationList";
-import ConsultingList from "../components/consultingList";
-import DevelopmentList from "../components/developmentList";
-import anime from "animejs";
-import Workflow from "../components/workflow";
+import AutomationList from "./components/automationList";
+import ConsultingList from "./components/consultingList";
+import DevelopmentList from "./components/developmentList";
+import Workflow from "./components/workflow";
 
 type Section = 'section1' | 'section2' | 'section3' | null;
 

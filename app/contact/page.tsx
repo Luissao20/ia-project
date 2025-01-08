@@ -1,8 +1,13 @@
+import ContactForm from "./components/contact-form";
+import SupportInformation from "./components/support-information";
+import OfficeLocation from "./components/office-location";
 
-export default function Home() {
+export default function Contact() {
   return (
-    <div>
-      <h2>Welcome to the Home Page</h2>
-    </div>
+    <>
+      <ContactForm />
+      <SupportInformation />
+      <OfficeLocation />
+    </>
   );
 }

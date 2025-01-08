@@ -1,9 +1,13 @@
+import PricingTiers from "./components/pricing-tiers";
+import PricingFAQ from "./components/pricing-faq";
+import PricingCTA from "./components/pricing-cta";
 
-export default function Home() {
+export default function Pricing() {
   return (
-    <div>
-      <h2>Pricing</h2>
-      <p>Welcome to the pricing page. Here you can find our pricing plans and options.</p>
-    </div>
+    <>
+      <PricingTiers />
+      <PricingFAQ />
+      <PricingCTA />
+    </>
   );
 }

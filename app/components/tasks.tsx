@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AnimatedList from "./animatedList";
+import AnimatedList from "../services/components/animatedList";
 
 export default function Tasks() {
     return (
