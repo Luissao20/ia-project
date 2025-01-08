@@ -16,7 +16,7 @@ export default function Services() {
         <li className="flex gap-3 w-[300px] h-[100px] lg:flex lg:items-center lg:justify-center">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl text-cyan-800 font-bold select-none">AI Agents</h4>
-            <Link href="/services#ai">
+            <Link href="/services#automation">
               <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
                 <Image
                   src='/arrow-right-large-svgrepo-com.svg'
@@ -30,20 +30,23 @@ export default function Services() {
         </li>
         <li className="flex gap-3 w-[300px] h-[100px] lg:flex lg:items-center lg:justify-center">
           <div className="flex gap-2 items-center">
-            <h4 className="text-2xl text-cyan-800 font-bold select-none">Advanced Analytics</h4>
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <h4 className="text-2xl text-cyan-800 font-bold select-none">Chatbots</h4>
+            <Link href="/services#automation">
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">
           <div className="flex gap-2 items-center">
-            <h4 className="text-2xl font-bold select-none">Seamless Integrations</h4>
+            <h4 className="text-2xl font-bold select-none">Automation</h4>
+            <Link href="/services#automation">
             <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
               <Image
                 src='/arrow-right-large-svgrepo-com.svg'
@@ -52,6 +55,7 @@ export default function Services() {
                 height={20}
               />
             </button>
+            </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">

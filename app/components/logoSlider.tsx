@@ -72,7 +72,7 @@ export default function ImageSlider() {
       <Swiper
         modules={[Navigation, Autoplay]}
         spaceBetween={5}
-        slidesPerView={5}
+        slidesPerView={6}
         loop
         autoplay={{ delay: 3000, disableOnInteraction: false }}
       >
