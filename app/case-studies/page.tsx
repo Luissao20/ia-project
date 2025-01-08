@@ -93,10 +93,7 @@ const caseStudies = [{
  // Agrega más casos de estudio según sea necesario 
 ];
 
-export default function Home() {
-  const [selectedTitle, setSelectedTitle] = useState<number | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
-  
+export default function Home() { 
   const variants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 },
@@ -117,15 +114,22 @@ export default function Home() {
   };
 
   return (
-    <section className="p-5 flex flex-col items-center">
-      <motion.div className="text-black w-[1200px] p-10"
-        initial="hidden"
-        animate="visible"
-        variants={variants}
-        transition={{ duration: 0.5 }}>
-        <h2 className="text-5xl text-center font-bold">Discover how our automations have reduced our clients' labor costs, optimized their processes to excellence, and boosted their income.</h2>
+    <section className="flex flex-col items-center">
+      <motion.div className="flex justify-center group relative box-content border-2 w-full h-[600px] bg-[url(../public/edr5.jpg)] bg-cover" whileHover={{ boxShadow: '0 0 50px rgb(0, 204, 255)' }}
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      transition={{ duration: 0.5 }}
+      >
+        <h2 className="absolute text-6xl text-center box-content w-[1200px] p-3 top-48 text-white font-bold backdrop-blur-sm rounded-2xl">Discover how our automations have reduced our clients' labor costs, optimized their processes to excellence, and boosted their income.</h2>
       </motion.div>
-      <div className="container mx-auto p-10">
+      <motion.div initial="hidden"
+      animate="visible"
+      variants={variants}
+      transition={{ duration: 0.5 }}>
+        <h3 className="text-5xl font-bold text-transparent m-10 p-10 bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-700">Case Studies</h3>
+      </motion.div>
+      <div className="w-full p-10 border border-gray-500">
         {caseStudies.map(study => (
           <div key={study.id} className="mb-4 p-5">
             <div className="flex items-center" onClick={() => toggleContent(study.id)}>

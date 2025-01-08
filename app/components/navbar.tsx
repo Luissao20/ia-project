@@ -33,7 +33,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id="navbar" className={hidden ? "lg:relative lg:overflow-hidden flex lg:pr-48 lg:h-[14vh] lg:flex lg:items-center lg:justify-between lg:shadow-lg lg:max-h-full lg:rounded-b-2xl bg-white lg:p-5 lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 -translate-y-full" : "lg:relative flex lg:pr-48 lg:h-[14vh] lg:max-h-full lg:overflow-hidden lg:flex lg:items-center lg:justify-between bg-white lg:p-5 lg:shadow-lg lg:rounded-b-2xl lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 translate-y-0"}>
+    <nav id="navbar" className={hidden ? "border-2 border-[#594A28] lg:relative lg:overflow-hidden flex lg:pr-48 lg:h-[14vh] lg:flex lg:items-center lg:justify-between lg:shadow-lg lg:max-h-full  bg-white lg:p-5 lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 -translate-y-full" : "lg:relative flex lg:pr-48 lg:h-[14vh] lg:max-h-full lg:overflow-hidden lg:flex lg:items-center lg:justify-between bg-white lg:p-5 lg:shadow-lg lg:rounded-b-2xl lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 translate-y-0 border-2 border-[#594A28]"}>
       <Link href="/">
         <div className="flex p-8 relative w-40 lg:w-48 lg:ml-56">
           <Image
@@ -52,7 +52,7 @@ export default function Navbar() {
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/">Home</Link>
         </li>
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/features">Features</Link>
+          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/services">Services</Link>
         </li>
         <li>
           <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/case-studies">Case Studies</Link>

@@ -10,7 +10,6 @@ const listItems = [
   <li key={1}>
     <Image
       src='/Airtable-Logo.png'
-      layout='responsive'
       width={100}
       height={100}
       alt="Airtable"
@@ -19,7 +18,6 @@ const listItems = [
   <li key={2}>
     <Image
       src='/Asana-Logo.png'
-      layout='responsive'
       width={100}
       height={100}
       alt="Asana"
@@ -28,7 +26,6 @@ const listItems = [
   <li key={3}>
     <Image
       src='/Dynamics-Logo.png'
-      layout='responsive'
       width={100}
       height={100}
       alt="Dynamics"
@@ -37,7 +34,6 @@ const listItems = [
   <li key={4}>
     <Image
       src='/HubSpot-Logo.png'
-      layout='responsive'
       width={100}
       height={100}
       alt="HubSpot"
@@ -46,7 +42,6 @@ const listItems = [
   <li key={5}>
     <Image
       src='/Jira-logo.png'
-      layout='responsive'
       width={100}
       height={100}
       alt="Jira"
@@ -55,7 +50,6 @@ const listItems = [
   <li key={6}>
     <Image
       src='/NetSuite-Logo.png'
-      layout='responsive'
       width={100}
       height={100}
       alt="NetSuite"
@@ -64,7 +58,6 @@ const listItems = [
   <li key={7}>
     <Image
       src='/Trello-Logo-.png'
-      layout='responsive'
       width={100}
       height={100}
       alt="Trello"

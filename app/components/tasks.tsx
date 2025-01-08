@@ -3,7 +3,7 @@ import AnimatedList from "./animatedList";
 
 export default function Tasks() {
     return (
-        <section className="lg:h-full bg-white lg:flex lg:flex-col lg:items-center bg-cover bg-no-repeat bg-fixed pt-20 pb-20 border border-y-cyan-800" >
+        <section className="lg:h-full bg-white lg:flex lg:flex-col lg:items-center bg-cover bg-no-repeat bg-fixed pt-20 pb-20 border-2 border-[#594A28]" >
             <div className="lg:border border-[#594A28] lg:w-[1600px] lg:h-[800px] bg-white lg:rounded-2xl lg:bg-cyan-700 shadow-[20px_35px_35px_rgba(8,8,8,0.9)]">
                 <div className="lg:flex lg:relative ">
                     <div className="flex flex-col justify-center p-16 items-center gap-10">

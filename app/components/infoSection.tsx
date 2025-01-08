@@ -36,7 +36,7 @@ const InfoSection: React.FC = () => {
     };
 
     return (
-        <div className="flex flex-col p-20 items-center">
+        <div className="flex flex-col p-20 items-center border-2 border-[#594A28]">
             <div className='text-black flex flex-col items-center p-10 gap-10 pb-32' data-aos="fade-up">
                 <h2 className='text-4xl font-bold select-none'>Take a look into how we work</h2>
                 <p className='text-3xl select-none'>Automate your processes to increase productivity and regain control of your time.</p>
