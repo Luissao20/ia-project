@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 import { useSearchParams } from 'next/navigation';
 import Image from "next/image";
+import Workflow from "../components/workflow";
 
 const caseStudies = [{
   id: 1,
@@ -129,6 +130,7 @@ export default function Home() {
       transition={{ duration: 0.5 }}>
         <h3 className="text-5xl font-bold text-transparent m-10 p-10 bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-700">Case Studies</h3>
       </motion.div>
+      <Workflow />
       <div className="w-full p-10 border border-gray-500">
         {caseStudies.map(study => (
           <div key={study.id} className="mb-4 p-5">

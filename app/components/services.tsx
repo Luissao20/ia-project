@@ -47,106 +47,120 @@ export default function Services() {
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">Automation</h4>
             <Link href="/services#automation">
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
             </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">Employee Orboarding</h4>
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out ">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <Link href="/services#consulting">
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out ">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">Payment & Contracts</h4>
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <Link href="/services#consulting">
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">Project Management</h4>
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <Link href="/services#development">
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">CRM</h4>
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <Link href="/services#development">
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[305px] lg:h-[100px]">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">Client Communications</h4>
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <Link href="/services#consulting">
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">Client Reporting</h4>
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <Link href="/services#consulting">
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
         <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">Operations</h4>
-            <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
-              <Image
-                src='/arrow-right-large-svgrepo-com.svg'
-                alt="Arrow"
-                width={20}
-                height={20}
-              />
-            </button>
+            <Link href="/services#consulting">
+              <button className="bg-sky-800 text-cyan-700 p-2 flex justify-center items-center gap-3 lg:rounded-full transition duration-300 hover:scale-[1.05] hover:easy-in-out">
+                <Image
+                  src='/arrow-right-large-svgrepo-com.svg'
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                />
+              </button>
+            </Link>
           </div>
         </li>
       </ul>
