@@ -6,56 +6,71 @@ import { Navigation } from 'swiper/modules';
 
 import 'swiper/swiper-bundle.css';
 
-const listItems = [
-  <li key={1} className="flex flex-col gap-3">
-    <Image
-      src='/casestudy1.png'
-      width={400}
-      height={200}
-      alt="Case 1"
-    />
-    <h4 className="text-2xl">Company 1</h4>
-    <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-    <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
-  </li>,
-  <li key={2} className="flex flex-col gap-3">
-  <Image
-    src='/casestudy1.png'
-    width={400}
-    height={200}
-    alt="Case 1"
-  />
-  <h4 className="text-2xl">Company 1</h4>
-  <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-  <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
-</li>,
-<li key={3} className="flex flex-col gap-3">
-    <Image
-      src='/casestudy1.png'
-      width={400}
-      height={200}
-      alt="Case 1"
-    />
-    <h4 className="text-2xl">Company 1</h4>
-    <h5 className="text-xl">Optimizing the Loan Approval Process for a Financial Institution</h5>
-    <button className="bg-[#000386] text-white text-xl p-5 flex justify-center items-center gap-3">Keep Reading</button>
-  </li>,
+const caseStudies = [
+  {
+    id: 1,
+    title: "Company 1",
+    image: "/casestudy1.png",
+    description: "Optimizing the Loan Approval Process for a Financial Institution"
+  }, // Agrega más casos de estudio según sea necesario 
+  {
+    id: 2,
+    title: "Company 2",
+    image: "/casestudy2.png",
+    description: "Optimizing the Loan Approval Process for a Financial Institution"
+  },
+  {
+    id: 3,
+    title: "Company 3",
+    image: "/casestudy2.png",
+    description: "Optimizing the Loan Approval Process for a Financial Institution"
+  },
+  {
+    id: 4,
+    title: "Company 4",
+    image: "/casestudy3.png",
+    description: "Optimizing the Loan Approval Process for a Financial Institution"
+  },
+  {
+    id: 5,
+    title: "Company 5",
+    image: "/casestudy2.png",
+    description: "Optimizing the Loan Approval Process for a Financial Institution"
+  },
 ];
 
-
 export default function ImageSlider() {
+  const goToCaseStudy = (id: number) => {
+    window.location.href = `/case-studies?id=${id}`;
+  };
+
   return (
     <Swiper
       modules={[Navigation]}
-      spaceBetween={30}
-      slidesPerView={1}
+      spaceBetween={10}
+      slidesPerView={3}
+      loop
       navigation
     >
-      {listItems.map((item, index) => (
-        <SwiperSlide key={index} className='p-5'>
-          <ul className="p-4 bg-white rounded-lg shadow">
-            {item}
-          </ul>
+      {caseStudies.map(study => (
+        <SwiperSlide
+          key={study.id}
+          className='p-5'>
+          <div className="p-5 bg-cyan-700 rounded-lg shadow text-white">
+            <Image
+              src={study.image}
+              layout='responsive'
+              width={400}
+              height={200}
+              alt={study.title}
+            />
+            <h4 className="text-2xl select-none">{study.title}</h4>
+            <h5 className="text-xl select-none">{study.description}</h5>
+            <button className="bg-sky-800 lg:rounded-2xl text-white text-xl p-5 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:easy-in-out"
+              onClick={() => goToCaseStudy(study.id)}
+            > Keep Reading
+            </button>
+          </div>
         </SwiperSlide>
       ))}
     </Swiper>
