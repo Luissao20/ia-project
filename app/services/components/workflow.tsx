@@ -4,10 +4,10 @@ import { useEffect, useRef } from "react";
 const Workflow = () => {
     useEffect(() => {
         anime({
-            targets: '.line',
-            strokeDasharray: ['10,10'],
+            targets: ".line",
+            strokeDasharray: ["10,10"],
             strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'linear',
+            easing: "linear",
             duration: 30000,
             loop: true,
         });

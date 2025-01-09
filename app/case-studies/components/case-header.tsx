@@ -8,7 +8,7 @@ export default function CaseHeader() {
 
     return (
         <div className="flex flex-col items-center w-full">
-            <motion.div className="flex justify-center group relative box-content border-2 w-full h-[600px] bg-[url(../public/edr5.jpg)] bg-cover" whileHover={{ boxShadow: '0 0 50px rgb(0, 204, 255)' }}
+            <motion.div className="flex justify-center group relative box-content border-2 w-full h-[600px] bg-[url(../public/edr5.jpg)] bg-cover" whileHover={{ boxShadow: "0 0 50px rgb(0, 204, 255)" }}
                 initial="hidden"
                 animate="visible"
                 variants={variants}

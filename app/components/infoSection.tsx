@@ -1,7 +1,8 @@
-'use client'
+"use client"
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image"
 
 const InfoSection: React.FC = () => {
     const [selectedTitle, setSelectedTitle] = useState<number | null>(null);
@@ -51,7 +52,7 @@ const InfoSection: React.FC = () => {
                         >
                             {item.title}
                             <div className='flex -mt-6 absolute right-0'>
-                                <img
+                                <Image
                                     src='/arrow.svg'
                                     alt="Arrow"
                                     width={20}
