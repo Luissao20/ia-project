@@ -15,12 +15,11 @@ type Section = "section1" | "section2" | "section3" | null;
 
 export default function Service() {
     const [showMoreSection, setShowMoreSection] = useState<Section>(null);
-    const sectionRefs = {
-        section1: useRef<HTMLDivElement>(null),
-        section2: useRef<HTMLDivElement>(null),
-        section3: useRef<HTMLDivElement>(null),
-
-    }
+    const sectionRefs = { 
+        section1: useRef<HTMLDivElement>(null), 
+        section2: useRef<HTMLDivElement>(null), 
+        section3: useRef<HTMLDivElement>(null), 
+    };  
 
     const toggleShowMore = (section: Section) => {
         if (showMoreSection === section) {
