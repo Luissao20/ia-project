@@ -1,13 +1,13 @@
-'use client'
+"use client"
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const logos = [
-    '/ChatGPT-Logo.png',
-    '/ClickUp-Logo.png',
-    '/Notion-Logo.png',
-    '/POE-Logo.png',
-    '/ChatSonic-Logo.png',
+    "/logos/ChatGPT-Logo.png",
+    "/logos/ClickUp-Logo.png",
+    "/logos/Notion-Logo.png",
+    "/logos/POE-Logo.png",
+    "/logos/ChatSonic-Logo.png",
 ];
 
 export default function Carousel() {
@@ -22,7 +22,7 @@ export default function Carousel() {
         if (isClient) {
             const interval = setInterval(() => {
                 setAngle((prevAngle) => prevAngle + 1);
-            }, 100); // Ajusta la velocidad del giro aquí 
+            }, 40); // Ajusta la velocidad del giro aquí 
             return () => clearInterval(interval);
         }
     }, [isClient]);

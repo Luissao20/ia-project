@@ -9,7 +9,7 @@ import 'swiper/swiper-bundle.css';
 const listItems = [
   <li key={1}>
     <Image
-      src='/Airtable-Logo.png'
+      src='/logos/Airtable-Logo.png'
       width={100}
       height={100}
       alt="Airtable"
@@ -17,7 +17,7 @@ const listItems = [
   </li>,
   <li key={2}>
     <Image
-      src='/Asana-Logo.png'
+      src='/logos/Asana-Logo.png'
       width={100}
       height={100}
       alt="Asana"
@@ -25,7 +25,7 @@ const listItems = [
   </li>,
   <li key={3}>
     <Image
-      src='/Dynamics-Logo.png'
+      src='/logos/Dynamics-Logo.png'
       width={100}
       height={100}
       alt="Dynamics"
@@ -33,7 +33,7 @@ const listItems = [
   </li>,
   <li key={4}>
     <Image
-      src='/HubSpot-Logo.png'
+      src='/logos/HubSpot-Logo.png'
       width={100}
       height={100}
       alt="HubSpot"
@@ -41,7 +41,7 @@ const listItems = [
   </li>,
   <li key={5}>
     <Image
-      src='/Jira-logo.png'
+      src='/logos/Jira-logo.png'
       width={100}
       height={100}
       alt="Jira"
@@ -49,7 +49,7 @@ const listItems = [
   </li>,
   <li key={6}>
     <Image
-      src='/NetSuite-Logo.png'
+      src='/logos/NetSuite-Logo.png'
       width={100}
       height={100}
       alt="NetSuite"
@@ -57,7 +57,7 @@ const listItems = [
   </li>,
   <li key={7}>
     <Image
-      src='/Trello-Logo-.png'
+      src='/logos/Trello-Logo-.png'
       width={100}
       height={100}
       alt="Trello"

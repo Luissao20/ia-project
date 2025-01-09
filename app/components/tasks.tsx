@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AnimatedList from "./animatedList";
+import Link from "next/link";
 
 export default function Tasks() {
     return (
@@ -14,7 +15,9 @@ export default function Tasks() {
                         <div>
                             <AnimatedList />
                         </div>
-                        <button className="bg-sky-800 transition duration-300 hover:scale-110 hover:easy-in-out hover:border hover:border-[#594A28] text-white text-xl p-5 lg:rounded-2xl w-[200px]">Book a call</button>
+                        <Link href="/contact">
+                            <button className="bg-sky-800 transition duration-300 hover:scale-110 hover:easy-in-out hover:border hover:border-[#594A28] text-white text-xl p-5 lg:rounded-2xl w-[200px]">Book a call</button>
+                        </Link>
                     </div>
                     <div className="lg:absolute lg:right-0 lg:inset-y-12">
                         <Image

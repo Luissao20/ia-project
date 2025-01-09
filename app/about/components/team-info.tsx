@@ -25,7 +25,7 @@ export default function TeamInfo() {
   return (
     <section className="py-20 px-5 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text" data-aos="fade-up" data-aos-delay="100">
+        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-800 to-sky-800 text-transparent bg-clip-text" data-aos="fade-up" data-aos-delay="100">
           Meet Our Leadership Team
         </h2>
         
@@ -35,13 +35,13 @@ export default function TeamInfo() {
               key={index}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center text-white text-3xl font-bold">
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-cyan-800 to-sky-800  flex items-center justify-center text-white text-3xl font-bold">
                 {member.name.split(' ').map(n => n[0]).join('')}
               </div>
               
               <div className="text-center">
                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                <p className="text-blue-600 font-medium mb-4">{member.role}</p>
+                <p className="text-cyan-600 font-medium mb-4">{member.role}</p>
                 <p className="text-gray-600">{member.bio}</p>
               </div>
             </div>
