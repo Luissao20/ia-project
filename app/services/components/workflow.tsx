@@ -1,5 +1,5 @@
 import anime from "animejs";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 const Workflow = () => {
     useEffect(() => {
