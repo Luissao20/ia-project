@@ -8,7 +8,7 @@ export default function Header() {
       };
       
     return(
-        <motion.div className="flex justify-center group relative border-2 border-[#594A28] w-full h-[600px] bg-cover" whileHover={{ boxShadow: '0 0 50px rgb(0, 204, 255)' }}
+        <motion.div className="flex justify-center group relative border-2 border-[#594A28] w-full h-[600px]" whileHover={{ boxShadow: '0 0 50px rgb(0, 204, 255)' }}
         initial="hidden"
         animate="visible"
         variants={variants}

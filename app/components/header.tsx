@@ -8,7 +8,7 @@ export default function Header() {
     <section className="relative text-white lg:h-[86vh] lg:flex lg:flex-col lg:items-center border-2 border-[#594A28]">
       <ParticlesBackground />
       <Image
-        src='/bg.jpg'
+        src="/bg.jpg"
         fill
         alt="Header"
         className="-z-10 lg:-z-10"
