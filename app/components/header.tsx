@@ -16,7 +16,7 @@ export default function Header() {
       />
       <div className="flex">
         <Image
-          src="/brain.jpg"
+          src="/brain2.jpg"
           alt="brain"
           width={500}
           height={700}
