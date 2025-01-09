@@ -39,7 +39,6 @@ export default function Navbar() {
           <Image
             src='/logo_final.png'
             alt="Logo"
-            layout="responsive"
             width={200}
             height={200}
             quality={100}
