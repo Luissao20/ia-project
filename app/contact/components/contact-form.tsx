@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: ""
   });
 
   const [status, setStatus] = useState({
@@ -21,18 +21,18 @@ export default function ContactForm() {
 
     try {
       // Replace with your actual API endpoint
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) throw new Error('Failed to submit');
+      if (!response.ok) throw new Error("Failed to submit");
       
       setStatus({ submitted: true, submitting: false, error: false });
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: "", email: "", message: "" });
     }catch {
       setStatus({ submitted: false, submitting: false, error: true });
     }
@@ -118,7 +118,7 @@ export default function ContactForm() {
             disabled={status.submitting}
             className="w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
           >
-            {status.submitting ? 'Sending...' : 'Send Message'}
+            {status.submitting ? "Sending..." : "Send Message"}
           </button>
 
           {/* Status Messages */}

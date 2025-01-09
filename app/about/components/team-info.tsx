@@ -1,24 +1,24 @@
 export default function TeamInfo() {
   const teamMembers = [
     {
-      name: 'Sarah Johnson',
-      role: 'CEO & Co-Founder',
-      bio: 'Former AI Research Lead at Tech Giants. 15+ years experience in AI and Machine Learning.',
+      name: "Sarah Johnson",
+      role: "CEO & Co-Founder",
+      bio: "Former AI Research Lead at Tech Giants. 15+ years experience in AI and Machine Learning.",
     },
     {
-      name: 'David Chen',
-      role: 'CTO & Co-Founder',
-      bio: 'Previously led engineering teams at Fortune 500 companies. Expert in scalable AI solutions.',
+      name: "David Chen",
+      role: "CTO & Co-Founder",
+      bio: "Previously led engineering teams at Fortune 500 companies. Expert in scalable AI solutions.",
     },
     {
-      name: 'Maria Rodriguez',
-      role: 'Head of Product',
-      bio: 'Product strategist with a decade of experience in SaaS and AI products.',
+      name: "Maria Rodriguez",
+      role: "Head of Product",
+      bio: "Product strategist with a decade of experience in SaaS and AI products.",
     },
     {
-      name: 'James Wilson',
-      role: 'Head of AI Research',
-      bio: 'PhD in Machine Learning. Published researcher with focus on business automation.',
+      name: "James Wilson",
+      role: "Head of AI Research",
+      bio: "PhD in Machine Learning. Published researcher with focus on business automation.",
     }
   ];
 
