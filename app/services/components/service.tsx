@@ -47,7 +47,7 @@ export default function Service() {
                 }
             }, 500); // Asegura que la animación se complete antes de desplazar 
         }
-    }, [showMoreSection]);
+    }, [showMoreSection, sectionRefs]);
 
     return (
         <section className="lg:flex lg:flex-col lg:items-center lg:h-full lg:w-full">
