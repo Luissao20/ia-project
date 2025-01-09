@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import Image from "next/image";
 import Link from "next/link";
@@ -26,9 +26,9 @@ export default function Navbar() {
       } lastScrollTop = scrollTop;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -37,7 +37,7 @@ export default function Navbar() {
       <Link href="/">
         <div className="flex p-8 relative w-40 lg:w-48 lg:ml-56">
           <Image
-            src='/logo_final.png'
+            src="/logo_final.png"
             alt="Logo"
             width={200}
             height={200}
@@ -71,7 +71,7 @@ export default function Navbar() {
       </ul>
       <Image
         onClick={handleClick}
-        src='/burguer-menu2.svg'
+        src="/burguer-menu2.svg"
         alt="Burger Menu"
         width={40}
         height={40}
