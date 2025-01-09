@@ -14,7 +14,7 @@ export default function CaseHeader() {
                 variants={variants}
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="absolute text-6xl text-center box-content w-[1200px] p-3 top-48 text-white font-bold backdrop-blur-sm rounded-2xl">Discover how our automations have reduced our clients' labor costs, optimized their processes to excellence, and boosted their income.</h2>
+                <h2 className="absolute text-6xl text-center box-content w-[1200px] p-3 top-48 text-white font-bold backdrop-blur-sm rounded-2xl">Discover how our automations have reduced our client`&apos;`s labor costs, optimized their processes to excellence, and boosted their income.</h2>
             </motion.div>
             <motion.div initial="hidden"
                 animate="visible"
