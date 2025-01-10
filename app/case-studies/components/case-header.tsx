@@ -17,7 +17,7 @@ export default function CaseHeader() {
             >
                 <div>
                     <Image 
-                        src="/edr5.jpg"
+                        src="/edr5.png"
                         alt="bg_cases"
                         fill
                         priority

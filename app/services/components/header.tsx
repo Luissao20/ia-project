@@ -16,7 +16,7 @@ export default function Header() {
       >
         <div>
           <Image 
-            src="/bg-lines.jpg"
+            src="/bg-lines.png"
             alt="bg_services"
             fill
             priority

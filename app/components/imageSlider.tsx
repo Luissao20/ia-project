@@ -56,12 +56,13 @@ export default function ImageSlider() {
         <SwiperSlide
           key={study.id}
           className='p-5'>
-          <div className="p-5 bg-cyan-700 rounded-lg shadow text-white">
+          <div className="p-5 bg-cyan-700 rounded-lg shadow text-white flex flex-col gap-5">
             <Image
               src={study.image}
               width={400}
               height={200}
               alt={study.title}
+              className="w-[600px]"
             />
             <h4 className="text-2xl select-none">{study.title}</h4>
             <h5 className="text-xl select-none">{study.description}</h5>
