@@ -10,16 +10,21 @@ import DevelopmentList from "./developmentList";
 import Workflow from "./workflow";
 import Header from "./header";
 import Image from "next/image";
+import Automations from "./automations";
+import WorkflowContent from "./workflowContent";
+import AutomationEnd from "./automationEnd";
+import Workflow2 from "./workflow2";
+import WorkflowContent2 from "./workflowContent2";
 
 type Section = "section1" | "section2" | "section3" | null;
 
 export default function Service() {
     const [showMoreSection, setShowMoreSection] = useState<Section>(null);
-    const sectionRefs = { 
-        section1: useRef<HTMLDivElement>(null), 
-        section2: useRef<HTMLDivElement>(null), 
-        section3: useRef<HTMLDivElement>(null), 
-    };  
+    const sectionRefs = {
+        section1: useRef<HTMLDivElement>(null),
+        section2: useRef<HTMLDivElement>(null),
+        section3: useRef<HTMLDivElement>(null),
+    };
 
     const toggleShowMore = (section: Section) => {
         if (showMoreSection === section) {
@@ -51,7 +56,7 @@ export default function Service() {
     return (
         <section className="lg:flex lg:flex-col lg:items-center lg:h-full lg:w-full">
             <Header />
-            <div className="grid items-center grid-cols-3 p-10 flex w-full h-full bg-sky-950">
+            <div className="grid items-center grid-cols-3 p-10 flex w-full h-full bg-white">
                 <div id="automation" className="relative w-[600px] h-[700px] rounded-[10px] overflow-hidden 
                     before:absolute before:top-[-50%] before:bottom-[-50%] before:right-[-50%] before:left-[-50%] 
                     before:bg-[conic-gradient(transparent,#594A28,#00a6ff)]
@@ -119,46 +124,30 @@ export default function Service() {
             </div>
             {showMoreSection === "section1" && (
                 <motion.div ref={sectionRefs.section1}
-                    className="flex flex-col gap-5 text-justify p-20 border-2 border-[#594A28] bg-white"
+                    className="flex flex-col gap-5 text-justify border-2 border-[#594A28] bg-white"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <h2 className="text-4xl select-none">The #1 AI and Automation Agency</h2>
-                    <p className="text-3xl select-none">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
+                    <div className="w-full bg-cyan-700 p-10 flex flex-col gap-10 items-center">
+                        <h2 className="text-4xl text-white select-none">The #1 AI and Automation Agency</h2>
+                        <p className="text-3xl text-white select-none p-10">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
+                    </div>
                     <div className="relative flex items-center justify-center">
                         <div>
                             <Workflow />
+                            <WorkflowContent />
                         </div>
-                        <div className="grid grid-cols-4 z-2 gap-10 p-10 absolute lg:top-40 flex gap-10">
-                            <div className="flex flex-col items-center gap-3">
-                                <Image src="/process.svg" alt="process" width={100} height={100} className="bg-white" />
-                                <span className="pl-4 text-lg bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-700">Step 1</span>
-                                <h4 className="text-lg font-bold select-none">We map out your processes</h4>
-                                <p className="select-none text-center w-[300px]">We`&apos;`ll create a visual map of all your systems, manual tasks and apps.</p>
-                            </div>
-                            <div className="flex flex-col items-center gap-3">
-                                <Image src="/find.svg" alt="process" width={100} height={100} className="bg-white" />
-                                <span className="pl-4 text-lg bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-700">Step 2</span>
-                                <h4 className="text-lg font-bold select-none">We find areas to add AI and automate</h4>
-                                <p className="select-none text-center w-[300px]">We audit your workflows to pinpoint opportunities with the highest ROI.</p>
-                            </div>
-                            <div className="flex flex-col items-center gap-3">
-                                <Image src="/test.svg" alt="process" width={100} height={100} className="bg-white" />
-                                <span className="pl-4 text-lg bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-700">Step 3</span>
-                                <h4 className="text-lg font-bold select-none">We build and test</h4>
-                                <p className="select-none text-center w-[300px]">We use a mix of custom code, AI tools, Zapier, Make.com and your tech stack.</p>
-                            </div>
-                            <div className="flex flex-col items-center gap-3">
-                                <Image src="/manage.svg" alt="process" width={100} height={100} className="bg-white" />
-                                <span className="pl-4 text-lg bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-700">Step 4</span>
-                                <h4 className="text-lg font-bold select-none">We manage and iterate</h4>
-                                <p className="select-none text-center w-[300px]">Every client we work with grows, so there&apos;s always new things to automate.</p>
-                            </div>
-                        </div>
-                        <h3>Chatbots</h3>
                     </div>
-                    <div className="flex jusify-center pt-24">
-                        <motion.button className="relative flex gap-2 items-center mt-4 text-[#594A28] px-4 py-2"
+                    <div className="pt-48 flex flex-col p-5 items-center gap-5">
+                        <h4 className="pt-24 text-2xl font-bold pb-5">The endless use cases of AI and Automation</h4>
+                        <p className="text-xl">Our clients make their employees 10X more efficient by taking tedious, repetitive tasks off their plate. We are industry agnostic.</p>
+                        <Automations />
+                    </div>
+                    <div>
+                        <AutomationEnd />
+                    </div>
+                    <div className="flex jusify-center z-4">
+                        <motion.button className="relative flex gap-2 items-center text-[#594A28] px-4 py-2"
                             onClick={handleGoBack}
                             whileHover={{ scale: 1.3 }}
                             style={{ transformOrigin: 'center center' }}
@@ -170,15 +159,28 @@ export default function Service() {
                 </motion.div>)}
             {showMoreSection === "section2" && (
                 <motion.div ref={sectionRefs.section2}
-                    className="flex flex-col gap-5 text-justify p-20 border-2 border-[#594A28] bg-white"
+                    className="flex flex-col gap-5 text-justify border-2 border-[#594A28] bg-white"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <h2 className="text-4xl">Consulting</h2>
-                    <p className="text-3xl">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team`&apos;`s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
-                    {/*En esta parte
-                        Se puede agregar calquier contenido
-                        Preferible utilizar otros componentes*/}
+                    <div className="w-full bg-cyan-700 p-10 flex flex-col gap-10 items-center">
+                        <h2 className="text-4xl text-white">Consulting</h2>
+                        <p className="text-3xl text-white">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
+                    </div>
+                    <div className="relative flex items-center justify-center">
+                        <div>
+                            <Workflow2 />
+                            <WorkflowContent2 />
+                        </div>
+                    </div>
+                    <div className="pt-48 flex flex-col p-5 items-center gap-5">
+                        <h4 className="pt-24 text-2xl font-bold pb-5">Consulting for endless use cases</h4>
+                        <p className="text-xl">Our experts have built hundreds of processes for dozens of industries, with millions of automated actions.</p>
+                        <Automations />
+                    </div>
+                    <div>
+                        <AutomationEnd />
+                    </div>
                     <div className="flex jusify-center">
                         <motion.button className="relative flex gap-2 items-center mt-4 text-[#594A28] px-4 py-2"
                             onClick={handleGoBack}
@@ -191,16 +193,29 @@ export default function Service() {
                     </div>
                 </motion.div>)}
             {showMoreSection === "section3" && (
-                <motion.div ref={sectionRefs.section1}
-                    className="flex flex-col gap-5 text-justify p-20 border-2 border-[#594A28] bg-white"
+                <motion.div ref={sectionRefs.section3}
+                    className="flex flex-col gap-5 text-justify border-2 border-[#594A28] bg-white"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <h2 className="text-4xl">The #1 Development Agency</h2>
-                    <p className="text-3xl">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team`&apos;`s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
-                    {/*En esta parte
-                        Se puede agregar calquier contenido
-                        Preferible utilizar otros componentes*/}
+                    <div className="w-full bg-cyan-700 p-10 flex flex-col gap-10 items-center">
+                        <h2 className="text-4xl text-white">Development</h2>
+                        <p className="text-3xl text-white">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
+                    </div>
+                    <div className="relative flex items-center justify-center">
+                        <div>
+                            <Workflow2 />
+                            <WorkflowContent2 />
+                        </div>
+                    </div>
+                    <div className="pt-48 flex flex-col p-5 items-center gap-5">
+                        <h4 className="pt-24 text-2xl font-bold pb-5">Consulting for endless use cases</h4>
+                        <p className="text-xl">Our experts have built hundreds of processes for dozens of industries, with millions of automated actions.</p>
+                        <Automations />
+                    </div>
+                    <div>
+                        <AutomationEnd />
+                    </div>
                     <div className="flex jusify-center">
                         <motion.button className="relative flex gap-2 items-center mt-4 text-[#594A28] px-4 py-2"
                             onClick={handleGoBack}

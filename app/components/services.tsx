@@ -12,7 +12,7 @@ export default function Services() {
         <h3 className="text-3xl text-center" data-aos="fade-up">If you can imagine it, we can achieve it</h3>
       </div>
 
-      <ul className="flex grid grid-cols-5 text-cyan-700" data-aos="zoom-in-down">
+      <ul className="flex grid grid-cols-3 grid-rows-3 text-cyan-700" data-aos="zoom-in-down">
         <li className="flex gap-3 w-[300px] h-[100px] lg:flex lg:items-center lg:justify-center">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl text-cyan-800 font-bold select-none">AI Agents</h4>
@@ -148,7 +148,7 @@ export default function Services() {
             </Link>
           </div>
         </li>
-        <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px]">
+        <li className="flex gap-3 lg:flex lg:items-center lg:justify-center lg:w-[300px] lg:h-[100px] col-start-2 col-end-2">
           <div className="flex gap-2 items-center">
             <h4 className="text-2xl font-bold select-none">Operations</h4>
             <Link href="/services#consulting">
@@ -169,7 +169,9 @@ export default function Services() {
         <motion.div animate={{ x: [0, 10, -10, 10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
           <Image src="/arrow_r.svg" alt="arrow_right" width={30} height={20} />
         </motion.div>
+        <Link href="/contact"> 
         <button className="bg-sky-800 border border-cyan-500 transition duration-300 hover:scale-110 hover:easy-in-out hover:border hover:border-[#594A28] text-white text-xl p-2 lg:rounded-2xl w-[150px] h-[60px]">Book a call</button>
+        </Link>
       </div>
     </section>
   );

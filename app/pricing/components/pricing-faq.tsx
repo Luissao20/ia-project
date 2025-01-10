@@ -45,7 +45,7 @@ export default function PricingFAQ() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <span className="text-xl font-semibold pr-8">{faq.question}</span>
-                <span className="text-blue-600 flex-shrink-0">
+                <span className="text-cyan-600 flex-shrink-0">
                   {openIndex === index ? (
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />

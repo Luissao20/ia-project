@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
@@ -68,7 +68,7 @@ export default function Contenido() {
         title: "Case Study 3",
         content: (
             <div className="flex flex-col items center">
-                <h3>Contenido del caso de estudio 2</h3>
+                <h3>Contenido del caso de estudio 3</h3>
                 <Image
                     src="/connect.png"
                     alt="connect_case-study1"
@@ -83,7 +83,22 @@ export default function Contenido() {
         title: "Case Study 4",
         content: (
             <div className="flex flex-col items center">
-                <h3>Contenido del caso de estudio 2</h3>
+                <h3>Contenido del caso de estudio 4</h3>
+                <Image
+                    src="/connect.png"
+                    alt="connect_case-study1"
+                    width={100}
+                    height={100}
+                />
+            </div>
+        ),
+    },
+    {
+        id: 5,
+        title: "Case Study 5",
+        content: (
+            <div className="flex flex-col items center">
+                <h3>Contenido del caso de estudio 5</h3>
                 <Image
                     src="/connect.png"
                     alt="connect_case-study1"
@@ -113,7 +128,7 @@ export default function Contenido() {
     return (
         <section className="flex flex-col items-center">
             <CaseHeader />
-            <div className="w-full p-10 border border-gray-500">
+            <div className="w-full p-10">
                 {caseStudies.map(study => (
                     <div key={study.id} className="mb-4 p-5">
                         <div className="flex items-center" onClick={() => toggleContent(study.id)}>

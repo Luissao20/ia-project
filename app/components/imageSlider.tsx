@@ -59,7 +59,6 @@ export default function ImageSlider() {
           <div className="p-5 bg-cyan-700 rounded-lg shadow text-white">
             <Image
               src={study.image}
-              layout='responsive'
               width={400}
               height={200}
               alt={study.title}

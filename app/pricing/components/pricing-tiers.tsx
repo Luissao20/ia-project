@@ -48,16 +48,16 @@ export default function PricingTiers() {
         {tiers.map((tier, index) => (
           <li 
             key={index}
-            className="flex flex-col p-8 bg-white rounded-lg shadow-lg border-2 border-gray-100 hover:border-blue-500 transition-colors"
+            className="flex flex-col p-8 bg-white rounded-lg shadow-lg border-2 border-gray-100 hover:border-[#594A28] transition-colors"
             data-aos="fade-up"
           >
             <h3 className="text-3xl font-bold mb-4">{tier.name}</h3>
-            <p className="text-4xl font-bold mb-8 text-blue-600">{tier.price}</p>
+            <p className="text-4xl font-bold mb-8 text-cyan-600">{tier.price}</p>
             <ul className="space-y-4 flex-grow">
               {tier.features.map((feature, featureIndex) => (
                 <li key={featureIndex} className="flex items-start text-xl gap-2">
                   <svg 
-                    className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" 
+                    className="w-5 h-5 text-[#594A28] mt-1 flex-shrink-0" 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -73,7 +73,7 @@ export default function PricingTiers() {
                 </li>
               ))}
             </ul>
-            <button className="mt-8 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+            <button className="mt-8 bg-cyan-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
               {tier.name === 'Enterprise' ? 'Contact Sales' : 'Get Started'}
             </button>
           </li>
