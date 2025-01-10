@@ -33,9 +33,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id="navbar" className={hidden ? "border-2 border-[#594A28] lg:relative lg:overflow-hidden flex lg:pr-48 lg:h-[14vh] lg:flex lg:items-center lg:justify-between lg:shadow-lg lg:max-h-full  bg-white lg:p-5 lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 -translate-y-full" : "lg:relative flex lg:pr-48 lg:h-[14vh] lg:max-h-full lg:overflow-hidden lg:flex lg:items-center lg:justify-between bg-white lg:p-5 lg:shadow-lg lg:rounded-b-2xl lg:sticky lg:top-0 lg:z-10 space-x-4 lg:flex-row transition-transform duration-300 translate-y-0 border-2 border-[#594A28]"}>
+    <nav id="navbar" className={`${hidden ? "-translate-y-full" : "translate-y-0"} relative w-full border-2 border-[#594A28] flex lg:pr-48 pr-48 h-[10vh] lg:h-[14vh] items-center justify-between shadow-lg bg-white p-5 z-10 transition-transform duration-300`}>
       <Link href="/">
-        <div className="flex p-8 relative w-40 lg:w-48 lg:ml-56">
+        <div className="flex lg:p-8 relative pl-2 w-16 lg:w-48 lg:ml-56">
           <Image
             src="/logo_final.png"
             alt="Logo"
@@ -75,7 +75,7 @@ export default function Navbar() {
         alt="Burger Menu"
         width={40}
         height={40}
-        className="lg:hidden"
+        className="lg:hidden absolute right-8 bg-black"
       />
       {togglemenu && <SlideMenu handleClick={handleClick} />}
     </nav>

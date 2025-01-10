@@ -13,4 +13,8 @@
     border-radius: 10px; 
     z-index: -1; 
     animation: electric-border 4s linear infinite; 
-} 
+}
+
+:root {
+    color-scheme: only light;
+  }

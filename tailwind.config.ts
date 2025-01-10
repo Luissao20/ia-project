@@ -6,6 +6,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "media",
   theme: {
     extend: {
       animation: {
@@ -25,7 +26,7 @@ export default {
           '100%': { 'background-position': '0 50%' }
         }
       },
-      backgroundSize: { '400%': '400%' }
+      backgroundSize: { '400%': '400%' },
     }
 
   },
