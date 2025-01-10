@@ -21,7 +21,7 @@ export default function Tasks() {
                     </div>
                     <div className="lg:absolute lg:right-0 lg:inset-y-12">
                         <Image
-                            src="/task-automation.jpg"
+                            src="/task-automation.png"
                             width={700}
                             height={700}
                             alt="Chatbot"
