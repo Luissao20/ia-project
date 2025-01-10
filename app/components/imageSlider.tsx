@@ -12,7 +12,7 @@ const caseStudies = [
     title: "Company 1",
     image: "/casestudy1.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
-  }, // Agrega más casos de estudio según sea necesario 
+  },
   {
     id: 2,
     title: "Company 2",
@@ -48,25 +48,46 @@ export default function ImageSlider() {
     <Swiper
       modules={[Navigation]}
       spaceBetween={10}
-      slidesPerView={3}
       loop
       navigation
+      breakpoints={{
+        320: { // para pantallas muy pequeñas
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        480: { // para teléfonos
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        640: { // para tabletas pequeñas
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: { // para tabletas grandes
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: { // para pantallas de computadora
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      }}
     >
       {caseStudies.map(study => (
         <SwiperSlide
           key={study.id}
-          className='p-5'>
+          className="p-5">
           <div className="p-5 bg-cyan-700 rounded-lg shadow text-white flex flex-col gap-5">
             <Image
               src={study.image}
               width={400}
               height={200}
               alt={study.title}
-              className="w-[600px]"
+              className="w-full" // Ajusta el ancho para que sea responsivo
             />
             <h4 className="text-2xl select-none">{study.title}</h4>
             <h5 className="text-xl select-none">{study.description}</h5>
-            <button className="bg-sky-800 lg:rounded-2xl text-white text-xl p-5 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:easy-in-out"
+            <button className="bg-sky-800 rounded-lg text-white text-xl p-3 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:ease-in-out"
               onClick={() => goToCaseStudy(study.id)}
             > Keep Reading
             </button>

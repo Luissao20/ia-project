@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function Tasks() {
     return (
-        <section className="lg:h-full bg-white lg:flex lg:flex-col lg:items-center bg-cover bg-no-repeat bg-fixed pt-20 pb-20 border-2 border-[#594A28]" >
-            <div className="lg:border border-[#594A28] lg:w-[1600px] lg:h-[800px] bg-white lg:rounded-2xl lg:bg-cyan-700 shadow-[20px_35px_35px_rgba(8,8,8,0.9)]">
-                <div className="lg:flex lg:relative ">
-                    <div className="flex flex-col justify-center p-16 items-center gap-10">
+        <section className="h-full bg-white lg:flex lg:flex-col items-center pt-20 pb-20 lg:border-2 lg:border-[#594A28]" >
+            <div className="lg:border lg:border-[#594A28] lg:w-[1600px] lg:h-[800px] w-screen lg:rounded-2xl lg:bg-cyan-700 bg-cyan-700 lg:shadow-[20px_35px_35px_rgba(8,8,8,0.9)]">
+                <div className="lg:flex lg:relative">
+                    <div className="lg:flex lg:flex-col lg:justify-center lg:p-16 lg:items-center lg:gap-10 flex flex-col p-5 gap-10 items-center">
                         <h2 className="p-10 text-center text-5xl text-white pb-10 font-bold select-none" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">Do you have repititive tasks?<br />
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 select-none">Let&apos;s Automate!</span>
                         </h2>
@@ -16,17 +16,17 @@ export default function Tasks() {
                             <AnimatedList />
                         </div>
                         <Link href="/contact">
-                            <button className="bg-sky-800 transition duration-300 hover:scale-110 hover:easy-in-out hover:border hover:border-[#594A28] text-white text-xl p-5 lg:rounded-2xl w-[200px]">Book a call</button>
+                            <button className="bg-sky-800 lg:transition lg:duration-300 lg:hover:scale-110 lg:hover:easy-in-out lg:hover:border lg:hover:border-[#594A28] text-white text-xl p-5 rounded-2xl w-[200px]">Book a call</button>
                         </Link>
                     </div>
-                    <div className="lg:absolute lg:right-0 lg:inset-y-12">
+                    <div>
                         <Image
                             src="/task-automation.png"
                             width={700}
                             height={700}
                             alt="Chatbot"
                             quality={100}
-                            className="rounded-l-2xl"
+                            className="lg:rounded-l-2xl lg:absolute lg:right-0 lg:inset-y-12"
                         />
                     </div>
                 </div>
