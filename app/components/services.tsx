@@ -8,7 +8,7 @@ export default function Services() {
   return (
     <section className="pl-5 pr-5 pt-20 flex flex-col gap-10 items-center pb-20 lg:h-full bg-white text-black border-2 border-[#594A28]">
       <div className="p-10 flex flex-col gap-10 items-center">
-        <h2 className="lg:text-4xl lg:font-bold text-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500" data-aos="fade-up">Our Automations:</h2>
+        <h2 className="lg:text-4xl lg:font-bold text-4xl text-cyan-800" data-aos="fade-up">Our Automations:</h2>
         <h3 className="lg:text-3xl lg:text-center text-3xl" data-aos="fade-up">If you can imagine it, we can achieve it</h3>
       </div>
 
@@ -164,13 +164,13 @@ export default function Services() {
           </div>
         </li>
       </ul>
-      <div className="flex gap-5 items-center border border-[#594A28] lg:p-10 p-5 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500">
+      <div className="flex gap-5 items-center border border-[#594A28] lg:p-10 p-5 rounded-2xl bg-cyan-800">
         <span className="lg:text-3xl text-lg text-white">Need an Automation?</span>
         <motion.div animate={{ x: [0, 10, -10, 10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
           <Image src="/arrow_r.svg" alt="arrow_right" width={30} height={20} />
         </motion.div>
         <Link href="/contact"> 
-          <button className="bg-sky-800 border border-cyan-500 lg:transition lg:duration-300 lg:hover:scale-110 lg:hover:easy-in-out lg:hover:border lg:hover:border-[#594A28] text-white lg:text-xl text-lg lg:p-2 rounded-2xl lg:w-[150px] lg:h-[60px] w-[110px] h-[50px]">Book a call</button>
+          <button className="bg-sky-800 border border-cyan-800 lg:transition lg:duration-300 lg:hover:scale-110 lg:hover:easy-in-out lg:hover:border lg:hover:border-[#594A28] text-white lg:text-xl text-lg lg:p-2 rounded-2xl lg:w-[150px] lg:h-[60px] w-[110px] h-[50px]">Book a call</button>
         </Link>
       </div>
     </section>
