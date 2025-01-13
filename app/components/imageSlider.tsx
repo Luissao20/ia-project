@@ -77,7 +77,7 @@ export default function ImageSlider() {
         <SwiperSlide
           key={study.id}
           className="p-5">
-          <div className="p-5 bg-cyan-700 rounded-lg shadow text-white flex flex-col gap-5">
+          <div className="p-5 bg-[#1c5a6c] rounded-lg shadow text-white flex flex-col gap-5">
             <Image
               src={study.image}
               width={400}
@@ -87,7 +87,7 @@ export default function ImageSlider() {
             />
             <h4 className="text-2xl select-none">{study.title}</h4>
             <h5 className="text-xl select-none">{study.description}</h5>
-            <button className="bg-sky-800 rounded-lg text-white text-xl p-3 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:ease-in-out"
+            <button className="bg-[#5ca9b1] rounded-lg text-white text-xl p-3 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:ease-in-out"
               onClick={() => goToCaseStudy(study.id)}
             > Keep Reading
             </button>

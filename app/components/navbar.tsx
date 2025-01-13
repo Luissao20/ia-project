@@ -1,17 +1,16 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import SlideMenu from "./slideInMenu";
 import { useEffect, useState } from "react";
 
-
 export default function Navbar() {
   const [togglemenu, setToggleMenu] = useState(false);
 
   const handleClick = () => {
     setToggleMenu(!togglemenu);
-  }
+  };
 
   const [hidden, setHidden] = useState(false);
 
@@ -21,9 +20,10 @@ export default function Navbar() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop) {
         setHidden(true);
-      } else {
+      } else if (scrollTop < lastScrollTop) {
         setHidden(false);
-      } lastScrollTop = scrollTop;
+      }
+      lastScrollTop = scrollTop;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -33,11 +33,16 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id="navbar" className={`${hidden ? "-translate-y-full" : "translate-y-0"} relative w-full border-2 border-[#594A28] flex lg:pr-48 pr-48 h-[10vh] lg:h-[14vh] items-center justify-between shadow-lg bg-white p-5 z-10 transition-transform duration-300`}>
+    <nav
+      id="navbar"
+      className={`${
+        hidden ? "-translate-y-full" : "translate-y-0"
+      } fixed w-full border-2 border-[#293750] rounded-b-2xl flex h-[10vh] lg:h-[14vh] items-center justify-between shadow-lg bg-white p-5 z-10 lg:pr-28 transition-transform duration-200`}
+    >
       <Link href="/">
         <div className="flex lg:p-8 relative pl-2 w-16 lg:w-48 lg:ml-56">
           <Image
-            src="/logo_final.png"
+            src="/logos/new-logo.png"
             alt="Logo"
             width={200}
             height={200}
@@ -46,27 +51,51 @@ export default function Navbar() {
           />
         </div>
       </Link>
-      <ul className="lg:flex lg:gap-3 lg:text-2xl lg:text-cyan-800 lg:items-center lg:justify-center">
+      <ul className="lg:flex lg:gap-3 lg:text-2xl lg:text-[#1c5a6c] lg:items-center lg:justify-center">
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/">Home</Link>
+          <Link
+            className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#293750] lg:rounded-2xl lg:cursor-pointer hidden lg:block"
+            href="/"
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/services">Services</Link>
+          <Link
+            className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#293750] lg:rounded-2xl lg:cursor-pointer hidden lg:block"
+            href="/services"
+          >
+            Our Services
+          </Link>
         </li>
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/case-studies">Case Studies</Link>
+          <Link
+            className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#293750] lg:rounded-2xl lg:cursor-pointer hidden lg:block"
+            href="/case-studies"
+          >
+            Case Studies
+          </Link>
         </li>
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/pricing">Pricing</Link>
+          <Link
+            className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#293750] lg:rounded-2xl lg:cursor-pointer hidden lg:block"
+            href="/why-agentify"
+          >
+            Why Agentify
+          </Link>
         </li>
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/about">About</Link>
+          <Link
+            className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#293750] lg:rounded-2xl lg:cursor-pointer hidden lg:block"
+            href="/resources"
+          >
+            Resources
+          </Link>
         </li>
         <li>
-          <Link className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#594A28] lg:rounded-2xl lg:cursor-pointer hidden lg:block" href="/contact">Contact</Link>
-        </li>
-        <li>
-          <button className="lg:p-3 lg:text-cyan-800 lg:text-2xl lg:border-2 lg:rounded-2xl lg:border-[#594A28] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-cyan-900 lg:hover:text-white hidden lg:block">Get Started</button>
+          <button className="lg:p-3 lg:text-cyan-800 lg:text-2xl lg:border-2 lg:rounded-2xl lg:border-[#293750] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-[#1a5c6c] lg:hover:text-white hidden lg:block">
+            Book a Discovery Call
+          </button>
         </li>
       </ul>
       <Image

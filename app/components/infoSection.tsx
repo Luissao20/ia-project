@@ -37,9 +37,9 @@ const InfoSection: React.FC = () => {
     };
 
     return (
-        <div className="lg:flex lg:flex-col lg:p-20 lg:items-center lg:border-2 lg:border-[#594A28]">
+        <div className="lg:flex lg:flex-col lg:p-20 lg:items-center lg:border-2 lg:border-[#273950]">
             <div className="text-black flex flex-col items-center p-10 gap-10 pb-32" data-aos="fade-up">
-                <h2 className="text-4xl font-bold select-none text-cyan-800">Take a look into how we work</h2>
+                <h2 className="text-4xl font-bold select-none text-[#1c5a6c]">Take a look into how we work</h2>
                 <p className="text-3xl select-none">Automate your processes to increase productivity and regain control of your time.</p>
             </div>
             <div className="flex flex-col lg:flex-row items-center justify-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -47,7 +47,7 @@ const InfoSection: React.FC = () => {
                     {infoData.map((item, index) => (
                         <button
                             key={index}
-                            className={`lg:w-[450px] text-2xl font-bold text-left p-5 lg:p-10 rounded-2xl lg:flex lg:items-center lg:justify-center ${selectedTitle === index ? "bg-gradient-to-b from-cyan-800 to-black select-none transition duration-300 scale-110 ease-in-out border border-[#594A28] text-white" : "bg-gray-100"}`}
+                            className={`lg:w-[450px] text-2xl font-bold text-left p-5 lg:p-10 rounded-2xl lg:flex lg:items-center lg:justify-center ${selectedTitle === index ? "bg-gradient-to-b from-[#1c5a6c] to-[#273950] select-none transition duration-300 scale-110 ease-in-out text-white" : "bg-gray-100"}`}
                             onClick={() => handleTitleClick(index)}
                         >
                             <div className="lg:hidden absolute right-2">
