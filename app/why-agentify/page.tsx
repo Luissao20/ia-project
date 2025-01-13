@@ -1,13 +1,15 @@
-import MissionVision from "./components/mission-vision";
-import TeamInfo from "./components/team-info";
-import WhyUs from "./components/why-us";
+import Intro from "./components/intro";
+import Features from "./components/features";
+import NextStep from "./components/next-step";
+import Comparison from "./components/comparison";
 
 export default function WhyAgentify() {
   return (
     <>
-      <MissionVision />
-      <TeamInfo />
-      <WhyUs />
+      <Intro />
+      <Features />
+      <Comparison />
+      <NextStep />
     </>
   );
 }
