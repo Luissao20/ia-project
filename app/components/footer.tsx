@@ -7,8 +7,9 @@ export default function Footer() {
         <div className="flex flex-col gap-5">
           <div className="flex gap-20">
             <div className="flex flex-col">
-              <Link href="/about">About</Link>
-              <Link href="/features">Features</Link>
+              <Link href="/why-agentify">Why Agentify</Link>
+              <Link href="/services">Our Services</Link>
+              <Link href="/resources">Resources</Link>
               <Link href="/contact">Contact</Link>
             </div>
             <div>

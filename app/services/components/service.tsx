@@ -56,14 +56,14 @@ export default function Service() {
     return (
         <section className="lg:flex lg:flex-col lg:items-center lg:h-full lg:w-full">
             <Header />
-            <div className="lg:grid lg:items-center lg:grid-cols-3 lg:p-10 lg:flex lg:w-full lg:h-full bg-white flex flex-col">
+            <div className="lg:grid lg:items-center lg:grid-cols-3 lg:p-10 lg:flex lg:w-full lg:h-full bg-white flex flex-col lg:overflow-hidden">
                 <div id="automation" className="lg:relative lg:w-[600px] lg:h-[700px] lg:rounded-[10px] lg:overflow-hidden 
                     before:absolute lg:before:top-[-50%] lg:before:bottom-[-50%] lg:before:right-[-50%] lg:before:left-[-50%]
                     before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%] 
-                    before:bg-[conic-gradient(transparent,#594A28,#00a6ff)]
+                    before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[400px] h-[800px] overflow-hidden rounded-[10px]" data-aos="fade-up-right">
                     <div className="lg:absolute absolute lg:flex flex lg:flex-col flex-col lg:gap-10 gap-5 items-center top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_23189.png)] bg-cover bg-no-repeat">
-                        <h3 className="text-4xl pt-20 select-none text-left">Automation</h3>
+                        <h3 className="text-4xl pt-20 select-none text-[#1c5a6c]">Automation</h3>
                         <p className="text-2xl select-none text-justify p-10 backdrop-blur-2xl">Adjust and adapt AI agent features to meet your company&apos;s specific needs and preferences</p>
                         <div className="lg:flex lg:gap-40 lg:pt-5">
                             <AutomationList />
@@ -73,7 +73,7 @@ export default function Service() {
                             
                         </div>
                         <motion.button
-                            className="flex gap-2 absolute bottom-3 left-10 text-[#594A28] px-2 py-1 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300"
+                            className="flex gap-2 absolute bottom-3 left-10 text-[#273950] px-2 py-1 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300"
                             whileHover={{ scale: 1.3 }}
                             onClick={() => toggleShowMore('section1')}
                         >
@@ -85,16 +85,16 @@ export default function Service() {
                 <div id="consulting" className="lg:relative lg:w-[600px] lg:h-[700px] lg:rounded-[10px] lg:overflow-hidden 
                     before:absolute lg:before:top-[-50%] lg:before:bottom-[-50%] lg:before:right-[-50%] lg:before:left-[-50%]
                     before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%] 
-                    before:bg-[conic-gradient(transparent,#594A28,#00a6ff)]
+                    before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[400px] h-[800px] overflow-hidden rounded-[10px]" data-aos="fade-up">
                     <div className="absolute flex flex-col items-center gap-10 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/673.png)] bg-cover bg-no-repeat">
-                        <h3 className="text-4xl pt-20 select-none">Consulting</h3>
+                        <h3 className="text-4xl pt-20 select-none text-[#1c5a6c]">Consulting</h3>
                         <p className="text-2xl text-justify p-10 select-none backdrop-blur-2xl">Software and technology to execute repetitive and routine tasks that save time, reduce errors and increase operational efficiency in various areas, from business management to software development</p>
                         <div>
                             <ConsultingList />
                         </div>
                         <motion.button
-                            className="flex gap-2 absolute bottom-3 left-10 text-[#594A28] px-2 py-1 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300"
+                            className="flex gap-2 absolute bottom-3 left-10 text-[#273950] px-2 py-1 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300"
                             whileHover={{ scale: 1.3 }}
                             onClick={() => toggleShowMore('section2')}
                         >
@@ -103,13 +103,13 @@ export default function Service() {
                         </motion.button>
                     </div>
                 </div>
-                <div id="development" className="relative lg:w-[600px] lg:h-[700px] rounded-[10px] overflow-hidden 
+                <div id="development" className="relative lg:w-[600px] lg:h-[700px] rounded-[10px] lg:overflow-hidden 
                     before:absolute lg:before:top-[-50%] lg:before:bottom-[-50%] lg:before:right-[-50%] lg:before:left-[-50%]
                     before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%]
-                    before:bg-[conic-gradient(transparent,#594A28,#00a6ff)]
+                    before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[400px] h-[800px] overflow-hidden rounded-[10px]" data-aos="fade-up-left">
                     <div className="lg:absolute absolute lg:flex lg:flex-col lg:items-center lg:gap-5 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_5102.png)] bg-cover bg-no-repeat">
-                        <h3 className="text-4xl pt-20 pb-5 select-none text-center select-none">Development</h3>
+                        <h3 className="text-4xl pt-20 pb-5 select-none text-center text-[#1c5a6c]">Development</h3>
                         <p className="text-2xl pl-10 pr-10 text-justify text-center select-none backdrop-blur-2xl">Maximize your team&apos;s efficiency and productivity with our integration solution that effortlessly connects with the most popular tools on the market. Our platform makes your workflow easier by uniting your favorite tools in one place</p>
                         <div className="flex flex-col">
                             <div className="pt-10 pl-48">
@@ -118,7 +118,7 @@ export default function Service() {
                             <LogoSlider />
                         </div>
                         <motion.button
-                            className="flex gap-2 absolute bottom-3 left-10 text-[#594A28] px-2 py-1 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300"
+                            className="flex gap-2 absolute bottom-3 left-10 text-[#273950] px-2 py-1 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300"
                             whileHover={{ scale: 1.3 }}
                             onClick={() => toggleShowMore('section3')}
                         >
@@ -130,11 +130,11 @@ export default function Service() {
             </div>
             {showMoreSection === "section1" && (
                 <motion.div ref={sectionRefs.section1}
-                    className="flex flex-col gap-5 text-justify border-2 border-[#594A28] bg-white"
+                    className="flex flex-col gap-5 text-justify border-2 border-[#273950] bg-white"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <div className="w-full bg-cyan-700 p-10 flex flex-col gap-10 items-center">
+                    <div className="w-full bg-[#1c5a6c] p-10 flex flex-col gap-10 items-center">
                         <h2 className="text-4xl text-white select-none">The #1 AI and Automation Agency</h2>
                         <p className="text-3xl text-white select-none p-10">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
                     </div>
@@ -153,7 +153,7 @@ export default function Service() {
                         <AutomationEnd />
                     </div>
                     <div className="flex jusify-center z-4">
-                        <motion.button className="relative flex gap-2 items-center text-[#594A28] px-4 py-2"
+                        <motion.button className="relative flex gap-2 items-center text-[#273950] px-4 py-2"
                             onClick={handleGoBack}
                             whileHover={{ scale: 1.3 }}
                             style={{ transformOrigin: 'center center' }}
@@ -165,11 +165,11 @@ export default function Service() {
                 </motion.div>)}
             {showMoreSection === "section2" && (
                 <motion.div ref={sectionRefs.section2}
-                    className="flex flex-col gap-5 text-justify border-2 border-[#594A28] bg-white"
+                    className="flex flex-col gap-5 text-justify border-2 border-[#273950] bg-white"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <div className="w-full bg-cyan-700 p-10 flex flex-col gap-10 items-center">
+                    <div className="w-full bg-[#1c5a6c] p-10 flex flex-col gap-10 items-center">
                         <h2 className="text-4xl text-white">Consulting</h2>
                         <p className="text-3xl text-white">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
                     </div>
@@ -188,7 +188,7 @@ export default function Service() {
                         <AutomationEnd />
                     </div>
                     <div className="flex jusify-center">
-                        <motion.button className="relative flex gap-2 items-center mt-4 text-[#594A28] px-4 py-2"
+                        <motion.button className="relative flex gap-2 items-center mt-4 text-[#273950] px-4 py-2"
                             onClick={handleGoBack}
                             whileHover={{ scale: 1.3 }}
                             style={{ transformOrigin: "center center" }}
@@ -200,11 +200,11 @@ export default function Service() {
                 </motion.div>)}
             {showMoreSection === "section3" && (
                 <motion.div ref={sectionRefs.section3}
-                    className="flex flex-col gap-5 text-justify border-2 border-[#594A28] bg-white"
+                    className="flex flex-col gap-5 text-justify border-2 border-[#273950] bg-white"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <div className="w-full bg-cyan-700 p-10 flex flex-col gap-10 items-center">
+                    <div className="w-full bg-[#1c5a6c] p-10 flex flex-col gap-10 items-center">
                         <h2 className="text-4xl text-white">Development</h2>
                         <p className="text-3xl text-white">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
                     </div>
@@ -223,7 +223,7 @@ export default function Service() {
                         <AutomationEnd />
                     </div>
                     <div className="flex jusify-center">
-                        <motion.button className="relative flex gap-2 items-center mt-4 text-[#594A28] px-4 py-2"
+                        <motion.button className="relative flex gap-2 items-center mt-4 text-[#273950] px-4 py-2"
                             onClick={handleGoBack}
                             whileHover={{ scale: 1.3 }}
                             style={{ transformOrigin: "center center" }}
