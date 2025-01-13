@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ParticlesBackground from "./ParticlesBg"
 
 export default function Header() {
