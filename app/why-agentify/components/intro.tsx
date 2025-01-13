@@ -12,7 +12,7 @@ export default function Intro() {
         <p className="text-xl text-gray-700 text-center leading-relaxed">
           Agentify provides custom AI automation solutions, including AI agents and chatbots,
           that save time, reduce costs, and drive measurable growth for businesses of all sizes.
-          Whether you're a startup or an enterprise, our solutions are built to scale alongside your business.
+          Whether you&apos;re a startup or an enterprise, our solutions are built to scale alongside your business.
         </p>
       </div>
     </section>
