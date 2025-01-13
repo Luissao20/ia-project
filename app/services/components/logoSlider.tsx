@@ -68,7 +68,7 @@ const listItems = [
 
 export default function ImageSlider() {
   return (
-    <div className='container lg:mx-auto my-10 lg:p-5 p-5 lg:w-[900px] w-[300px]'>
+    <div className='container lg:mx-auto my-10 lg:p-5 p-5 lg:w-[600px] w-[300px]'>
       <Swiper
         modules={[Navigation, Autoplay]}
         breakpoints={{
@@ -98,7 +98,7 @@ export default function ImageSlider() {
       >
         {listItems.map((item, index) => (
           <SwiperSlide key={index}>
-            <ul className="p-4 w-[130px] h-auto lg:grayscale lg:hover:grayscale-0">
+            <ul className="p-4 w-[130px] lg:w-[300px] h-auto lg:grayscale lg:hover:grayscale-0">
               {item}
             </ul>
           </SwiperSlide>

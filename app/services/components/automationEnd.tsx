@@ -7,7 +7,7 @@ import GridCarousel from "./gridcarousel";
 export default function AutomationEnd() {
     return (
         <motion.div>
-            <div className="flex p-10 justify-center items-center gap-10 w-full bg-sky-700 z-3">
+            <div className="flex p-10 justify-center items-center gap-10 w-full bg-[#1c5a6c] z-3">
                 <div className="flex flex-col gap-5 p-10">
                     <h3 className="text-3xl text-white">We connect all your apps</h3>
                     <p className="text-xl text-white">Plus thousands more through APIs, custom code and web hooks.</p>
@@ -21,7 +21,7 @@ export default function AutomationEnd() {
                 <div className="flex flex-col gap-10 p-10">
                     <p className="text-xl w-[500px]">Whether you need help with a one-off project, or you need custom coding for highly complex automations involving several apps, we&apos;ll get it done.</p>
                     <Link href="/contact">
-                        <button className="bg-sky-800 border border-transparent transition duration-300 hover:scale-110 hover:easy-in-out hover:border hover:border-[#594A28] text-white text-xl p-5 lg:rounded-2xl w-[200px]">Book a call</button>
+                        <button className="bg-[#5ca9b1] border border-transparent transition easy-in-out duration-300 hover:scale-110 text-white text-xl p-5 lg:rounded-2xl w-[200px]">Book a call</button>
                     </Link>
                 </div>
             </div>
