@@ -19,7 +19,7 @@ const AnimatedListItem: React.FC<AnimatedListItemProps> = ({ item, index }) => {
             initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.5, delay: index * 0.2 }} >
-            <motion.div className="w-6 h-6 mr-4 bg-cyan-500 rounded-full flex items-center justify-center text-white flex-shrink-0"
+            <motion.div className="w-6 h-6 mr-4 bg-[#5ca9b1] rounded-full flex items-center justify-center text-white flex-shrink-0"
                 initial={{ scale: 0 }}
                 animate={inView ? { scale: 1 } : { scale: 0 }}
                 transition={{ duration: 0.3 }} >
