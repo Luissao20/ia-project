@@ -3,7 +3,7 @@
 import Workflow from "./workflow";
 import WorkflowContent from "./workflowContent";
 import Cta from "./cta";
-import UseCases from "./use-cases";
+import Automations from "./automations";
 
 export default function Services() {
   return (
@@ -15,12 +15,10 @@ export default function Services() {
         <Workflow />
         <WorkflowContent />
       </div>
-      <div>
         <Cta />
-      </div>
-      <div>
-        <UseCases />
-      </div>
+        <h2 className="lg:text-4xl font-bold text-[#1c5a6c] lg:pt-20 lg:p-10">The endless use cases of AI and Automation</h2>
+        <Automations />
+        <Cta />
     </section>
   );
 }
