@@ -3,7 +3,8 @@
 import Workflow from "./workflow";
 import WorkflowContent from "./workflowContent";
 import Cta from "./cta";
-import UseCases from "./use-cases";
+import Automations from "./automations";
+import Tech from "./technologies";
 
 export default function Services() {
   return (
@@ -15,11 +16,13 @@ export default function Services() {
         <Workflow />
         <WorkflowContent />
       </div>
-      <div>
+      <div className="flex flex-col items-center gap-20">
         <Cta />
-      </div>
-      <div>
-        <UseCases />
+        <h2 className="lg:text-4xl font-bold text-[#1c5a6c] lg:pt-20 lg:p-10">The endless use cases of AI and Automation</h2>
+        <Automations />
+        <Cta />
+        <h2 className="lg:text-4xl font-bold text-[#1c5a6c] lg:pt-20 lg:p-10">AI and Automation technilogies we are experts in</h2>
+        <Tech />
       </div>
     </section>
   );
