@@ -14,25 +14,24 @@ export default function Services() {
       <div className="p-10 flex flex-col gap-10 items-center">
         <h2 className="lg:text-4xl lg:font-bold text-4xl text-[#1c5a6c]" data-aos="fade-up">How our AI and Automation agency works:</h2>
       </div>
-      <div className="relative pb-20">
+      <div className="relative pb-20" data-aos="zoom-in">
         <Workflow />
         <WorkflowContent />
       </div>
       <div className="flex flex-col items-center gap-20">
         <Cta />
         <h2 className="lg:text-4xl font-bold text-[#1c5a6c] lg:pt-20 lg:p-10" data-aos="fade-up">The endless use cases of AI and Automation</h2>
-        <Automations />
+        <div  data-aos="zoom-in"><Automations /></div>
         <Cta />
         <h2 className="lg:text-4xl font-bold text-[#1c5a6c] lg:pt-20 lg:p-10">AI and Automation technilogies we are experts in</h2>
         <Tech />
       </div>
       <div className="flex flex-col items-center justify-center pl-10 p-20">
-        <h2 className="lg:text-4xl font-bold text-[#1c5a6c] lg:pt-20 lg:p-10">Why AI must be combined with Automation</h2>
-        <div className="flex">
+        <h2 className="lg:text-4xl font-bold text-[#1c5a6c] lg:p-10" data-aos="fade-up">Why AI must be combined with Automation</h2>
+        <div className="flex" data-aos="zoom-in">
           <VerticalLine />
           <Combined />
         </div>
-        
       </div>
     </section>
   );
