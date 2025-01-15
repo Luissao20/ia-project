@@ -37,13 +37,13 @@ const InfoSection: React.FC = () => {
     };
 
     return (
-        <div className="lg:flex lg:flex-col lg:p-20 lg:items-center lg:border-2 lg:border-[#273950]">
+        <div className="lg:flex lg:flex-col lg:p-20 lg:items-center lg:border-2 lg:border-[#273950] lg:overflow-hidden">
             <div className="text-black flex flex-col items-center p-10 gap-10 pb-32" data-aos="fade-up">
                 <h2 className="text-4xl font-bold select-none text-[#1c5a6c]">Take a look into how we work</h2>
                 <p className="text-3xl select-none">Automate your processes to increase productivity and regain control of your time.</p>
             </div>
             <div className="flex flex-col lg:flex-row items-center justify-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div className="lg:w-[400px] lg:h-[400px] lg:relative lg:flex lg:flex-col lg:items-start lg:gap-5 flex flex-col w-[300px] relative pb-24 gap-5">
+                <div className="lg:w-[400px] lg:h-[400px] lg:relative lg:flex lg:flex-col lg:items-center lg:gap-5 lg:ms-96 lg:pl-10 flex flex-col w-[300px] relative pb-24 gap-5">
                     {infoData.map((item, index) => (
                         <button
                             key={index}
@@ -82,7 +82,7 @@ const InfoSection: React.FC = () => {
                 </div>
                 <div className="hidden lg:block lg:w-[1200px] lg:p-10 lg:ml-20">
                     {selectedTitle === null && (
-                        <div className="flex items-center justify-center h-full gap-5">
+                        <div className="flex items-center justify-center h-full gap-5 lg:me-64">
                             <span className="ml-2 text-gray-300 text-4xl">&#8592;</span>
                             <span className="text-gray-300 text-3xl select-none">Click to show more</span>
                         </div>
@@ -94,8 +94,11 @@ const InfoSection: React.FC = () => {
                             animate={{ opacity: isVisible ? 1 : 0 }}
                             transition={{ duration: 0.75 }}
                         >
-                            <h2 className="text-3xl font-bold select-none">{infoData[selectedTitle].title}</h2>
-                            <p className="lg:mt-5 text-2xl select-none">{infoData[selectedTitle].content}</p>
+                            <div>
+                                <h2 className="text-3xl font-bold select-none">{infoData[selectedTitle].title}</h2>
+                                <p className="lg:mt-5 text-2xl select-none lg:w-[800px]">{infoData[selectedTitle].content}</p>
+                            </div>
+
                         </motion.div>
                     )}
                 </div>

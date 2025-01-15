@@ -37,7 +37,7 @@ export default function Service() {
     const handleGoBack = () => {
         setShowMoreSection(null);
         setTimeout(() => {
-            window.scrollTo({ top: 600, behavior: "smooth" });
+            window.scrollTo({ top: 800, behavior: "smooth" });
         }, 300); // Asegura que la animación se complete antes de desplazar
     };
 
@@ -54,14 +54,14 @@ export default function Service() {
     }, [showMoreSection, sectionRefs]);
 
     return (
-        <section className="lg:flex lg:flex-col lg:items-center lg:h-full lg:w-full">
+        <section className="flex flex-col items-center h-full w-full">
             <Header />
-            <div className="lg:grid lg:items-center lg:grid-cols-3 lg:p-10 lg:flex lg:w-full lg:h-full bg-white flex flex-col lg:overflow-hidden">
-                <div id="automation" className="lg:relative lg:w-[600px] lg:h-[700px] lg:rounded-[10px] lg:overflow-hidden 
+            <div className="p-1 lg:p-20 flex flex-col items-center justify-center w-full h-full bg-white overflow-hidden lg:gap-5">
+                <div id="automation" className="lg:w-[1200px] lg:h-[700px] rounded-[10px] overflow-hidden 
                     before:absolute lg:before:top-[-50%] lg:before:bottom-[-50%] lg:before:right-[-50%] lg:before:left-[-50%]
                     before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%] 
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
-                    before:animate-spin-slow group relative w-[400px] h-[800px] overflow-hidden rounded-[10px]" data-aos="fade-up-right">
+                    before:animate-spin-slow group relative w-[355px] h-[820px] md:w-[450px]" data-aos="fade-up-right">
                     <div className="lg:absolute absolute lg:flex flex lg:flex-col flex-col lg:gap-10 gap-5 items-center top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_23189.png)] bg-cover bg-no-repeat">
                         <h3 className="text-4xl pt-20 select-none text-[#1c5a6c]">Automation</h3>
                         <p className="text-2xl select-none text-justify p-10 backdrop-blur-2xl">Adjust and adapt AI agent features to meet your company&apos;s specific needs and preferences</p>
@@ -82,11 +82,11 @@ export default function Service() {
                         </motion.button>
                     </div>
                 </div>
-                <div id="consulting" className="lg:relative lg:w-[600px] lg:h-[700px] lg:rounded-[10px] lg:overflow-hidden 
+                <div id="consulting" className="lg:w-[1200px] lg:h-[700px] rounded-[10px] overflow-hidden 
                     before:absolute lg:before:top-[-50%] lg:before:bottom-[-50%] lg:before:right-[-50%] lg:before:left-[-50%]
                     before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%] 
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
-                    before:animate-spin-slow group relative w-[400px] h-[800px] overflow-hidden rounded-[10px]" data-aos="fade-up">
+                    before:animate-spin-slow group relative w-[355px] h-[830px] md:w-[450px]" data-aos="fade-up">
                     <div className="absolute flex flex-col items-center gap-10 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/673.png)] bg-cover bg-no-repeat">
                         <h3 className="text-4xl pt-20 select-none text-[#1c5a6c]">Consulting</h3>
                         <p className="text-2xl text-justify p-10 select-none backdrop-blur-2xl">Software and technology to execute repetitive and routine tasks that save time, reduce errors and increase operational efficiency in various areas, from business management to software development</p>
@@ -103,16 +103,16 @@ export default function Service() {
                         </motion.button>
                     </div>
                 </div>
-                <div id="development" className="relative lg:w-[600px] lg:h-[700px] rounded-[10px] lg:overflow-hidden 
+                <div id="development" className="lg:w-[1200px] lg:h-[700px] rounded-[10px] overflow-hidden 
                     before:absolute lg:before:top-[-50%] lg:before:bottom-[-50%] lg:before:right-[-50%] lg:before:left-[-50%]
-                    before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%]
+                    before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%] 
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
-                    before:animate-spin-slow group relative w-[400px] h-[800px] overflow-hidden rounded-[10px]" data-aos="fade-up-left">
+                    before:animate-spin-slow group relative w-[355px] h-[830px] md:w-[450px]" data-aos="fade-up-left">
                     <div className="lg:absolute absolute lg:flex lg:flex-col lg:items-center lg:gap-5 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_5102.png)] bg-cover bg-no-repeat">
                         <h3 className="text-4xl pt-20 pb-5 select-none text-center text-[#1c5a6c]">Development</h3>
                         <p className="text-2xl pl-10 pr-10 text-justify text-center select-none backdrop-blur-2xl">Maximize your team&apos;s efficiency and productivity with our integration solution that effortlessly connects with the most popular tools on the market. Our platform makes your workflow easier by uniting your favorite tools in one place</p>
                         <div className="flex flex-col">
-                            <div className="pt-10 pl-48">
+                            <div className="pt-10 pl-10">
                                 <DevelopmentList />
                             </div>
                             <LogoSlider />
