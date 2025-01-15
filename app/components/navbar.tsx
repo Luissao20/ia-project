@@ -37,10 +37,10 @@ export default function Navbar() {
       id="navbar"
       className={`${
         hidden ? "-translate-y-full" : "translate-y-0"
-      } fixed w-full border-2 border-[#293750] rounded-b-2xl flex h-[10vh] lg:h-[12vh] items-center justify-between shadow-lg bg-white p-5 z-10 lg:pr-28 transition-transform duration-200`}
+      } fixed w-screen lg:w-full border-2 border-[#293750] rounded-b-2xl flex h-[10vh] lg:h-[12vh] items-center justify-between shadow-lg bg-white p-5 z-10 lg:pr-28 transition-transform duration-200`}
     >
       <Link href="/">
-        <div className="flex lg:p-8 relative pl-2 w-16 md:w-16 lg:w-[161px] lg:ml-56">
+        <div className="flex lg:p-8 relative pl-2 w-20 lg:w-[161px] lg:ml-56">
           <Image
             src="/logos/logo2.png"
             alt="Logo"
@@ -103,7 +103,7 @@ export default function Navbar() {
         alt="Burger Menu"
         width={40}
         height={40}
-        className="lg:hidden absolute right-8 bg-black"
+        className="lg:hidden bg-black"
       />
       {togglemenu && <SlideMenu handleClick={handleClick} />}
     </nav>
