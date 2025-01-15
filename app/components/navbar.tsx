@@ -37,21 +37,20 @@ export default function Navbar() {
       id="navbar"
       className={`${
         hidden ? "-translate-y-full" : "translate-y-0"
-      } fixed w-full border-2 border-[#293750] rounded-b-2xl flex h-[10vh] lg:h-[14vh] items-center justify-between shadow-lg bg-white p-5 z-10 lg:pr-28 transition-transform duration-200`}
+      } fixed w-full border-2 border-[#293750] rounded-b-2xl flex h-[10vh] lg:h-[12vh] items-center justify-between shadow-lg bg-white p-5 z-10 lg:pr-28 transition-transform duration-200`}
     >
       <Link href="/">
-        <div className="flex lg:p-8 relative pl-2 w-16 lg:w-48 lg:ml-56">
+        <div className="flex lg:p-8 relative pl-2 w-16 md:w-16 lg:w-[150px] lg:ml-56">
           <Image
             src="/logos/new-logo.png"
             alt="Logo"
             width={200}
             height={200}
             quality={100}
-            sizes="(max-width: 768px) 96px, (max-width: 1024px) 128px, 192px"
           />
         </div>
       </Link>
-      <ul className="lg:flex lg:gap-3 lg:text-2xl lg:text-[#1c5a6c] lg:items-center lg:justify-center">
+      <ul className="lg:flex lg:gap-3 lg:text-xl lg:text-[#1c5a6c] lg:items-center lg:justify-center">
         <li>
           <Link
             className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#293750] lg:rounded-2xl lg:cursor-pointer hidden lg:block"
@@ -93,7 +92,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <button className="lg:p-3 lg:text-cyan-800 lg:text-2xl lg:border-2 lg:rounded-2xl lg:border-[#293750] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-[#1a5c6c] lg:hover:text-white hidden lg:block">
+          <button className="lg:p-3 lg:text-cyan-800 lg:text-2xl lg:border-2 lg:rounded-2xl lg:border-[#293750] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-[#1a5c6c] lg:hover:text-white hidden lg:block lg:w-[280px]">
             Book a Discovery Call
           </button>
         </li>
