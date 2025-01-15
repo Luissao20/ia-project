@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Cta() {
     return (
-        <div className="flex gap-5 items-center border border-[#273950] lg:p-10 p-5 rounded-2xl bg-[#1c5a6c]">
+        <div className="flex gap-5 items-center border border-[#273950] lg:p-10 p-5 m-3 rounded-2xl bg-[#1c5a6c]">
             <span className="lg:text-3xl text-lg text-white">Need an Automation?</span>
             <motion.div animate={{ x: [0, 10, -10, 10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
                 <Image src="/arrow_r.svg" alt="arrow_right" width={30} height={20} />
