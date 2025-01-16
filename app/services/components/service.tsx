@@ -7,14 +7,10 @@ import { useEffect, useRef, useState } from "react";
 import AutomationList from "./automationList";
 import ConsultingList from "./consultingList";
 import DevelopmentList from "./developmentList";
-import Workflow from "./workflow";
 import Header from "./header";
 import Image from "next/image";
 import Automations from "./automations";
-import WorkflowContent from "./workflowContent";
 import AutomationEnd from "./automationEnd";
-import Workflow2 from "./workflow2";
-import WorkflowContent2 from "./workflowContent2";
 
 type Section = "section1" | "section2" | "section3" | null;
 
@@ -70,7 +66,7 @@ export default function Service() {
                             <div className="pt-14 lg:-mt-14">
                                 <Carousel />
                             </div>
-                            
+
                         </div>
                         <motion.button
                             className="flex gap-2 absolute bottom-3 left-10 text-[#273950] px-2 py-1 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300"
@@ -130,19 +126,13 @@ export default function Service() {
             </div>
             {showMoreSection === "section1" && (
                 <motion.div ref={sectionRefs.section1}
-                    className="flex flex-col gap-5 text-justify border-2 border-[#273950] bg-white"
+                    className="flex flex-col gap-5 text-justify border-2 border-[#273950] bg-white group"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <div className="w-full bg-[#1c5a6c] p-10 flex flex-col gap-10 items-center">
-                        <h2 className="text-4xl text-white select-none">The #1 AI and Automation Agency</h2>
-                        <p className="text-3xl text-white select-none p-10">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
-                    </div>
-                    <div className="relative flex items-center justify-center">
-                        <div>
-                            <Workflow />
-                            <WorkflowContent />
-                        </div>
+                    <div className="w-[700px] lg:w-full bg-[#1c5a6c] p-10 flex flex-col gap-10 items-center">
+                        <h2 className="lg:text-4xl text-xl text-white select-none">The #1 AI and Automation Agency</h2>
+                        <p className="lg:text-3xl text-lg text-white select-none p-10 ">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
                     </div>
                     <div className="pt-48 flex flex-col p-5 items-center gap-5">
                         <h4 className="pt-24 text-2xl font-bold pb-5">The endless use cases of AI and Automation</h4>
@@ -173,12 +163,6 @@ export default function Service() {
                         <h2 className="text-4xl text-white">Consulting</h2>
                         <p className="text-3xl text-white">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
                     </div>
-                    <div className="relative flex items-center justify-center">
-                        <div>
-                            <Workflow2 />
-                            <WorkflowContent2 />
-                        </div>
-                    </div>
                     <div className="pt-48 flex flex-col p-5 items-center gap-5">
                         <h4 className="pt-24 text-2xl font-bold pb-5">Consulting for endless use cases</h4>
                         <p className="text-xl">Our experts have built hundreds of processes for dozens of industries, with millions of automated actions.</p>
@@ -207,12 +191,6 @@ export default function Service() {
                     <div className="w-full bg-[#1c5a6c] p-10 flex flex-col gap-10 items-center">
                         <h2 className="text-4xl text-white">Development</h2>
                         <p className="text-3xl text-white">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
-                    </div>
-                    <div className="relative flex items-center justify-center">
-                        <div>
-                            <Workflow2 />
-                            <WorkflowContent2 />
-                        </div>
                     </div>
                     <div className="pt-48 flex flex-col p-5 items-center gap-5">
                         <h4 className="pt-24 text-2xl font-bold pb-5">Consulting for endless use cases</h4>
