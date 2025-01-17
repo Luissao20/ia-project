@@ -128,11 +128,11 @@ export default function Contenido() {
     return (
         <section className="flex flex-col items-center">
             <CaseHeader />
-            <div className="w-full p-10">
+            <div className="w-full lg:p-10">
                 {caseStudies.map(study => (
                     <div key={study.id} className="mb-4 p-5">
                         <div className="flex items-center" onClick={() => toggleContent(study.id)}>
-                            <h2 className="text-2xl font-bold cursor-pointer text-cyan-700">
+                            <h2 className="text-2xl font-bold cursor-pointer text-[#1c5a6c]">
                                 {study.title}
                             </h2>
                             <span className="ml-2 transform transition-transform duration-300 select-none">

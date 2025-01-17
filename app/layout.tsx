@@ -4,7 +4,7 @@ import "./globals.css";
 import ClientComponent from "./clientComponent";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-
+import Head from "next/head";
 
 const geistSans = Rubik({
   subsets: ["latin"],
@@ -13,7 +13,7 @@ const geistSans = Rubik({
 
 export const metadata: Metadata = {
   title: "Agentify.AI",
-  description: "Smart solutions for your business",
+  description: "Revolutionize your business with Agentify's AI automation, AI agents, and chatbots. Streamline workflows, engage customers, and scale efficiently.",
 };
 
 export default function RootLayout({
@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify("datos-seo.json")}}></script>
+      </Head>
       <body
         className={`${geistSans.className} antialiased`}
       >

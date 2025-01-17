@@ -1,0 +1,32 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Automations",
+    "name": "Agentify AI",
+    "description": "Empower your business with Agentify's AI automation solutions. From AI agents to AI chatbots, we optimize operations and enhance customer engagement.",
+    "url": "https://www.agentifynow.ai/",
+    "logo": "./public/logos/logo2.png",
+    "datePublished": "2024-03-24",
+    "aiAgencyWorks": "How our AI and Automation agency works",
+    "aiAgencyWorksSteps": [
+        {
+            "step": "1",
+            "name": "Comprehensive Process Mapping",
+            "description":"We create a detailed visual blueprint of your existing systems, manual workflows, and apps to identify inefficiencies, save time, and reduce operational costs. This process helps uncover automation opportunities that boost productivity."
+        },
+        {
+            "step": "2",
+            "name": "AI Opportunity Identification",
+            "description": "Our team evaluates your workflows to identify repetitive tasks in areas like marketing, customer service, or operations. We focus on high-impact AI automation opportunities that deliver measurable ROI and improve efficiency."
+        },
+        {
+            "step": "3",
+            "name": "Custom AI and Automation Development",
+            "description": "We develop and test custom AI automation solutions using advanced tools like Zapier, Make.com, and your existing tech stack. These scalable solutions are tailored to your unique needs, ensuring seamless integration and adaptability as your business evolves."
+        },
+        {
+            "step": "4",
+            "name": "Continuous Management and Iteration",
+            "description": "We provide ongoing automation management and optimization, ensuring your workflows evolve with your business. By uncovering new automation opportunities, we help reduce costs, enhance efficiency, and drive continuous business growth."
+        }
+    ]
+}
