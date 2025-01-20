@@ -7,10 +7,11 @@ import Automations from "./automations";
 import Tech from "./technologies";
 import VerticalLine from "./vertical-line";
 import Combined from "./combined";
+import CTA2 from "./cta2";
 
 export default function Services() {
   return (
-    <section className="lg:pl-5 lg:pr-5 lg:pt-20 pt-10 flex flex-col gap-10 items-center pb-20 lg:h-full bg-white text-black border-2 border-[#273950] group">
+    <section className="lg:pl-5 lg:pr-5 lg:pt-20 pt-10 flex flex-col gap-10 items-center pb-20 lg:h-full bg-white text-black group">
       <div className="p-10 flex flex-col gap-10 items-center">
         <h2 className="lg:text-4xl lg:font-bold text-2xl text-center text-[#1c5a6c]" data-aos="fade-up">How our AI and Automation agency works:</h2>
       </div>
@@ -32,6 +33,7 @@ export default function Services() {
           <VerticalLine />
           <Combined />
         </div>
+        <CTA2 />
       </div>
     </section>
   );

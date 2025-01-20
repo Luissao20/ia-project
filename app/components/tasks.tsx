@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Tasks() {
     return (
-        <section className="h-full bg-white lg:flex lg:flex-col items-center pt-20 pb-20 lg:border-2 lg:border-[#273950]" >
+        <section className="h-full bg-white lg:flex lg:flex-col items-center pt-20 pb-20">
             <div className="lg:border lg:border-[#273950] lg:w-[1350px] lg:h-[800px] w-screen lg:rounded-2xl lg:bg-[#1c5a6c] bg-[#1c5a6c] lg:shadow-[20px_35px_35px_rgba(8,8,8,0.9)]">
                 <div className="lg:flex lg:relative">
                     <div className="lg:flex lg:flex-col lg:justify-center lg:p-16 lg:items-center lg:gap-10 lg:-ml-10 flex flex-col p-5 gap-10 items-center">

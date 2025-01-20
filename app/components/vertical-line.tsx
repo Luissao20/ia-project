@@ -66,7 +66,7 @@ const VerticalLine = () => {
                       x1="54"
                       y1="0"
                       x2="54"
-                      y2="1100"
+                      y2="1050"
                       stroke="#273950"
                       strokeWidth="2"
                       strokeDasharray="75 75"

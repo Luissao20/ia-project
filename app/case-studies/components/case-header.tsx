@@ -8,8 +8,8 @@ export default function CaseHeader() {
     };
 
     return (
-        <div className="flex flex-col items-center w-full">
-            <motion.div className="flex items-center justify-center group relative box-content border-2 w-full lg:h-svh" whileHover={{ boxShadow: "0 0 50px rgb(28, 90, 108)" }}
+        <div className="flex flex-col items-center lg:w-full w-screen">
+            <motion.div className="flex items-center justify-center group border-2 w-screen h-svh lg:w-full lg:h-svh" whileHover={{ boxShadow: "0 0 50px rgb(28, 90, 108)" }}
                 initial="hidden"
                 animate="visible"
                 variants={variants}
@@ -24,9 +24,10 @@ export default function CaseHeader() {
                         quality={100}
                     />
                 </div>
-                <h2 className="text-6xl text-center absolute w-[1200px] p-3 text-white font-bold">Discover how our automations have reduced our client&apos;s labor costs, optimized their processes to excellence, and boosted their income.</h2>
+                <h2 className="lg:text-6xl text-4xl w-[600px] text-center relative lg:w-[1200px] p-3 text-white font-bold">Discover how our automations have reduced our client&apos;s labor costs, optimized their processes to excellence, and boosted their income.</h2>
             </motion.div>
-            <motion.div initial="hidden"
+            <motion.div 
+                initial="hidden"
                 animate="visible"
                 variants={variants}
                 transition={{ duration: 0.5 }}>
