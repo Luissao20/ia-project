@@ -2,7 +2,7 @@
     "@context": "http://schema.org",
     "@type": "Automations",
     "name": "Agentify AI",
-    "description": "Empower your business with Agentify's AI automation solutions. From AI agents to AI chatbots, we optimize operations and enhance customer engagement.",
+    "description": "AI-Powered Workflow Automation for Growing Businesses.",
     "url": "https://www.agentifynow.ai/",
     "logo": "./public/logos/logo2.png",
     "datePublished": "2024-03-24",

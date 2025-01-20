@@ -13,7 +13,7 @@ const geistSans = Rubik({
 
 export const metadata: Metadata = {
   title: "Agentify.AI",
-  description: "Revolutionize your business with Agentify's AI automation, AI agents, and chatbots. Streamline workflows, engage customers, and scale efficiently.",
+  description: "Agentify's AI automation solutions, including AI agents and chatbots, help businesses streamline workflows, reduce costs, and improve team productivity—all tailored to fit your growth strategy.",
 };
 
 export default function RootLayout({
