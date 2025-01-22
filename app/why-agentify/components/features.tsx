@@ -2,7 +2,7 @@ export default function Features() {
  
   return (
     <section className="py-20 px-5 flex flex-col items-center">
-      <div className="grid grid-cols-1 lg:grid-cols-1 lg:gap-10 lg:pr-28 lg:pl-28" data-aos="zoom-in-up">
+      <div className="grid grid-cols-1 lg:grid-cols-1 gap-10 lg:pr-28 lg:pl-28" data-aos="zoom-in-up">
         <div className="flex flex-col gap-5 lg:flex lg:flex-col lg:gap-10 lg:w-[1000px] border border-[#273950] p-3 rounded-2xl items-start justifify-center shadow-md hover:shadow-lg transition-shadow">
             <h2 className="text-xl font-bold text-white bg-[#1c5a6c] w-full text-center rounded-2xl p-2 select-none">Personalized and Scalable Solutions</h2>
             <ul className="text-lg text-[#273950] list-inside list-disc space-y-2 pl-10">
