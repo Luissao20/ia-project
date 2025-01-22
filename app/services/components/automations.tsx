@@ -13,9 +13,9 @@ export default function Automations() {
         animate="visible"
         variants={variants}
         transition={{ duration: 0.5 }}
-        className="grid grid-cols-3 p-16 gap-10"
+        className="grid grid-cols-1 lg:grid-cols-3 lg:p-16 lg:gap-10 gap-12"
         >
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/sales.svg"
                     alt="sales"
@@ -25,7 +25,7 @@ export default function Automations() {
                 <h4 className="pt-5 text-lg font-bold">Sales and Marketing automation</h4>
                 <p className="text-md">Content creation, full-funnel automation, lead routing, CRM, outbound, payments, contracts and much more.</p>
             </div>
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/pc.svg"
                     alt="pc"
@@ -35,7 +35,7 @@ export default function Automations() {
                 <h4 className="pt-5 text-lg font-bold">Image, voice, text recognition and analysis</h4>
                 <p className="text-md">Analyze and parse documents, biometrics, emotion, facial, products, videos and more to summarize or automate actions based off keywords, identity, sentiment, etc.</p>
             </div>
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/analytics.svg"
                     alt="analytics"
@@ -45,7 +45,7 @@ export default function Automations() {
                 <h4 className="pt-5 text-lg font-bold">Predictive analytics</h4>
                 <p className="text-md">Data-driven decision making through risk analytics, demand or inventory forecasting and other future planning tasks.</p>
             </div>
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/conversational.svg"
                     alt="conversational"
@@ -55,7 +55,7 @@ export default function Automations() {
                 <h4 className="pt-5 text-lg font-bold">Conversational AI</h4>
                 <p className="text-md">Prompt engineering, automatic replies and more for customer service, sales, chat bots, front-office and marketing.</p>
             </div>
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/management.svg"
                     alt="management"
@@ -65,7 +65,7 @@ export default function Automations() {
                 <h4 className="pt-5 text-lg font-bold">Project management</h4>
                 <p className="text-md">We connect all manual, repetitive steps in a process, from task handoff to completion. Such as onboarding, admin, accounting, invoicing.</p>
             </div>
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/energy.svg"
                     alt="energy"
@@ -75,7 +75,7 @@ export default function Automations() {
                 <h4 className="pt-5 text-lg font-bold">Staff augmentation</h4>
                 <p className="text-md">Save employees hours a day by automating their most tedious daily tasks. We&apos;ve even replaced entire teams of virtual assistants.</p>
             </div>
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/data.svg"
                     alt="data"
@@ -85,7 +85,7 @@ export default function Automations() {
                 <h4 className="pt-5 text-lg font-bold">Data silos</h4>
                 <p className="text-md">Content creation, full-funnel automation, lead routing, CRM, outbound, payments, contracts and much moreWe automate data entry, collection, cleansing and reporting from nuanced and silo&apos;d locations, for fast and accurate decision making.</p>
             </div>
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/customer.svg"
                     alt="customer"
@@ -95,7 +95,7 @@ export default function Automations() {
                 <h4 className="pt-5 text-lg font-bold">Customer service</h4>
                 <p className="text-md">Most customer service questions and responses are similar and repetitive. As a result, most CS tasks can be automated.</p>
             </div>
-            <div className="flex flex-col p-5 gap-5 items-center justify-center w-[400px] transition duration-300 hover:scale-[1.05] hover:rounded-2xl hover:border hover:border-[#594A28] hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/connect.svg"
                     alt="connect"

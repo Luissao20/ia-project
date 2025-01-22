@@ -45,7 +45,7 @@ export default function SequentialCarousel() {
                 <img
                     key={index}
                     src={logo}
-                    className={`w-32 h-16 transition-transform duration-500 ease-in-out ${activeIndex === index ? 'translate-y-[-20px]' : ''}`}
+                    className={`lg:w-32 w-8 h-6 lg:h-16 transition-transform duration-500 ease-in-out ${activeIndex === index ? 'translate-y-[-20px]' : ''}`}
                 />
             ))}
         </div>

@@ -47,7 +47,7 @@ export default function BlogPost() {
   ];
 
   return (
-    <section className="pb-20 pt-48 px-5 xl:px-20">
+    <section className="pb-20 lg:pt-48 pt-10 px-5 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-[#1c5a6c] py-5 lg:text-6xl">
