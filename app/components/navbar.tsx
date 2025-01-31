@@ -92,7 +92,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <button className="lg:p-3 lg:text-cyan-800 lg:text-2xl lg:border-2 lg:rounded-2xl lg:border-[#293750] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-[#1a5c6c] lg:hover:text-white hidden lg:block lg:w-[280px]">
+          <button className="lg:p-3 lg:text-cyan-800 lg:text-xl lg:border-2 lg:rounded-2xl lg:border-[#293750] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-[#1a5c6c] lg:hover:text-white hidden lg:block lg:w-[240px]">
             Book a Discovery Call
           </button>
         </li>

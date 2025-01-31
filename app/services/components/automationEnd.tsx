@@ -16,8 +16,8 @@ export default function AutomationEnd() {
                     <GridCarousel />
                 </div>
             </div>
-            <div className="flex lg:p-32 p-8 items-center justify-center lg:gap-20 gap-10 column-on-small-screen">
-                <h3 className="lg:text-3xl text-xl lg:pl-32 lg:w-[500px] text-center font-bold text-[#273950]">Let our consultants get your job done right</h3>
+            <div className="flex lg:p-20 p-8 items-center justify-center lg:gap-15 gap-10 column-on-small-screen">
+                <h3 className="lg:text-2xl text-xl lg:w-[500px] text-center font-bold text-[#273950]">Let our consultants get your job done right</h3>
                 <div className="flex flex-col gap-10 lg:p-10">
                     <p className="lg:text-xl text-md lg:w-[500px] w-full">Whether you need help with a one-off project, or you need custom coding for highly complex automations involving several apps, we&apos;ll get it done.</p>
                     <Link href="/contact">

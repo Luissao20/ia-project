@@ -10,16 +10,16 @@ const InfoSection: React.FC = () => {
 
     const infoData = [
         {
-            title: "Driven by strategy",
-            content: "We may work with robots all day, but we're very human. We'll tailor our strategy around your industry, needs, and goals. Copy-paste? No thanks."
+            title: "Powered by strategy",
+            content: "While we collaborate with robots during the day, we're entirely human. We'll craft a customized strategy for your industry, needs, and goals. Copy-paste? That's not our style."
         },
         {
-            title: "Part of your team",
-            content: "We're all in. Add us to your slack channels, email us with concerns, and have your vendors reach out directly. We'll be your Chief Automation Officer."
+            title: "Integrated into your team.",
+            content: "We are fully committed. Integrate our services into your Slack channels, email us with your concerns, and let your vendors contact us directly. We'll serve as your Chief Automation Officer."
         },
         {
-            title: "Innovators to the core",
-            content: "We'll solve your bottlenecks—whether we need to go over, under, or through. We combine expertise + creativity to work out your knots."
+            title: "Innovators in our DNA",
+            content: "We'll tackle your blockages, whether we need to go over, under, or directly through. We combine our expertise and creativity to untangle your challenges"
         }
     ];
 
@@ -39,8 +39,8 @@ const InfoSection: React.FC = () => {
     return (
         <div className="lg:flex lg:flex-col lg:p-20 lg:items-center lg:overflow-hidden">
             <div className="text-black flex flex-col items-center p-10 gap-10 pb-32" data-aos="fade-up">
-                <h2 className="text-4xl font-bold select-none text-[#1c5a6c]">Take a look into how we work</h2>
-                <p className="text-3xl select-none">Automate your processes to increase productivity and regain control of your time.</p>
+                <h2 className="text-4xl font-bold select-none text-[#1c5a6c]">Discover how we work</h2>
+                <p className="text-3xl select-none">Optimize your processes through automation to boost productivity and regain control of your time.</p>
             </div>
             <div className="flex flex-col lg:flex-row items-center justify-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div className="lg:w-[400px] lg:h-[400px] lg:relative lg:flex lg:flex-col lg:items-center lg:gap-5 lg:ms-96 lg:pl-10 flex flex-col w-[300px] relative pb-24 gap-5">

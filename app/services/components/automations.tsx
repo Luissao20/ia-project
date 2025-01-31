@@ -13,9 +13,9 @@ export default function Automations() {
         animate="visible"
         variants={variants}
         transition={{ duration: 0.5 }}
-        className="grid grid-cols-1 lg:grid-cols-3 lg:p-16 lg:gap-10 gap-12"
+        className="grid grid-cols-1 lg:grid-cols-3 lg:p-10 lg:gap-8 gap-12"
         >
-            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[400px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
+            <div className="flex flex-col lg:p-5 gap-5 items-center justify-center w-[300px] lg:w-[350px] lg:transition lg:duration-300 lg:hover:scale-[1.05] lg:hover:rounded-2xl lg:hover:border lg:hover:border-[#594A28] lg:hover:shadow-xl">
                 <Image 
                     src="/sales.svg"
                     alt="sales"

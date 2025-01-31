@@ -3,7 +3,8 @@ import DevelopmentListItem from "./developmentListItem";
 
 const list = [
   "Project Management",
-  "CRM"
+  "CRM",
+  "Web Development"
 ];
 
 const DevelopmentList: React.FC = () => {
