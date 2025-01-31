@@ -25,7 +25,7 @@ const AnimatedListItem: React.FC<AnimatedListItemProps> = ({ item, index }) => {
                 transition={{ duration: 0.3 }} >
                 ✓
             </motion.div>
-            <div className="max-w-2xl text-white text-xl text-justify">
+            <div className="max-w-2xl text-white text-lg text-justify">
                 {item}
             </div>
         </motion.li>

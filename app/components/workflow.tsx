@@ -60,11 +60,11 @@ const Workflow = () => {
 
     return (
         <div className="p-8 flex justify-center items-center z-1 lg:pt-28 ml-20">
-            <svg ref={svgRef} className={`${isLargeScreen ? 'block' : 'hidden'}`} width="1300" height="60">
+            <svg ref={svgRef} className={`${isLargeScreen ? 'block' : 'hidden'}`} width="1100" height="60">
                 <line 
                   className="line-animated" 
                   x1="0" y1="50" 
-                  x2="1300" y2="50" 
+                  x2="1000" y2="50" 
                   stroke="#4A5568" 
                   strokeWidth="3" 
                   strokeDasharray="8,5 8,5" 

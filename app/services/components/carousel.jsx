@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const logos = [
     "/logos/ChatGPT-Logo.png",
-    "/logos/ClickUp-Logo.png",
+    "/logos/hubspot-1.svg",
     "/logos/Notion-Logo.png",
     "/logos/POE-Logo.png",
     "/logos/ChatSonic-Logo.png",

@@ -58,9 +58,9 @@ export default function Service() {
                     before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%] 
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[355px] h-[820px] md:w-[450px]" data-aos="fade-up-right">
-                    <div className="lg:absolute absolute lg:flex flex lg:flex-col flex-col lg:gap-10 gap-5 items-center top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_23189.png)] bg-cover bg-no-repeat">
+                    <div className="lg:absolute absolute text-center lg:flex flex lg:flex-col flex-col lg:gap-10 gap-5 items-center top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_23189.png)] bg-cover bg-no-repeat">
                         <h3 className="text-4xl pt-20 select-none text-[#1c5a6c]">Automation</h3>
-                        <p className="text-2xl select-none text-justify p-10 backdrop-blur-2xl">Adjust and adapt AI agent features to meet your company&apos;s specific needs and preferences</p>
+                        <p className="text-2xl select-none text-justify p-10 backdrop-blur-2xl w-full">Adjust and adapt AI agent features to meet your company&apos;s specific needs and preferences</p>
                         <div className="lg:flex lg:gap-40 lg:pt-5">
                             <AutomationList />
                             <div className="pt-14 lg:-mt-14">
@@ -83,7 +83,7 @@ export default function Service() {
                     before:top-[-80%] before:bottom-[-80%] before:right-[-80%] before:left-[-80%] 
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[355px] h-[830px] md:w-[450px]" data-aos="fade-up">
-                    <div className="absolute flex flex-col items-center gap-10 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/673.png)] bg-cover bg-no-repeat">
+                    <div className="absolute flex flex-col items-center gap-10 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/673.png)] bg-no-repeat">
                         <h3 className="text-4xl pt-20 select-none text-[#1c5a6c]">Consulting</h3>
                         <p className="text-2xl text-justify p-10 select-none backdrop-blur-2xl">Software and technology to execute repetitive and routine tasks that save time, reduce errors and increase operational efficiency in various areas, from business management to software development</p>
                         <div>
@@ -131,12 +131,12 @@ export default function Service() {
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
                     <div className="w-full bg-[#1c5a6c] lg:p-10 p-5 flex flex-col gap-10 items-center">
-                        <h2 className="lg:text-4xl text-xl text-center text-white select-none">The #1 AI and Automation Agency</h2>
-                        <p className="lg:text-3xl text-md w-full text-white select-none lg:p-10 text-center ">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
+                        <h2 className="lg:text-3xl text-xl text-center text-white select-none">The #1 AI and Automation Agency</h2>
+                        <p className="lg:text-xl text-md text-white select-none lg:p-10 text-center ">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
                     </div>
                     <div className="lg:pt-24 pt-10 flex flex-col p-5 items-center gap-5">
                         <h4 className="lg:pt-24 text-center lg:text-2xl text-lg font-bold pb-5">The endless use cases of AI and Automation</h4>
-                        <p className="lg:text-xl w-full text-md pb-10">Our clients make their employees 10X more efficient by taking tedious, repetitive tasks off their plate. We are industry agnostic.</p>
+                        <p className="lg:text-xl w-full text-md pb-10 text-center">Our clients make their employees 10X more efficient by taking tedious, repetitive tasks off their plate. We are industry agnostic.</p>
                         <Automations />
                     </div>
                     <div>
@@ -165,7 +165,7 @@ export default function Service() {
                     </div>
                     <div className="lg:pt-48 pt-10 flex flex-col p-5 items-center gap-5">
                         <h4 className="lg:pt-24 lg:text-2xl text-lg font-bold pb-5">Consulting for endless use cases</h4>
-                        <p className="lg:text-xl text-md w-full pb-10">Our experts have built hundreds of processes for dozens of industries, with millions of automated actions.</p>
+                        <p className="lg:text-xl text-md w-full pb-10 text-center">Our experts have built hundreds of processes for dozens of industries, with millions of automated actions.</p>
                         <Automations />
                     </div>
                     <div>

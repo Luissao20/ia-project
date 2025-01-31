@@ -40,12 +40,12 @@ export default function SequentialCarousel() {
     }, []);
 
     return (
-        <div className="grid grid-cols-6 gap-6">
+        <div className="grid grid-cols-6 gap-4">
             {logos.map((logo, index) => (
                 <img
                     key={index}
                     src={logo}
-                    className={`lg:w-32 w-8 h-6 lg:h-16 transition-transform duration-500 ease-in-out ${activeIndex === index ? 'translate-y-[-20px]' : ''}`}
+                    className={`lg:w-20 w-8 h-6 lg:h-12 transition-transform duration-500 ease-in-out ${activeIndex === index ? 'translate-y-[-20px]' : ''}`}
                 />
             ))}
         </div>

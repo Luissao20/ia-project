@@ -15,7 +15,7 @@ const ConsultingListItem: React.FC<ConsultingListItemProps> = ({ item, index }) 
     });
 
     return (
-        <motion.li ref={ref} className="flex items-center"
+        <motion.li ref={ref} className="flex items-center bg-clip-text backdrop-blur-lg rounded-2xl"
             initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.5, delay: index * 0.2 }} >

@@ -6,7 +6,6 @@ const list = [
   "Payments and Contracts",
   "Client Communications",
   "Client Reporting",
-  "Client Communications",
   "Operations"
 ];
 
