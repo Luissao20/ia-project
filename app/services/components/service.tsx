@@ -131,8 +131,8 @@ export default function Service() {
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
                     <div className="w-full bg-[#1c5a6c] lg:p-10 p-5 flex flex-col gap-10 items-center">
-                        <h2 className="lg:text-3xl text-xl text-center text-white select-none">The #1 AI and Automation Agency</h2>
-                        <p className="lg:text-xl text-md text-white select-none lg:p-10 text-center ">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
+                        <h2 className="lg:text-4xl text-xl text-center text-white select-none">The #1 AI and Automation Agency</h2>
+                        <p className="lg:text-3xl text-md text-white select-none lg:p-10 text-center ">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
                     </div>
                     <div className="lg:pt-24 pt-10 flex flex-col p-5 items-center gap-5">
                         <h4 className="lg:pt-24 text-center lg:text-2xl text-lg font-bold pb-5">The endless use cases of AI and Automation</h4>
