@@ -7,7 +7,6 @@ import Automations from "./automations";
 import Tech from "./technologies";
 import VerticalLine from "./vertical-line";
 import Combined from "./combined";
-import CTA2 from "./cta2";
 
 export default function Services() {
   return (
@@ -33,7 +32,6 @@ export default function Services() {
           <VerticalLine />
           <Combined />
         </div>
-        <CTA2 />
       </div>
     </section>
   );

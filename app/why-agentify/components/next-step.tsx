@@ -20,7 +20,6 @@ export default function NextStep() {
               quality={100}
             />
           </div>
-          <button className="text-2xl font-bold bg-[#93c3c7] text-[#1c5a6c] mt-4 p-3 rounded-2xl transition duration-200 easy-in-out hover:scale-[1.05]">Schedule a Free Demo</button>
           <button className="text-2xl font-bold bg-[#93c3c7] text-[#1c5a6c] mt-4 p-3 rounded-2xl transition duration-200 easy-in-out hover:scale-[1.05]">Request a Consultation Today!</button>
         </div>
       </div>

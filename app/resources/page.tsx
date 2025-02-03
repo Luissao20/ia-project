@@ -1,6 +1,6 @@
-import Header from "./components/header";
 import BlogPost from "./components/blog-post";
 import Podcast from "./components/podcast";
+import SrcHeader from "./components/src-header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export default function Resouces(){
 
     return (
         <>
-            <Header />
+            <SrcHeader />
             <BlogPost />
             <Podcast />
         </>

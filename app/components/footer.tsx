@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#273950] text-white p-5 text-white">
+    <footer className="bg-[#1c5a6c] text-white p-5 text-white">
       <div className="container mx-auto">
         <div className="flex flex-col gap-5">
           <div className="flex gap-20">
             <div className="flex flex-col">
-              <Link href="/why-agentify">Why Agentify</Link>
+              <Link href="/why-agentify">Why Agentify Now?</Link>
               <Link href="/services">Our Services</Link>
               <Link href="/resources">Resources</Link>
               <Link href="/contact">Contact</Link>
@@ -53,15 +53,28 @@ export default function Footer() {
                     />
                   </svg>
                 </li>
+                <li className="w-8 h-8">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.498 6.186a2.998 2.998 0 00-2.116-2.116C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.382.57A2.998 2.998 0 00.502 6.186C0 8.068 0 12 0 12s0 3.932.502 5.814a2.998 2.998 0 002.116 2.116C4.5 20.5 12 20.5 12 20.5s7.5 0 9.382-.57a2.998 2.998 0 002.116-2.116C24 15.932 24 12 24 12s0-3.932-.502-5.814zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </li>
+                <li className="w-8 h-8">
+                  <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM55.4949 25.0138C53.9398 25.0159 52.3819 25.018 50.8188 25.0422L50.8204 25.0438C50.7793 30.4143 50.7819 35.7861 50.7845 41.1646C50.786 44.1708 50.7875 47.1791 50.7813 50.1904C50.7745 51.2001 50.7756 52.2087 50.7766 53.2168C50.7793 55.9293 50.7821 58.638 50.6329 61.3551C50.6112 62.1091 50.2329 62.7719 49.8656 63.4157C49.8363 63.467 49.8071 63.5181 49.7781 63.5692C48.5656 65.5459 46.3358 66.896 44.0091 66.921C40.4995 67.2319 37.2118 64.3583 36.7165 60.9394C36.7128 60.7719 36.7068 60.6033 36.7009 60.434C36.667 59.4697 36.6324 58.4863 36.9993 57.5877C37.5212 56.1063 38.5228 54.7969 39.8417 53.9422C41.648 52.6874 44.0638 52.4999 46.1311 53.1687C46.1311 51.8508 46.1536 50.5334 46.1761 49.2161C46.2063 47.4488 46.2365 45.6817 46.2123 43.9135C41.6871 43.0666 36.854 44.4979 33.4038 47.5028C30.3599 50.0826 28.3989 53.875 28.0238 57.8393C27.9817 58.8565 27.9988 59.8972 28.0488 60.9394C28.4801 65.8147 31.4412 70.3571 35.6493 72.8385C38.1884 74.3354 41.1652 75.148 44.145 74.9777C49.0031 74.8964 53.733 72.2916 56.4582 68.2961C58.152 65.8959 59.113 62.9973 59.2755 60.0847C59.3178 56.0836 59.3152 52.075 59.3125 48.0616C59.3112 45.9936 59.3098 43.9243 59.3146 41.854C60.3974 42.5619 61.5038 43.2541 62.6913 43.7916C65.418 45.0854 68.4369 45.7105 71.4418 45.8089V37.4194C68.2354 37.0616 64.9399 36.0037 62.6101 33.6926C60.2756 31.4378 59.1286 28.1892 58.9646 25C57.8089 25.0107 56.6527 25.0122 55.4949 25.0138Z" fill="#ffffff" id="id_102"></path>
+                  </svg>
+                </li>
               </ul>
             </div>
           </div>
           <div>
-            <h2 className="text-lg font-bold">Agentify.AI</h2>
-            <p className="text-sm">© 2024 Agentify.AI. All rights reserved.</p>
+            <h2 className="text-lg font-bold">AgentifyNow.AI</h2>
+            <p className="text-sm">© 2024 AgentifyNow.AI | All rights reserved.</p>
           </div>
         </div>
-      </div>
-    </footer>
+      </div >
+    </footer >
   );
 }

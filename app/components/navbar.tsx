@@ -54,14 +54,6 @@ export default function Navbar() {
         <li>
           <Link
             className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#293750] lg:rounded-2xl lg:cursor-pointer hidden lg:block"
-            href="/"
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="lg:p-3 lg:border-2 lg:border-transparent lg:hover:easy-in-out lg:duration-500 lg:hover:border-[#293750] lg:rounded-2xl lg:cursor-pointer hidden lg:block"
             href="/services"
           >
             Our Services

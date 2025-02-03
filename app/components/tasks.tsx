@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Tasks() {
     return (
         <section className="h-full bg-white lg:flex lg:flex-col items-center pt-20 pb-20">
-            <div className="lg:border lg:border-[#273950] lg:w-[1300px] lg:h-[800px] w-screen lg:rounded-2xl lg:bg-[#1c5a6c] bg-[#1c5a6c] lg:shadow-[20px_35px_35px_rgba(8,8,8,0.9)]">
+            <div className="lg:border lg:border-[#273950] lg:w-[1300px] lg:h-[800px] w-screen lg:rounded-2xl bg-[#1c5a6c] lg:shadow-[20px_35px_35px_rgba(8,8,8,0.9)]">
                 <div className="lg:flex lg:relative">
                     <div className="lg:flex lg:flex-col lg:justify-center lg:p-16 lg:items-center lg:gap-10 lg:-ml-10 flex flex-col p-5 gap-10 items-center">
                         <h2 className="p-10 text-center text-5xl text-white pb-10 font-bold select-none" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">Do you have repititive tasks?<br />
