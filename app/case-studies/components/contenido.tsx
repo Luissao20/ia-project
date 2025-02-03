@@ -125,9 +125,21 @@ export default function Contenido() {
         setActiveId(activeId === id ? null : id);
     };
 
+    const variants = {
+        hidden: { opacity: 0, y: -20 },
+        visible: { opacity: 1, y: 0 },
+      };
+
     return (
         <section className="flex flex-col items-center">
             <CaseHeader />
+            <motion.div 
+                initial="hidden"
+                animate="visible"
+                variants={variants}
+                transition={{ duration: 0.5 }}>
+                <h3 className="text-5xl font-bold text-transparent m-10 p-10 bg-clip-text bg-gradient-to-r from-[#1c5a6c] to-[#5ca9b1]">Case Studies</h3>
+            </motion.div>
             <div className="w-full lg:p-10">
                 {caseStudies.map(study => (
                     <div key={study.id} className="mb-4 p-5">

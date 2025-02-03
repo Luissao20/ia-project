@@ -16,15 +16,15 @@ export default function Header() {
       >
         <div>
           <Image
-            src="/bg-lines.png"
+            src="/bg-lines2.png"
             alt="bg_services"
             fill
             priority
             quality={100}
           />
         </div>
-        <h2 className="lg:top-10 lg:text-8xl lg:items-start lg:pt-56 lg:m-10 lg:text-white lg:font-bold select-none lg:w-auto lg:h-40 text-6xl pt-28 text-white w-[300px] absolute">Innovate, Automate, Dominate.</h2>
-        <p className="lg:bottom-16 select-none lg:text-5xl text-white text-justify text-center font-bold lg:p-2 lg:w-[1100px] text-2xl absolute bottom-5 w-[300px]">Agentify delivers intelligent AI automation with AI agents and chatbots to simplify workflows, improve support, and drive business growth.</p>
+        <h2 className="lg:top-10 lg:text-8xl lg:items-start lg:pt-56 lg:m-10 lg:font-bold select-none lg:w-auto lg:h-40 text-6xl pt-28 text-[#1c5a6c] w-[300px] absolute">Innovate, Automate, Dominate.</h2>
+        <p className="lg:bottom-16 select-none lg:text-5xl text-[#1c5a6c] text-justify text-center font-bold lg:p-2 lg:w-[1100px] text-2xl absolute bottom-5 w-[300px]">Agentify delivers intelligent AI automation with AI agents and chatbots to simplify workflows, improve support, and drive business growth.</p>
       </motion.div>
   );
 }

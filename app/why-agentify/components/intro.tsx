@@ -2,7 +2,7 @@
 export default function Intro() {
   return (
     <section className="pt-52 pb-20 px-5 xl:pt-64 flex flex-col gap-10 bg-[url(../public/rb_4182.png)] bg-fixed bg-center">
-      <h2 className="text-5xl font-bold text-center mb-8 select-none" data-aos="fade-up" data-aos-delay="100">
+      <h2 className="text-5xl font-bold text-center text-[#1c5a6c] mb-8 select-none" data-aos="fade-up" data-aos-delay="100">
         Why Choose Agentify?
       </h2>
       <div className="max-w-3xl mx-auto flex flex-col gap-16 lg:flex lg:flex-col lg:gap-16" data-aos="fade-up" data-aos-delay="200">
