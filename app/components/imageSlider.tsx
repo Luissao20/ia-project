@@ -22,19 +22,19 @@ const caseStudies = [
   {
     id: 3,
     title: "Company 3",
-    image: "/casestudy2.png",
+    image: "/casestudy3.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
   },
   {
     id: 4,
     title: "Company 4",
-    image: "/casestudy3.png",
+    image: "/casestudy4.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
   },
   {
     id: 5,
     title: "Company 5",
-    image: "/casestudy2.png",
+    image: "/casestudy5.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
   },
 ];

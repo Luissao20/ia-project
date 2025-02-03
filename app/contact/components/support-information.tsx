@@ -2,7 +2,7 @@ export default function SupportInformation() {
   const supportChannels = [
     {
       title: "Email Support",
-      info: "support@agentify.ai",
+      info: "info@agentifynow.ai",
       description: "24-hour response time guaranteed",
       icon: (
         <svg className="w-8 h-8 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

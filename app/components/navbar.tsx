@@ -35,9 +35,8 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`${
-        hidden ? "-translate-y-full" : "translate-y-0"
-      } fixed w-screen lg:w-full border-2 border-[#293750] rounded-b-2xl flex h-[10vh] lg:h-[12vh] items-center justify-between shadow-lg bg-white p-5 z-10 lg:pr-28 transition-transform duration-200`}
+      className={`${hidden ? "-translate-y-full" : "translate-y-0"
+        } fixed w-screen lg:w-full border-2 border-[#293750] rounded-b-2xl flex h-[10vh] lg:h-[12vh] items-center justify-between shadow-lg bg-white p-5 z-10 lg:pr-28 transition-transform duration-200`}
     >
       <Link href="/">
         <div className="flex lg:p-8 relative pl-2 w-20 lg:w-[161px] lg:ml-56">
@@ -84,9 +83,11 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <button className="lg:p-3 lg:text-cyan-800 lg:text-xl lg:border-2 lg:rounded-2xl lg:border-[#293750] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-[#1a5c6c] lg:hover:text-white hidden lg:block lg:w-[240px]">
-            Book a Discovery Call
-          </button>
+          <Link href="/contact">
+            <button className="lg:p-3 lg:text-cyan-800 lg:text-xl lg:border-2 lg:rounded-2xl lg:border-[#293750] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-[#1a5c6c] lg:hover:text-white hidden lg:block lg:w-[240px]">
+              Book a Discovery Call
+            </button>
+          </Link>
         </li>
       </ul>
       <Image
