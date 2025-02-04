@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "AgentifyNow.AI",
     images: [
       {
-        url: "/logos/logo2.png",
+        url: "/logos/New-Logo2.png",
         width: 1200,
         height: 630,
         alt: "AgentifyNow.AI | AI automation solutions AI agents and Chatbots",
