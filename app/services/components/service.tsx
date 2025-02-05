@@ -59,8 +59,8 @@ export default function Service() {
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[355px] h-[820px] md:w-[450px]" data-aos="fade-up-right">
                     <div className="lg:absolute absolute text-center lg:flex flex lg:flex-col flex-col lg:gap-10 gap-5 items-center top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_23189.png)] bg-cover bg-no-repeat">
-                        <h3 className="text-4xl pt-20 select-none text-[#1c5a6c]">Automation</h3>
-                        <p className="text-2xl select-none text-justify p-10 backdrop-blur-2xl w-full">Adjust and adapt AI agent features to meet your company&apos;s specific needs and preferences</p>
+                        <h3 className="text-4xl pt-20 text-[#1c5a6c]">Automation</h3>
+                        <p className="text-2xl text-justify p-10 backdrop-blur-2xl w-full">Adjust and adapt AI agent features to meet your company&apos;s specific needs and preferences</p>
                         <div className="lg:flex lg:gap-40 lg:pt-5">
                             <AutomationList />
                             <div className="pt-14 lg:-mt-14">
@@ -84,8 +84,8 @@ export default function Service() {
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[355px] h-[830px] md:w-[450px]" data-aos="fade-up">
                     <div className="absolute flex flex-col items-center gap-10 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/673.png)] bg-no-repeat">
-                        <h3 className="text-4xl pt-20 select-none text-[#1c5a6c]">Consulting</h3>
-                        <p className="text-2xl text-justify p-10 select-none backdrop-blur-2xl">Software and technology to execute repetitive and routine tasks that save time, reduce errors and increase operational efficiency in various areas, from business management to software development</p>
+                        <h3 className="text-4xl pt-20 text-[#1c5a6c]">Consulting</h3>
+                        <p className="text-2xl text-justify p-10 backdrop-blur-2xl">Software and technology to execute repetitive and routine tasks that save time, reduce errors and increase operational efficiency in various areas, from business management to software development</p>
                         <div>
                             <ConsultingList />
                         </div>
@@ -105,8 +105,8 @@ export default function Service() {
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[355px] h-[830px] md:w-[450px]" data-aos="fade-up-left">
                     <div className="lg:absolute absolute lg:flex lg:flex-col lg:items-center lg:gap-5 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_5102.png)] bg-cover bg-no-repeat">
-                        <h3 className="text-4xl pt-20 pb-5 select-none text-center text-[#1c5a6c]">Development</h3>
-                        <p className="text-2xl pl-10 pr-10 text-justify text-center select-none backdrop-blur-2xl">Maximize your team&apos;s efficiency and productivity with our integration solution that effortlessly connects with the most popular tools on the market. Our platform makes your workflow easier by uniting your favorite tools in one place</p>
+                        <h3 className="text-4xl pt-20 pb-5 text-center text-[#1c5a6c]">Development</h3>
+                        <p className="text-2xl pl-10 pr-10 text-justify text-center backdrop-blur-2xl">Maximize your team&apos;s efficiency and productivity with our integration solution that effortlessly connects with the most popular tools on the market. Our platform makes your workflow easier by uniting your favorite tools in one place</p>
                         <div className="flex flex-col">
                             <div className="pt-10 pl-10">
                                 <DevelopmentList />
@@ -131,8 +131,8 @@ export default function Service() {
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
                     <div className="w-full bg-[#1c5a6c] lg:p-10 p-5 flex flex-col gap-10 items-center">
-                        <h2 className="lg:text-4xl text-xl text-center text-white select-none">The #1 AI and Automation Agency</h2>
-                        <p className="lg:text-3xl text-md text-white select-none lg:p-10 text-center ">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
+                        <h2 className="lg:text-4xl text-xl text-center text-white">The #1 AI and Automation Agency</h2>
+                        <p className="lg:text-3xl text-md text-white lg:p-10 text-center ">We combine artificial intelligence with automation to create incredibly efficient processes that connect your apps and automate actions between them, which replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience. Fully custom and done-for-you</p>
                     </div>
                     <div className="lg:pt-24 pt-10 flex flex-col p-5 items-center gap-5">
                         <h4 className="lg:pt-24 text-center lg:text-2xl text-lg font-bold pb-5">The endless use cases of AI and Automation</h4>

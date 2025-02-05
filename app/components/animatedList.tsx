@@ -9,7 +9,7 @@ const list = [
 
 const AnimatedList: React.FC = () => {
   return (
-    <ul className="space-y-4 select-none">
+    <ul className="space-y-4">
       {list.map((item, index) => (
         <AnimatedListItem key={index} item={item} index={index} />
       ))}

@@ -85,8 +85,8 @@ export default function ImageSlider() {
               alt={study.title}
               className="w-full" // Ajusta el ancho para que sea responsivo
             />
-            <h4 className="text-2xl select-none">{study.title}</h4>
-            <h5 className="text-xl select-none">{study.description}</h5>
+            <h4 className="text-2xl">{study.title}</h4>
+            <h5 className="text-xl">{study.description}</h5>
             <button className="bg-[#5ca9b1] rounded-lg text-white text-xl p-3 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:ease-in-out"
               onClick={() => goToCaseStudy(study.id)}
             > Keep Reading
