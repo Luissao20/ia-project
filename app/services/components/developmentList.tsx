@@ -9,7 +9,7 @@ const list = [
 
 const DevelopmentList: React.FC = () => {
   return (
-    <ul className="space-y-4 select-none">
+    <ul className="space-y-4">
       {list.map((item, index) => (
         <DevelopmentListItem key={index} item={item} index={index} />
       ))}

@@ -147,12 +147,12 @@ export default function Contenido() {
                             <h2 className="text-2xl font-bold cursor-pointer text-[#1c5a6c]">
                                 {study.title}
                             </h2>
-                            <span className="ml-2 transform transition-transform duration-300 select-none">
+                            <span className="ml-2 transform transition-transform duration-300">
                                 {activeId === study.id ? (<Image src="/arrow_up.svg" alt="arrow_up_case" width={20} height={20} />) : (<Image src="/arrow_down.svg" alt="arrow_down_case" width={20} height={20} />)}
                             </span>
                         </div>
                         {activeId === study.id && (
-                            <motion.div className="mt-2 select-none p-10 text-xl"
+                            <motion.div className="mt-2 p-10 text-xl"
                                 key={study.id}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: study.id ? 1 : 0 }}
