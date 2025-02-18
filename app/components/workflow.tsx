@@ -7,7 +7,7 @@ const Workflow = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsLargeScreen(window.innerWidth >= 768);
+            setIsLargeScreen(window.innerWidth >= 1024);
         };
 
         // Verificar el tamaño de la pantalla en el montaje
@@ -31,13 +31,13 @@ const Workflow = () => {
         };
 
         // Aplicamos la animación si el SVG es visible y la pantalla es grande
-        if (isLargeScreen && lineElement) {
+        if (isLargeScreen && lineElement && svgRef.current?.style.display !== 'none') {
             handleAnimation();
         }
 
         // Usamos ResizeObserver para aplicar la animación cuando el tamaño de la ventana cambia
         const resizeObserver = new ResizeObserver(() => {
-            if (isLargeScreen && lineElement) {
+            if (isLargeScreen && lineElement && svgRef.current?.style.display !== 'none') {
                 handleAnimation();
             }
         });
