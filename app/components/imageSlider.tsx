@@ -9,21 +9,21 @@ import 'swiper/swiper-bundle.css';
 const caseStudies = [
   {
     id: 1,
-    title: "Company 1",
-    image: "/casestudy1.png",
-    description: "Optimizing the Loan Approval Process for a Financial Institution"
+    title: "ElagriFarm",
+    image: "/ElagriFarm.png",
+    description: "Digital Transformation for Elagri Farm"
   },
   {
     id: 2,
-    title: "Company 2",
-    image: "/casestudy2.png",
-    description: "Optimizing the Loan Approval Process for a Financial Institution"
+    title: "EcuaBet",
+    image: "/ecuabet.png",
+    description: "Innovation and Entertainment in Sports Betting and Online Casino"
   },
   {
     id: 3,
-    title: "Company 3",
-    image: "/casestudy3.png",
-    description: "Optimizing the Loan Approval Process for a Financial Institution"
+    title: "ListoBet",
+    image: "/listobet.png",
+    description: "Innovation and Security in Online Gaming"
   },
   {
     id: 4,
@@ -77,16 +77,20 @@ export default function ImageSlider() {
         <SwiperSlide
           key={study.id}
           className="p-5">
-          <div className="p-5 bg-[#1c5a6c] rounded-lg shadow text-white flex flex-col gap-5">
-            <Image
-              src={study.image}
-              width={400}
-              height={200}
-              alt={study.title}
-              className="w-full" // Ajusta el ancho para que sea responsivo
-            />
+          <div className="p-5 bg-[#1c5a6c] rounded-lg shadow text-white flex flex-col gap-3">
+            <div className="w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden">
+              <Image
+                src={study.image}
+                width={400}
+                height={200}
+                alt={study.title}
+                className="object-contain w-full h-full"
+              />
+            </div>
             <h4 className="text-2xl">{study.title}</h4>
-            <h5 className="text-xl">{study.description}</h5>
+            <div className="h-20 overflow-hidden">
+              <h5 className="text-lg">{study.description}</h5>
+            </div>
             <button className="bg-[#5ca9b1] rounded-lg text-white text-xl p-3 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:ease-in-out"
               onClick={() => goToCaseStudy(study.id)}
             > Keep Reading
