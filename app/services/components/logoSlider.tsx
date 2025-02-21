@@ -7,68 +7,75 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 const listItems = [
-  <li key={1}>
+  <li key={1} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/Airtable-Logo.png'
+      src='/logos/nextjs-13.svg'
       width={100}
       height={100}
-      alt="Airtable"
+      alt="NextJS"
     />
   </li>,
-  <li key={2}>
+  <li key={2} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/Asana-Logo.png'
+      src='/logos/Render_logo.png'
       width={100}
       height={100}
-      alt="Asana"
+      alt="Render"
     />
   </li>,
-  <li key={3}>
+  <li key={3} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/Dynamics-Logo.png'
+      src='/logos/astro-logo-dark.png'
       width={100}
       height={100}
-      alt="Dynamics"
+      alt="Astro"
     />
   </li>,
-  <li key={4}>
+  <li key={4} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/HubSpot-Logo.png'
+      src='/logos/Vercel-Logo.png'
       width={100}
       height={100}
-      alt="HubSpot"
+      alt="Vercel"
     />
   </li>,
-  <li key={5}>
+  <li key={5} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/Jira-logo.png'
+      src='/logos/Squarespace-Logo.png'
       width={100}
       height={100}
-      alt="Jira"
+      alt="Squarespace"
     />
   </li>,
-  <li key={6}>
+  <li key={6} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/NetSuite-Logo.png'
+      src='/logos/Wordpress-logo.png'
       width={100}
       height={100}
-      alt="NetSuite"
+      alt="Wordpress"
     />
   </li>,
-  <li key={7}>
+  <li key={7} className="flex justify-center items-center h-full">
+  <Image
+    src='/logos/HubSpot-Logo.png'
+    width={100}
+    height={100}
+    alt="HubSpot"
+  />
+</li>,
+<li key={8} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/Trello-Logo-.png'
+      src='/logos/Calendly-Logo.png'
       width={100}
       height={100}
-      alt="Trello"
+      alt="Calendly"
     />
   </li>,
 ];
 
-
 export default function ImageSlider() {
   return (
-    <div className='container lg:mx-auto mx-auto my-3 lg:my-10 lg:p-5 p-5 lg:w-[900px] w-[300px]'>
+    <div className='container lg:mx-auto mx-auto my-3 lg:my-10 lg:p-5 p-5 lg:w-[700px] w-[300px]'>
       <Swiper
         modules={[Navigation, Autoplay]}
         breakpoints={{
@@ -81,16 +88,16 @@ export default function ImageSlider() {
             spaceBetween: 5,
           },
           640: { // para tabletas pequeñas
-            slidesPerView: 6,
+            slidesPerView: 4,
             spaceBetween: 5,
           },
           768: { // para tabletas grandes
-            slidesPerView: 6,
+            slidesPerView: 4,
             spaceBetween: 5,
           },
           1024: { // para pantallas de computadora
-            slidesPerView: 6,
-            spaceBetween: 5,
+            slidesPerView: 4,
+            spaceBetween: 6,
           },
         }}
         loop
@@ -98,7 +105,7 @@ export default function ImageSlider() {
       >
         {listItems.map((item, index) => (
           <SwiperSlide key={index}>
-            <ul className="p-2 w-[130px] lg:w-[300px] h-auto lg:grayscale lg:hover:grayscale-0">
+            <ul className="p-2 w-[130px] lg:w-[200px] h-[100px] flex justify-center items-center">
               {item}
             </ul>
           </SwiperSlide>

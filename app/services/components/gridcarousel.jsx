@@ -14,7 +14,14 @@ const logos = [
     "/logos/make-logo.svg",
     "/logos/NetSuite-Logo.png",
     "/logos/slack.svg",
-    "/logos/zoom-app.svg"
+    "/logos/zoom-app.svg",
+    "/logos/Calendly.png",
+    "/logos/Zapier-Logo.png",
+    "/logos/facebook.svg",
+    "/logos/messenger.svg",
+    "/logos/Instagram-Logo.png",
+    "/logos/TikTok_Logo.png",
+    "/logos/google-calendar.svg",
 ];
 
 export default function SequentialCarousel() {
@@ -28,7 +35,7 @@ export default function SequentialCarousel() {
     }, []);
 
     return (
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-5 gap-5">
             {logos.map((logo, index) => (
                 <img
                     key={index}
