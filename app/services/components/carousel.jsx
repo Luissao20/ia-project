@@ -5,9 +5,10 @@ import { useEffect, useState } from "react";
 const logos = [
     "/logos/ChatGPT-Logo.png",
     "/logos/hubspot-1.svg",
-    "/logos/Notion-Logo.png",
-    "/logos/POE-Logo.png",
-    "/logos/ChatSonic-Logo.png",
+    "/logos/Airtable-Emblem.png",
+    "/logos/ClickUp-Logo.png",
+    "/logos/slack.svg",
+    "/logos/make-emblem.png",
 ];
 
 export default function Carousel() {
@@ -37,10 +38,10 @@ export default function Carousel() {
                 const logoAngle = (index / logos.length) * 360;
                 const rotateAngle = (angle + logoAngle) % 360;
                 const radian = (rotateAngle * Math.PI) / 180;
-                const x = Math.cos(radian) * 80;
-                const y = Math.sin(radian) * 80;
+                const x = Math.cos(radian) * 90;
+                const y = Math.sin(radian) * 90;
                 return (
-                    <img key={index} src={logo} className="absolute w-16 h-16" style={{ transform: `translate(${x}px, ${y}px)`, }} />
+                    <img key={index} src={logo} className="absolute w-18 h-16" style={{ transform: `translate(${x}px, ${y}px)`, }} />
                 );
             })}
         </div>

@@ -5,28 +5,23 @@ import { useEffect, useState } from "react";
 const logos = [
     "/logos/ChatGPT-Logo.png",
     "/logos/ClickUp-Logo.png",
-    "/logos/Notion-Logo.png",
-    "/logos/POE-Logo.png",
-    "/logos/ChatSonic-Logo.png",
     "/logos/Airtable-Logo.png",
-    "/logos/Asana-Logo.png",
-    "/logos/discord.svg",
     "/logos/drive.svg",
-    "/logos/Dynamics-Logo.png",
     "/logos/Gmail-logo.png",
     "/logos/google-meet.svg",
     "/logos/HubSpot-Logo.png",
-    "/logos/Jira-logo.png",
     "/logos/linkedin.svg",
-    "/logos/Mailchimp-logo.png",
     "/logos/make-logo.svg",
     "/logos/NetSuite-Logo.png",
-    "/logos/outlook-.svg",
-    "/logos/salesforce.svg",
-    "/logos/shopify.svg",
     "/logos/slack.svg",
-    "/logos/Trello-Logo-.png",
-    "/logos/zoom-app.svg"
+    "/logos/zoom-app.svg",
+    "/logos/Calendly.png",
+    "/logos/Zapier-Logo.png",
+    "/logos/facebook.svg",
+    "/logos/messenger.svg",
+    "/logos/Instagram-Logo.png",
+    "/logos/TikTok_Logo.png",
+    "/logos/google-calendar.svg",
 ];
 
 export default function SequentialCarousel() {
@@ -40,7 +35,7 @@ export default function SequentialCarousel() {
     }, []);
 
     return (
-        <div className="grid grid-cols-6 gap-4">
+        <div className="grid grid-cols-5 gap-5">
             {logos.map((logo, index) => (
                 <img
                     key={index}

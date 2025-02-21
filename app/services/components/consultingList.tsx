@@ -2,11 +2,10 @@ import React from "react";
 import ConsultingListItem from "./consultingListItem";
 
 const list = [
-  "Employee Onboarding",
-  "Payments and Contracts",
-  "Client Communications",
-  "Client Reporting",
-  "Operations"
+  "Process Automation",
+  "CRM Implementation",
+  "Leads Generation",
+  "Sales and Payment Automation",
 ];
 
 const ConsultingList: React.FC = () => {
