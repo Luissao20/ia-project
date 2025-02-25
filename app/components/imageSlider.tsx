@@ -11,7 +11,7 @@ const caseStudies = [
     id: 1,
     title: "ElagriFarm",
     image: "/ElagriFarm.png",
-    description: "Digital Transformation for Elagri Farm"
+    description: "The Power of Automation: How AI Transformed Elagri Farm's Operations"
   },
   {
     id: 2,

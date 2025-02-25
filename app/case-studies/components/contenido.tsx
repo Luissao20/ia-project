@@ -5,16 +5,14 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from 'next/navigation';
 import Image from "next/image";
 import CaseHeader from "./case-header";
-
+import Gallery from "./gallery";
 
 export default function Contenido() {
     const caseStudies = [{
         id: 1,
-        title: "Digital Transformation for Elagri Farm",
+        title: "The Power of Automation: How AI Transformed Elagri Farm's Operations",
         content: (
             <div className="flex flex-col items-center justify-center gap-10 text-justify w-[1300px]">
-                <p>Elagri Farm is a company dedicated to the export of bananas, mangoes, dragon fruit, and passion fruit. Despite having been in the market for three years, its growth was limited by the lack of structured processes and a digital strategy, as its business model relied exclusively on word-of-mouth and lacked a website. This created challenges in customer management, sales, and shipment tracking, making expansion difficult. To address these issues, a solution was needed to optimize time and improve activities. For this reason, they decided to use artificial intelligence tools, specifically Make.com, to enhance operational efficiency.</p>
-                <p>The lack of a digital platform and automated processes caused difficulties in customer management, order handling, and inventory control. As the company grew, tracking customers, purchases, sales, and shipments became increasingly complex, increasing the risk of operational errors and lost business opportunities. To tackle these problems, all operational processes were documented, and automation opportunities were identified. AI-based solutions were implemented using Make.com, improving efficiency in customer management and optimizing repetitive tasks.</p>
                 <Image
                     alt="ElagriFarm"
                     src="/ElagriFarm.png"
@@ -22,8 +20,139 @@ export default function Contenido() {
                     width={800}
                     height={500}
                 />
-                <p>Additionally, a website with an automated chatbot was designed and implemented to handle inquiries and capture potential clients. Billing and accounting were automated, reducing errors and optimizing work times. The implemented solution included the creation of a website with an integrated automated chatbot to answer inquiries and capture prospects, automation of billing and accounting to reduce errors and improve operational efficiency, implementation of Make.com to optimize workflow and enhance customer and order management, and integration of digital tools that improved shipment tracking and customer database management. As a result, operational efficiency increased, administrative task time was reduced, customer management was optimized, client acquisition and retention improved through a digitized system, billing and accounting errors were reduced, income and expense control was optimized, and logistics management was enhanced with tools that facilitated tracking and shipment control.</p>
-                <p>Elagri Farm has reported significant improvements in business management and has successfully optimized time across key activities. Automation has enabled better internal organization and more efficient customer service.  The implemented solutions will allow Elagri Farm to continue scaling its business efficiently and structurally, with greater responsiveness to market demands and a solid foundation for future expansions. This project has demonstrated the importance of digitization in the agricultural industry and how artificial intelligence can be a key tool for improving operational efficiency. As the next step, the impact of the implemented solutions will continue to be monitored, and new digitization opportunities will be explored to further strengthen the company. If you want to optimize your business processes and improve efficiency with artificial intelligence, contact us for a personalized consultation.</p>
+                <p>In the competitive world of agricultural exports, efficiency and
+                    precision are key to scaling operations and maximizing profitability.
+                    However, Elagri Farm struggled with outdated manual processes that
+                    created bottlenecks in customer management, order tracking, and
+                    shipment coordination. As demand grew, these inefficiencies led to missed opportunities,
+                    increased operational costs, and a limited ability to expand. To
+                    overcome these challenges, the company turned to intelligent
+                    automation, integrating AI-driven solutions that streamlined
+                    workflows, optimized inventory management, and enhanced financial
+                    processes. This strategic transformation not only improved day-to-day efficiency
+                    but also positioned Elagri Farm for sustained growth in the global
+                    market.</p>
+
+                <ul className="flex flex-col justify-center gap-5">
+                    <h3>Additionally, the company faced key difficulties before implementing AI automation:</h3>
+                    <li><span className="font-bold">Lack of Structured Processes & Digital Tools:</span> The company
+                        relied solely on manual operations and word-of-mouth marketing,
+                        making it difficult to track customer interactions, manage orders, and
+                        scale operations.</li>
+                    <li><span className="font-bold">Inefficiencies in Customer Management: </span>Without a centralized
+                        system, tracking customer inquiries, managing relationships, and ensuring timely follow-ups were inconsistent and time-consuming.</li>
+                    <li><span className="font-bold">Manual Sales Tracking: </span>Sales processes were not automated,
+                        leading to inefficiencies in order management, delays in processing transactions, and missed revenue opportunities.</li>
+                    <li><span className="font-bold">Shipment Coordination Challenges: </span>Managing logistics manually
+                        increased the risk of errors, delays, and miscommunications, leading to late deliveries and dissatisfied customers.</li>
+                    <li><span className="font-bold">Inventory Management Issues: </span>Without real-time tracking, the company struggled
+                        with overstocking or running out of stock, affecting order fulfillment and profitability.</li>
+                    <li><span className="font-bold">High Administrative Workload: </span>Employees had to spend long hours on repetitive tasks
+                        like verifying orders, tracking shipments, and processing payments, reducing their ability to focus on growth and customer service.</li>
+                    <li><span className="font-bold">Delayed Payments & Cash Flow Problems: </span>Invoicing and payment
+                        tracking were done manually, leading to late payments, inefficiencies in financial management, and cash flow issues.</li>
+                </ul>
+                <Gallery images={["/graphics/Elagri 4.png"]} />
+                <p>By implementing AI-driven automation solutions, Elagri Farm was able to
+                    transform its operations and achieve significant improvements in key areas:</p>
+
+                <div className="overflow-x-auto no-scrollbar">
+                    <table className="lg:w-[1200px] bg-white overflow-hidden">
+                        <thead className="text-[#1c5a6c] font-bold lg:text-xl text-md">
+                            <tr>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="100">Operations</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="200">Before Automations</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">After Automations</th>
+                            </tr>
+                        </thead>
+                        <tbody className="text-[#273950] lg:text-lg text-md">
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Customer Handling and Sales</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">It took 5 hours a day, indicating that it was done daily.</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">It is reduced to 2 hours a day.</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Inventory Management</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">Was done daily, taking 4 hours per day.</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="400">Reducing to 1.5 hours per day.</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Shipment tracking</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">This was done daily, requiring 3 hours a day.</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="400">Reduced to 45 minutes a day.</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Payment processing</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">This was done weekly, consuming 6 hours per week.</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="400">Reducing to 1.5 hours per week.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div className="overflow-x-auto no-scrollbar pb-10">
+                    <table className="lg:w-[1200px] bg-white overflow-hidden table-fixed">
+                        <thead className="text-[#1c5a6c] font-bold lg:text-xl text-md">
+                            <tr>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="100">Operations</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="200">Manual Time</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Automated Time</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Time Saved</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Porcentage Reduction</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Hours/Years Saved</th>
+                            </tr>
+                        </thead>
+                        <tbody className="text-[#273950] lg:text-lg text-md">
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Customer Handling and Sales</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">100 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">40 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">60 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">60%</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">720</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Inventory Management</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">80 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">30 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">50 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">62.5%</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">600</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Shipment tracking</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">60 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">9 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">51 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">85%</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">612</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Payment processing</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">120 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">30 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">90 hours/week</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">75%</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">1080</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <Gallery images={["/graphics/Elagri 3.png"]}/>
+
+                <p>Elagri Farm achieved a total monthly time savings of <span className="font-bold">251 hours</span>, which translated into <span className="font-bold">$6,275 </span> 
+                    in cost reductions per month. Over the course of a year, this resulted in <span className="font-bold">$75,307</span> in total savings, allowing the company to reinvest 
+                    resources into expanding its business operations. These efficiencies not only reduced labor costs but also minimized operational errors, 
+                    improving the overall reliability and scalability of the business.</p>
+
+                <Gallery images={["/graphics/Elagri 2.png"]}/>
+
+                <p>With automation handling repetitive tasks, employees could focus on strategic activities that drive growth, such as market expansion and customer 
+                    relationship management. Additionally, streamlined financial processes improved cash flow stability, ensuring the company could scale operations 
+                    without financial bottlenecks. Elagri Farm&apos;s case demonstrates how automation is not just a tool for efficiency but a key driver of sustainable 
+                    business growth in the agricultural export industry.</p>
+
+
             </div>
         ),
     },
@@ -56,7 +185,7 @@ export default function Contenido() {
             <div className="flex flex-col items-center text-justify w-[1300px]">
                 <p>ListoBet is a leading platform in the online gaming industry, combining sports betting, casino, and virtual sports into a unique and exciting experience. With a strong commitment to transparency, security, and customer satisfaction, ListoBet has distinguished itself in a highly competitive market by embracing automation and digital transformation to optimize operations and enhance user experience.</p>
                 <p>The online betting sector faces numerous challenges, including data security for players, gaming regulation compliance, and the constant need for innovation to retain users&apos; attention. In this context, ListoBet has developed a robust platform that prioritizes information protection, an optimized user experience, and high service standards.</p>
-                <p><br/>Automation has been instrumental in driving the company&apos;s growth. By integrating Make.com for payment processing and electronic invoicing, financial operations have been streamlined. Transactions are now handled in real time, minimizing delays and reducing the likelihood of human errors. This has led to greater efficiency in financial processes, ensuring faster deposits and withdrawals while maintaining accurate and transparent invoicing for regulatory compliance.</p>
+                <p><br />Automation has been instrumental in driving the company&apos;s growth. By integrating Make.com for payment processing and electronic invoicing, financial operations have been streamlined. Transactions are now handled in real time, minimizing delays and reducing the likelihood of human errors. This has led to greater efficiency in financial processes, ensuring faster deposits and withdrawals while maintaining accurate and transparent invoicing for regulatory compliance.</p>
                 <Image
                     src="/listobet.png"
                     alt="ListoBet"
@@ -65,7 +194,7 @@ export default function Contenido() {
                     className="bg-black p-10 m-10"
                 />
                 <p>To stay ahead in a competitive industry, ListoBet has focused on several key strategic areas. The company has leveraged cutting-edge technology to create a secure and dynamic platform that meets the high demands of the gaming industry. By integrating advanced security measures, including data encryption, multi-factor authentication, and fraud detection systems, ListoBet ensures a safe environment for its users. This commitment to security not only protects players but also reinforces trust in the platform.</p>
-                <p><br/>ListoBet has successfully established itself as a secure, innovative, and automated platform for online gaming enthusiasts. Its strategic focus on technology, automation, responsible gaming, and customer satisfaction has allowed the company to differentiate itself in a highly competitive market. By continuously optimizing financial transactions, enhancing security measures, and leveraging automation, ListoBet has set a new standard of excellence in the online gaming industry. Moving forward, the company remains committed to further innovation, ensuring that users enjoy a seamless and engaging gaming experience with the highest levels of efficiency and security.</p>
+                <p><br />ListoBet has successfully established itself as a secure, innovative, and automated platform for online gaming enthusiasts. Its strategic focus on technology, automation, responsible gaming, and customer satisfaction has allowed the company to differentiate itself in a highly competitive market. By continuously optimizing financial transactions, enhancing security measures, and leveraging automation, ListoBet has set a new standard of excellence in the online gaming industry. Moving forward, the company remains committed to further innovation, ensuring that users enjoy a seamless and engaging gaming experience with the highest levels of efficiency and security.</p>
             </div>
         ),
     },

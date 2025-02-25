@@ -49,7 +49,7 @@ const listItems = [
   </li>,
   <li key={6} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/Wordpress-logo.png'
+      src='/logos/WordPress-logo.png'
       width={100}
       height={100}
       alt="Wordpress"
@@ -65,7 +65,7 @@ const listItems = [
 </li>,
 <li key={8} className="flex justify-center items-center h-full">
     <Image
-      src='/logos/Calendly-Logo.png'
+      src='/logos/Calendly.png'
       width={100}
       height={100}
       alt="Calendly"
