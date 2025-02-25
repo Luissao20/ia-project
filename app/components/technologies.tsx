@@ -37,12 +37,12 @@ export default function Tech() {
                 </div>
                 <div className="flex flex-col items-center text-center justify-center gap-5 p-5 lg:-m-5 border border-[#273950] rounded-2xl lg:border-none" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
                     <Image
-                        src="/logos/Gemini-Logo.png"
-                        alt="Gemini-logo"
+                        src="/logos/HubSpot-Logo.png"
+                        alt="Hubspot"
                         width={200}
                         height={200}
                     />
-                    <p>Gemini, Google&apos;s AI platform, specializes in natural language understanding and machine learning. We integrate Gemini for applications like customer insights, advanced sentiment analysis, and data-driven marketing strategies.</p>
+                    <p>HubSpot implementation and customizing experts help to maximize customer relationship management, automate marketing, link tools, and produce thorough reports supporting data-driven decision-making.</p>
                 </div>
                 <div className="flex flex-col items-center text-center justify-center gap-5 p-5 lg:-m-5 border border-[#273950] rounded-2xl lg:border-none" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
                     <Image
@@ -51,7 +51,7 @@ export default function Tech() {
                         width={200}
                         height={200}
                     />
-                    <p>Zapier connects your favorite tools and apps to create seamless workflows, eliminating repetitive tasks and saving hours every week. Whether it&apos;s automating lead routing between your CRM and email marketing tools or syncing project management platforms, Zapier ensures efficiency and accuracy. Perfect for small businesses and enterprises alike.</p>
+                    <p>We use Zapier to connect applications and automate repetitive tasks, improving operational efficiency. With Zapier, we create customized workflows that allow your team to focus on strategic tasks and increase productivity.</p>
                 </div>
                 <div className="flex flex-col items-center text-center justify-center gap-10 p-5 lg:-m-5 border border-[#273950] rounded-2xl lg:border-none" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
                     <Image
@@ -61,16 +61,16 @@ export default function Tech() {
                         height={200}
                         className="pb-5 pt-6"
                     />
-                    <p>Make.com provides a visual and flexible platform for automating complex, large-scale workflows. With its intuitive drag-and-drop interface and advanced conditional logic, it&apos;s ideal for connecting e-commerce platforms with inventory systems or managing intricate marketing campaigns. Make.com is perfect for businesses needing advanced integrations and scalability.</p>
+                    <p>Specialized in creating and automating workflows with Make.com, facilitating application integration, optimizing processes, and personalizing solutions to enhance operational efficiency and meet your business&apos;s specific needs.</p>
                 </div>
                 <div className="flex flex-col items-center text-center justify-center gap-5 p-5 lg:-m-5 border border-[#273950] rounded-2xl lg:border-none" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
                     <Image
-                        src="/logos/Python-Logo.png"
-                        alt="Python-logo"
+                        src="/logos/Airtable-Logo.png"
+                        alt="Airtable"
                         width={200}
                         height={200}
                     />
-                    <p>Python&apos;s versatility makes it a powerful tool for creating advanced automation and data manipulation scripts. From automating financial data analysis to building custom APIs for seamless app integration, Python enables businesses to streamline operations and reduce manual workload. Its compatibility with AI models also makes it a top choice for cutting-edge automation solutions.</p>
+                    <p>Focused in creating and setting databases in Airtable for effective project management, process automation, application integration, and customised solutions to fit your particular requirements.</p>
                 </div>
             </motion.div>
         </section>
