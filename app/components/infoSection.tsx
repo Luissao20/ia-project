@@ -14,7 +14,7 @@ const InfoSection: React.FC = () => {
             content: "While we collaborate with robots during the day, we're entirely human. We'll craft a customized strategy for your industry, needs, and goals. Copy-paste? That's not our style."
         },
         {
-            title: "Integrated into your team.",
+            title: "Integrated into your team",
             content: "We are fully committed. Integrate our services into your Slack channels, email us with your concerns, and let your vendors contact us directly. We'll serve as your Chief Automation Officer."
         },
         {
@@ -39,15 +39,15 @@ const InfoSection: React.FC = () => {
     return (
         <div className="lg:flex lg:flex-col lg:p-20 lg:items-center lg:overflow-hidden">
             <div className="text-black flex flex-col items-center p-10 gap-10 pb-32" data-aos="fade-up">
-                <h2 className="text-4xl font-bold text-[#1c5a6c]">Discover how we work</h2>
-                <p className="text-3xl">Optimize your processes through automation to boost productivity and regain control of your time.</p>
+                <h2 className="text-4xl font-bold text-[#03a7b3]">Discover how we work</h2>
+                <p className="text-xl">Optimize your processes through automation to boost productivity and regain control of your time.</p>
             </div>
             <div className="flex flex-col lg:flex-row items-center justify-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div className="lg:w-[400px] lg:h-[400px] lg:relative lg:flex lg:flex-col lg:items-center lg:gap-5 lg:ms-96 lg:pl-10 flex flex-col w-[300px] relative pb-24 gap-5">
                     {infoData.map((item, index) => (
                         <button
                             key={index}
-                            className={`lg:w-[450px] text-2xl font-bold text-left p-5 lg:p-10 rounded-2xl lg:flex lg:items-center lg:justify-center ${selectedTitle === index ? "bg-gradient-to-b from-[#1c5a6c] to-[#273950] transition duration-300 scale-110 ease-in-out text-white" : "bg-gray-100"}`}
+                            className={`lg:w-[450px] text-2xl font-bold text-left p-5 lg:p-10 rounded-2xl lg:flex lg:items-center lg:justify-center ${selectedTitle === index ? "bg-gradient-to-b from-[#03a7b3] to-[#345d87] transition duration-300 scale-110 ease-in-out text-white" : "bg-[#b0a9cb] text-[#3c4442]"}`}
                             onClick={() => handleTitleClick(index)}
                         >
                             <div className="lg:hidden absolute right-2">

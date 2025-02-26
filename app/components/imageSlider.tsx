@@ -27,13 +27,13 @@ const caseStudies = [
   },
   {
     id: 4,
-    title: "FINO TP",
+    title: "FINO PT",
     image: "/casestudy4.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
   },
   {
     id: 5,
-    title: "Company 5",
+    title: "Construcciones Vanguard",
     image: "/casestudy5.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
   },
@@ -77,7 +77,7 @@ export default function ImageSlider() {
         <SwiperSlide
           key={study.id}
           className="p-5">
-          <div className="p-5 bg-[#1c5a6c] rounded-lg shadow text-white flex flex-col gap-3">
+          <div className="p-5 border-2 border-[#b0a9cb] bg-gradient-to-b from-[#03a7b3] to-[#345b87] rounded-lg shadow text-white flex flex-col gap-3">
             <div className="w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden">
               <Image
                 src={study.image}
@@ -87,11 +87,11 @@ export default function ImageSlider() {
                 className="object-contain w-full h-full"
               />
             </div>
-            <h4 className="text-2xl">{study.title}</h4>
+            <h4 className="text-2xl text-[#010817] font-bold">{study.title}</h4>
             <div className="h-20 overflow-hidden">
-              <h5 className="text-lg">{study.description}</h5>
+              <h5 className="text-lg text-[#010817]">{study.description}</h5>
             </div>
-            <button className="bg-[#5ca9b1] rounded-lg text-white text-xl p-3 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:ease-in-out"
+            <button className="bg-[#010817] rounded-lg text-white text-xl p-3 flex justify-center items-center gap-3 transition duration-300 hover:scale-[0.9] hover:ease-in-out"
               onClick={() => goToCaseStudy(study.id)}
             > Keep Reading
             </button>
