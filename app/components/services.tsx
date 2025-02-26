@@ -27,7 +27,7 @@ export default function Services() {
         <Tech />
       </div>
       <div className="flex flex-col items-center justify-center pt-5 lg:w-full">
-        <h2 className="lg:text-4xl text-2xl bg-[#03a7b3] lg:w-full text-center font-bold text-[#010817] p-5 lg:p-10" data-aos="fade-up">Why AI must be combined with Automation</h2>
+        <h2 className="lg:text-4xl text-2xl bg-[#03a7b3] w-full text-center font-bold text-[#010817] p-5 lg:p-10" data-aos="fade-up">Why AI must be combined with Automation</h2>
         <div className="flex" data-aos="zoom-in">
           <VerticalLine />
           <Combined />
