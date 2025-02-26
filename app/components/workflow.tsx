@@ -65,7 +65,7 @@ const Workflow = () => {
                   className="line-animated" 
                   x1="0" y1="50" 
                   x2="1000" y2="50" 
-                  stroke="#4A5568" 
+                  stroke="#345d87" 
                   strokeWidth="3" 
                   strokeDasharray="8,5 8,5" 
                 />

@@ -39,9 +39,9 @@ export default function Navbar() {
         } fixed w-screen lg:w-full border-2 border-[#010817] rounded-b-2xl flex h-[10vh] lg:h-[12vh] items-center justify-between shadow-lg bg-white p-5 z-10 lg:pr-28 transition-transform duration-200`}
     >
       <Link href="/">
-        <div className="flex lg:p-8 relative pl-2 w-16 lg:w-[150px] lg:ml-56">
+        <div className="flex lg:p-8 relative pl-2 w-16 lg:w-[300px] lg:ml-56">
           <Image
-            src="/logos/Logocolor.png"
+            src="/logos/logofinal2.png"
             alt="Logo"
             width={200}
             height={200}

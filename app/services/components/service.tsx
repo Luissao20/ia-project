@@ -11,6 +11,9 @@ import Header from "./header";
 import Image from "next/image";
 import Automations from "./automations";
 import AutomationEnd from "./automationEnd";
+import AiAgents from "./ai-agents";
+import Chatbots from "./chatbots";
+import Workflows from "./workflows";
 
 type Section = "section1" | "section2" | "section3" | null;
 
@@ -59,14 +62,13 @@ export default function Service() {
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[355px] h-[820px] md:w-[450px]" data-aos="fade-up-right">
                     <div className="lg:absolute absolute text-center lg:flex flex lg:flex-col flex-col lg:gap-10 gap-5 items-center top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_23189.png)] bg-cover bg-no-repeat">
-                        <h3 className="text-4xl pt-20 text-[#1c5a6c]">Automations</h3>
+                        <h3 className="text-4xl pt-20 text-[#03a9bc] font-bold">Automations</h3>
                         <p className="text-2xl text-justify p-10 backdrop-blur-2xl w-full">Agentify offers modern artificial intelligence automation, thereby arming businesses with intelligent AI agents and chatbots meant to streamline processes, improve customer service, and hasten corporate development.</p>
                         <div className="lg:flex lg:gap-40 lg:pt-5">
                             <AutomationList />
                             <div className="pt-14 lg:-mt-14">
                                 <Carousel />
                             </div>
-
                         </div>
                         <motion.button
                             className="flex gap-2 absolute bottom-3 left-10 text-[#273950] px-2 py-1 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300"
@@ -84,7 +86,7 @@ export default function Service() {
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[355px] h-[830px] md:w-[450px]" data-aos="fade-up">
                     <div className="absolute flex flex-col items-center gap-10 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/673.png)] bg-no-repeat">
-                        <h3 className="text-4xl pt-20 text-[#1c5a6c]">Consulting</h3>
+                        <h3 className="text-4xl pt-20 text-[#03a9bc] font-bold">Consulting</h3>
                         <p className="text-2xl text-justify p-10 backdrop-blur-2xl">Software and technology to execute repetitive and routine tasks that save time, reduce errors and increase operational efficiency in various areas, from business management to software development</p>
                         <div>
                             <ConsultingList />
@@ -105,7 +107,7 @@ export default function Service() {
                     before:bg-[conic-gradient(transparent,#273950,#5ca9b1)]
                     before:animate-spin-slow group relative w-[355px] h-[830px] md:w-[450px]" data-aos="fade-up-left">
                     <div className="lg:absolute absolute lg:flex lg:flex-col lg:items-center lg:gap-5 top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_5102.png)] bg-cover bg-no-repeat">
-                        <h3 className="text-4xl pt-20 pb-5 text-center text-[#1c5a6c]">Development</h3>
+                        <h3 className="text-4xl pt-20 pb-5 text-center text-[#03a9bc] font-bold">Development</h3>
                         <p className="text-2xl pl-10 pr-10 text-justify text-center backdrop-blur-2xl">Maximize your team&apos;s efficiency and productivity with our integration solution that effortlessly connects with the most popular tools on the market. Our platform makes your workflow easier by uniting your favorite tools in one place</p>
                         <div className="flex flex-col">
                             <div className="pt-10 pl-10">
@@ -130,18 +132,17 @@ export default function Service() {
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <div className="w-full bg-[#1c5a6c] lg:p-10 p-5 flex flex-col gap-10 items-center">
-                        <h2 className="lg:text-4xl text-xl text-center text-white">The #1 AI and Automation Agency</h2>
-                        <p className="lg:text-3xl text-md text-white lg:p-10 text-center ">Agentify guarantees that automation exactly fits your industry, operations, and goals by customizing AI agent capabilities to meet your particular demands. Whether your needs are for real-time decision-making, automated task management, or customer service driven by artificial intelligence, our solutions are designed to maximize operations while preserving scalability and adaptability.</p>
+                    <div className="w-full bg-[#03a7b3] lg:p-10 p-5 flex flex-col gap-10 items-center">
+                        <h2 className="lg:text-4xl text-xl text-center text-[#010817]">The AI and Automation Agency You Need</h2>
+                        <p className="lg:text-2xl text-md text-white lg:p-10 text-center ">Agentify guarantees that automation exactly fits your industry, operations, 
+                            and goals by customizing AI agent capabilities to meet your particular demands. Whether your needs are for real-time decision-making, 
+                            automated task management, or customer service driven by artificial intelligence, our solutions are designed to maximize operations 
+                            while preserving scalability and adaptability.</p>
                     </div>
-                    <div className="lg:pt-24 pt-10 flex flex-col p-5 items-center gap-5">
-                        <h4 className="lg:pt-24 text-center lg:text-2xl text-lg font-bold pb-5">The endless use cases of AI and Automation</h4>
-                        <p className="lg:text-xl w-full text-md pb-10 text-center">Our clients make their employees 10X more efficient by taking tedious, repetitive tasks off their plate. We are industry agnostic.</p>
-                        <Automations />
-                    </div>
-                    <div>
-                        <AutomationEnd />
-                    </div>
+                    <AiAgents />
+                    <Chatbots />
+                    <Workflows />
+                    <AutomationEnd />
                     <div className="flex jusify-center z-4">
                         <motion.button className="relative flex gap-2 items-center text-[#273950] px-4 py-2"
                             onClick={handleGoBack}
