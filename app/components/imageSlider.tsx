@@ -17,7 +17,7 @@ const caseStudies = [
     id: 2,
     title: "EcuaBet",
     image: "/ecuabet.png",
-    description: "Innovation and Entertainment in Sports Betting and Online Casino"
+    description: "Ecuabet's Digital Evolution: How Automation Transformed Efficiency and Profitability"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const caseStudies = [
   },
   {
     id: 4,
-    title: "Company 4",
+    title: "FINO TP",
     image: "/casestudy4.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
   },
