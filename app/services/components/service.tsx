@@ -63,7 +63,7 @@ export default function Service() {
                     before:animate-spin-slow group relative w-[355px] h-[820px] md:w-[450px]" data-aos="fade-up-right">
                     <div className="lg:absolute absolute text-center lg:flex flex lg:flex-col flex-col lg:gap-10 gap-5 items-center top-[5px] bottom-[5px] left-[5px] right-[5px] rounded-[10px] bg-white bg-[url(../public/rb_23189.png)] bg-cover bg-no-repeat">
                         <h3 className="text-4xl pt-20 text-[#03a9bc] font-bold">Automations</h3>
-                        <p className="text-2xl text-justify p-10 backdrop-blur-2xl w-full">Agentify offers modern artificial intelligence automation, thereby arming businesses with intelligent AI agents and chatbots meant to streamline processes, improve customer service, and hasten corporate development.</p>
+                        <p className="text-2xl text-justify p-10 backdrop-blur-2xl w-full">AgentifyNow offers modern artificial intelligence automation, thereby arming businesses with intelligent AI agents and chatbots meant to streamline processes, improve customer service, and hasten corporate development.</p>
                         <div className="lg:flex lg:gap-40 lg:pt-5">
                             <AutomationList />
                             <div className="pt-14 lg:-mt-14">
@@ -128,16 +128,14 @@ export default function Service() {
             </div>
             {showMoreSection === "section1" && (
                 <motion.div ref={sectionRefs.section1}
-                    className="flex flex-col gap-5 text-justify border-2 border-[#273950] bg-white"
+                    className="flex flex-col gap-5 border-2 border-[#273950] bg-white w-full"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <div className="w-full bg-[#03a7b3] lg:p-10 p-5 flex flex-col gap-10 items-center">
-                        <h2 className="lg:text-4xl text-xl text-center text-[#010817]">The AI and Automation Agency You Need</h2>
-                        <p className="lg:text-2xl text-md text-white lg:p-10 text-center ">Agentify guarantees that automation exactly fits your industry, operations, 
-                            and goals by customizing AI agent capabilities to meet your particular demands. Whether your needs are for real-time decision-making, 
-                            automated task management, or customer service driven by artificial intelligence, our solutions are designed to maximize operations 
-                            while preserving scalability and adaptability.</p>
+                    <div className="w-full bg-[#03a7b3] lg:p-10 p-5 flex flex-col gap-5 items-center">
+                        <h2 className="lg:text-4xl text-xl text-center text-white">The AI and Automation Agency You Need</h2>
+                        <p className="lg:text-2xl text-md text-white lg:p-10 text-center w-[1300px]">AgentifyNow guarantees that automation exactly fits your industry, operations, 
+                            and goals by customizing AI agent capabilities to meet your particular demands.</p>
                     </div>
                     <AiAgents />
                     <Chatbots />

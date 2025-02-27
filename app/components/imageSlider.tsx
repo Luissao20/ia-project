@@ -22,7 +22,7 @@ const caseStudies = [
   {
     id: 3,
     title: "ListoBet",
-    image: "/listobet.png",
+    image: "/logos/listobet3.png",
     description: "Innovation and Security in Online Gaming"
   },
   {
@@ -76,8 +76,8 @@ export default function ImageSlider() {
       {caseStudies.map(study => (
         <SwiperSlide
           key={study.id}
-          className="p-5">
-          <div className="p-5 border-2 border-[#b0a9cb] bg-gradient-to-b from-[#03a7b3] to-[#345b87] rounded-lg shadow text-white flex flex-col gap-3">
+          className="p-16">
+          <div className="p-10 border-2 border-[#010817] w-[500px] rounded-lg flex flex-col">
             <div className="w-full h-[250px] flex items-center justify-center rounded-lg overflow-hidden">
               <Image
                 src={study.image}

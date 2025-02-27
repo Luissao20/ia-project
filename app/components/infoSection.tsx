@@ -47,7 +47,7 @@ const InfoSection: React.FC = () => {
                     {infoData.map((item, index) => (
                         <button
                             key={index}
-                            className={`lg:w-[450px] text-2xl font-bold text-left p-5 lg:p-10 rounded-2xl lg:flex lg:items-center lg:justify-center ${selectedTitle === index ? "bg-gradient-to-b from-[#03a7b3] to-[#345d87] transition duration-300 scale-110 ease-in-out text-white" : "bg-[#b0a9cb] text-[#3c4442]"}`}
+                            className={`lg:w-[450px] text-2xl font-bold text-left p-5 lg:p-10 rounded-2xl lg:flex lg:items-center lg:justify-center ${selectedTitle === index ? "bg-gradient-to-b from-[#03a7b3] to-[#345d87] transition duration-300 scale-110 ease-in-out text-white" : "bg-[#f0f0f0] text-[#3c4442]"}`}
                             onClick={() => handleTitleClick(index)}
                         >
                             <div className="lg:hidden absolute right-2">
