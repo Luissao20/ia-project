@@ -8,7 +8,7 @@ export default function Consulting() {
                 your challenges and design <span className="bg-gradient-to-r from-[#03a7b3] to-[#345d87] bg-clip-text text-transparent font-bold">Strategies</span> that drive your growth.</p>
             <div className="grid grid-cols-2 gap-20 p-20">
                 <div className="flex items-center justify-center gap-10 col-span-2">
-                    <h4 className="p-20 rounded-r-lg rounded-full border-2 border-[#b0a9cb] text-xl font-bold"><span className="bg-gradient-to-b from-[#03a7b3] to-[#010817] bg-clip-text text-transparent">Process Automation</span></h4>
+                    <h4 className="p-20 rounded-r-lg rounded-full border-2 border-[#03a7b3] text-xl font-bold"><span className="bg-gradient-to-b from-[#03a7b3] to-[#010817] bg-clip-text text-transparent">Process Automation</span></h4>
                     <p className="text-center w-[500px]">We drive operational efficiency by automating key processes within your organization, reducing the time and costs associated with manual tasks.</p>
                 </div>
                 <div className="flex items-center justify-center gap-10 col-span-2">

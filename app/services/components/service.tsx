@@ -15,6 +15,7 @@ import AiAgents from "./ai-agents";
 import Chatbots from "./chatbots";
 import Workflows from "./workflows";
 import Consulting from "./consulting";
+import Development from "./development";
 
 type Section = "section1" | "section2" | "section3" | null;
 
@@ -195,23 +196,17 @@ export default function Service() {
                 </motion.div>)}
             {showMoreSection === "section3" && (
                 <motion.div ref={sectionRefs.section3}
-                    className="flex flex-col gap-5 text-justify border-2 border-[#03a7b3] bg-white"
+                    className="w-full flex flex-col gap-5 text-justify border-2 border-[#03a7b3] bg-white"
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.5 }} >
-                    <div className="w-full bg-[#1c5a6c] p-10 flex flex-col gap-10 items-center">
-                        <h2 className="lg:text-4xl text-xl text-white">Development</h2>
-                        <p className="lg:text-3xl text-lg text-white">We combine artificial intelligence with automation to
-                            create incredibly efficient processes that connect your apps and automate actions between them, which
-                            replaces manual work for massive gains in your team&apos;s bandwidth, quality, speed and customer experience.
-                            Fully custom and done-for-you</p>
+                    <div className="w-full bg-[#03a7b3] lg:p-10 p-5 flex flex-col gap-5 items-center">
+                        <h2 className="lg:text-4xl text-xl text-center text-white">Development</h2>
+                        <p className="lg:text-2xl text-md text-white lg:p-10 text-center w-[1300px]">we offer customized technology 
+                            solutions to boost your business. Whether it&apos;s a beautiful website, customer relationship management, 
+                            or programming integration, we&apos;re here to help you achieve your goals with efficient and scalable solutions</p>
                     </div>
-                    <div className="lg:pt-48 pt-10 flex flex-col p-5 items-center gap-5">
-                        <h4 className="lg:pt-24 lg:text-2xl text-xl font-bold pb-5">Consulting for endless use cases</h4>
-                        <p className="lg:text-xl text-md pb-10">Our experts have built hundreds of processes for dozens of industries, with
-                            millions of automated actions.</p>
-                        <Automations />
-                    </div>
+                    <Development />
                     <div>
                         <AutomationEnd />
                     </div>
