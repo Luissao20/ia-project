@@ -9,7 +9,6 @@ import ConsultingList from "./consultingList";
 import DevelopmentList from "./developmentList";
 import Header from "./header";
 import Image from "next/image";
-import Automations from "./automations";
 import AutomationEnd from "./automationEnd";
 import AiAgents from "./ai-agents";
 import Chatbots from "./chatbots";
