@@ -41,7 +41,7 @@ export default function Navbar() {
       <Link href="/">
         <div className="flex lg:p-8 relative pl-2 w-16 lg:w-[300px] lg:ml-56">
           <Image
-            src="/logos/logofinal2.png"
+            src="/logos/logo.png"
             alt="Logo"
             width={200}
             height={200}

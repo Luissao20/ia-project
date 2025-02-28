@@ -18,14 +18,14 @@ export default function WorkflowContent() {
                 <p className="lg:text-sm text-center w-[300px] text-justify">Our team evaluates your workflows to identify repetitive tasks in areas like marketing, customer service, or operations. We focus on high-impact AI automation opportunities that deliver measurable ROI and improve efficiency.</p>
             </div>
             <div className="flex flex-col items-center gap-3">
-                <Image src="/test.svg" alt="process" width={100} height={100} className="bg-white lg:block hidden" />
+                <Image src="/test.svg" alt="process" width={120} height={120} className="bg-white lg:block hidden -mt-5" />
                 <Image src="/test.svg" alt="process" width={50} height={50} className="bg-white lg:hidden" />
                 <span className="text-sm lg:text-lg bg-clip-text text-transparent bg-gradient-to-b from-[#03a7b3] to-[#345b87]">Step 3</span>
                 <h4 className="text-sm lg:text-lg font-bold text-center text-[#010817]">Custom AI and Automation Development</h4>
                 <p className="lg:text-sm text-center w-[300px] text-justify">We develop and test custom AI automation solutions using advanced tools like Zapier, Make.com, and your existing tech stack. These scalable solutions are tailored to your unique needs, ensuring seamless integration and adaptability as your business evolves.</p>
             </div>
             <div className="flex flex-col items-center gap-3">
-                <Image src="/manage.svg" alt="process" width={100} height={100} className="bg-white hidden lg:block" />
+                <Image src="/manage.svg" alt="process" width={120} height={120} className="bg-white hidden lg:block -mt-5" />
                 <Image src="/manage.svg" alt="process" width={50} height={50} className="bg-white lg:hidden" />
                 <span className="text-sm lg:text-lg bg-clip-text text-transparent bg-gradient-to-b from-[#03a7b3] to-[#345b87]">Step 4</span>
                 <h4 className="text-sm lg:text-lg font-bold text-center text-[#010817]">Continuous Management and Iteration</h4>
