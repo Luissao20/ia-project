@@ -56,14 +56,31 @@ const listItems = [
     />
   </li>,
   <li key={7} className="flex justify-center items-center h-full">
-  <Image
-    src='/logos/HubSpot-Logo.png'
-    width={100}
-    height={100}
-    alt="HubSpot"
-  />
-</li>,
-<li key={8} className="flex justify-center items-center h-full">
+    <Image
+      src='/logos/cursor.svg'
+      width={100}
+      height={100}
+      alt="Cursor"
+      className='p-3'
+    />
+  </li>,
+  <li key={8} className="flex justify-center items-center h-full">
+    <Image
+      src='/logos/tailwind.png'
+      width={140}
+      height={140}
+      alt="Tailwind"
+    />
+  </li>,
+  <li key={9} className="flex justify-center items-center h-full">
+    <Image
+      src='/logos/HubSpot-Logo.png'
+      width={100}
+      height={100}
+      alt="HubSpot"
+    />
+  </li>,
+  <li key={10} className="flex justify-center items-center h-full">
     <Image
       src='/logos/Calendly.png'
       width={100}
