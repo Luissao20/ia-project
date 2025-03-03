@@ -172,10 +172,12 @@ export default function Contenido() {
                     customer inquiries, and user data analysis allowed the company to scale efficiently,
                     improve service speed, and attract a growing customer base without increasing operational overhead.</p>
 
-                <p>In an industry where speed, security, and customer experience are critical, Ecuabet and AgentifyNow have positioned themselves as market leaders through innovation.
-                    By leveraging intelligent automation, AI-driven customer support, and fast payment processing, they have accelerated growth and transformed the online betting experience in Ecuador.</p>
+                <p>In an industry where speed, security, and customer experience are critical, Ecuabet and AgentifyNow have positioned
+                    themselves as market leaders through innovation. By leveraging intelligent automation, AI-driven customer support,
+                    and fast payment processing, they have accelerated growth and transformed the online betting experience in Ecuador.</p>
 
-                <p><br />Ecuabet faced several key challenges before implementing intelligent automation, which hindered its efficiency, customer satisfaction, and overall growth. Here are the main challenges:</p>
+                <p><br />Ecuabet faced several key challenges before implementing intelligent automation, which hindered its efficiency,
+                    customer satisfaction, and overall growth. Here are the main challenges:</p>
 
                 <ul className="list-decimal flex flex-col gap-5 pt-10">
                     <li><span className="font-bold">Slow and Inefficient Payment Processing:</span>
@@ -286,30 +288,149 @@ export default function Contenido() {
                     </table>
                 </div>
                 <Gallery images={["/graphics/Ecuabet 3.png", "/graphics/Ecuabet 1.png"]} />
-                <p className="pt-10">Before automation, Ecuabet faced significant inefficiencies, with an estimated monthly cost of <span className="font-bold">$45,000</span> due to delays in payment processing, 
-                    high labor costs for customer support, inefficiencies in fraud detection, and slow bet verification. After implementing AI-driven automation, 
-                    these inefficiencies were significantly reduced, leading to monthly savings of <span className="font-bold">$36,500</span>. As a result, the platform has achieved annual savings 
+                <p className="pt-10">Before automation, Ecuabet faced significant inefficiencies, with an estimated monthly cost of <span className="font-bold">$45,000</span> due to delays in payment processing,
+                    high labor costs for customer support, inefficiencies in fraud detection, and slow bet verification. After implementing AI-driven automation,
+                    these inefficiencies were significantly reduced, leading to monthly savings of <span className="font-bold">$36,500</span>. As a result, the platform has achieved annual savings
                     of <span className="font-bold">$438,000</span>, improving financial efficiency, optimizing operational workflows, and enhancing overall user satisfaction.</p>
             </div>
         ),
     },
     {
         id: 3,
-        title: "ListoBet - Innovation and Security in Online Gaming",
+        title: "ListoBet - Innovation, Automation and Security in Online Gaming",
         content: (
-            <div className="flex flex-col items-center text-justify w-[1300px]">
-                <p>ListoBet is a leading platform in the online gaming industry, combining sports betting, casino, and virtual sports into a unique and exciting experience. With a strong commitment to transparency, security, and customer satisfaction, ListoBet has distinguished itself in a highly competitive market by embracing automation and digital transformation to optimize operations and enhance user experience.</p>
-                <p>The online betting sector faces numerous challenges, including data security for players, gaming regulation compliance, and the constant need for innovation to retain users&apos; attention. In this context, ListoBet has developed a robust platform that prioritizes information protection, an optimized user experience, and high service standards.</p>
-                <p>Automation has been instrumental in driving the company&apos;s growth. By integrating Make.com for payment processing and electronic invoicing, financial operations have been streamlined. Transactions are now handled in real time, minimizing delays and reducing the likelihood of human errors. This has led to greater efficiency in financial processes, ensuring faster deposits and withdrawals while maintaining accurate and transparent invoicing for regulatory compliance.</p>
+            <div className="flex flex-col gap-10 items-center justify-center text-justify w-[1300px]">
                 <Image
-                    src="/listobet.png"
+                    src="/logos/listobet3.png"
                     alt="ListoBet"
-                    width={800}
-                    height={900}
-                    className="bg-black p-10 m-10"
+                    width={500}
+                    height={500}
                 />
-                <p>To stay ahead in a competitive industry, ListoBet has focused on several key strategic areas. The company has leveraged cutting-edge technology to create a secure and dynamic platform that meets the high demands of the gaming industry. By integrating advanced security measures, including data encryption, multi-factor authentication, and fraud detection systems, ListoBet ensures a safe environment for its users. This commitment to security not only protects players but also reinforces trust in the platform.</p>
-                <p>ListoBet has successfully established itself as a secure, innovative, and automated platform for online gaming enthusiasts. Its strategic focus on technology, automation, responsible gaming, and customer satisfaction has allowed the company to differentiate itself in a highly competitive market. By continuously optimizing financial transactions, enhancing security measures, and leveraging automation, ListoBet has set a new standard of excellence in the online gaming industry. Moving forward, the company remains committed to further innovation, ensuring that users enjoy a seamless and engaging gaming experience with the highest levels of efficiency and security.</p>
+                <p>ListoBet is a leading platform in the online gaming industry, combining sports betting, casino, and virtual sports into a unique and exciting experience.
+                    With a strong commitment to transparency, security, and customer satisfaction, ListoBet has distinguished itself in a highly competitive market by embracing
+                    automation and digital transformation to optimize operations and enhance user experience. The online betting sector faces numerous challenges, including data
+                    security for players, gaming regulation compliance, and the constant need for innovation to retain users&apos; attention. In this context, ListoBet has developed
+                    a robust platform that prioritizes information protection, an optimized user experience, and high service standards.</p>
+                <p>Automation has been instrumental in driving the company&apos;s growth. By integrating Make.com for payment processing and electronic invoicing, financial
+                    operations have been streamlined. Transactions are now handled in real time, minimizing delays and reducing the likelihood of human errors. This has led
+                    to greater efficiency in financial processes, ensuring faster deposits and withdrawals while maintaining accurate and transparent invoicing for regulatory compliance.</p>
+
+                <p>Before the implementation of automation, financial operations were time-consuming and required significant manual input. The following breakdown illustrates the impact of automation on efficiency:</p>
+                <div className="overflow-x-auto no-scrollbar pb-10 pt-10">
+                    <table className="lg:w-[1200px] bg-white overflow-hidden table-auto">
+                        <thead className="text-[#1c5a6c] font-bold lg:text-xl text-md">
+                            <tr>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="100">Operations</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="200">Before Automation</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">After Automation</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Cost Analysis</th>
+                            </tr>
+                        </thead>
+                        <tbody className="text-[#273950] lg:text-lg text-md">
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Payment Processing</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">
+                                    <ul className="list-disc list-inside">
+                                        <li>Payments required manual verification, taking 5-10 minutes per transaction.</li>
+                                        <li>High transaction volumes led to delays, especially during peak hours.</li>
+                                        <li>Human errors in processing caused disputes and reconciliation issues.</li>
+                                        <li>Fraud detection was slow and reactive, increasing security risks.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
+                                    <ul className="list-disc list-inside">
+                                        <li>Payments are processed in real time (&lt;30 seconds per transaction).</li>
+                                        <li>AI-driven fraud detection instantly flags suspicious transactions.</li>
+                                        <li>Automated reconciliation reduces errors and speeds up financial reporting.</li>
+                                        <li>Transaction processing time reduced by up to 90%, improving user experience.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
+                                    <ul className="list-disc list-inside">
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Invoicing & Regulatory Compliance</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">
+                                    <ul className="list-disc list-inside">
+                                        <li>Manual invoice generation took 15-20 minutes per transaction.</li>
+                                        <li>Errors in calculations and missing records caused compliance risks.</li>
+                                        <li>Delays in sending invoices led to payment collection issues.</li>
+                                        <li>Regulatory reporting required significant manual effort, increasing labor costs.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
+                                    <ul className="list-disc list-inside">
+                                        <li>AI automatically generates, verifies, and sends invoices within 1-2 minutes.</li>
+                                        <li>Compliance audits are streamlined with automated record-keeping.</li>
+                                        <li>Faster invoicing improves cash flow and eliminates compliance fines.</li>
+                                        <li>Invoice errors reduced by up to 95%, ensuring accuracy.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
+                                    <ul className="list-disc list-inside">
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Customer Support & Query Handling</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">
+                                    <ul className="list-disc list-inside">
+                                        <li>Customers had to contact support for transaction status updates.</li>
+                                        <li>Support response times ranged from 24-48 hours, leading to customer frustration.</li>
+                                        <li>High call volumes overwhelmed staff, increasing labor costs.</li>
+                                        <li>Manual account verification slowed down issue resolution.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
+                                    <ul className="list-disc list-inside">
+                                        <li>AI-powered chatbots provide instant responses to customer inquiries.</li>
+                                        <li>Customers can check transaction statuses in real time without contacting support.</li>
+                                        <li>AI automates account verification, reducing fraud risk.</li>
+                                        <li>Customer support workload reduced by up to 60%, improving efficiency.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300"></td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Security & Fraud Prevention</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">
+                                    <ul className="list-disc list-inside">
+                                        <li>Fraud detection was reactive, relying on manual monitoring.</li>
+                                        <li>Data security risks increased due to human errors and slow response times.</li>
+                                        <li>Multi-step authentication was manual, delaying account verification.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
+                                    <ul className="list-disc list-inside">
+                                        <li>AI scans transactions in real time, identifying fraud instantly.</li>
+                                        <li>Automated data encryption enhances user security and regulatory compliance.</li>
+                                        <li>AI-driven multi-factor authentication improves login security without delays.</li>
+                                        <li>Security breach risks reduced by up to 80%, boosting platform trust.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>To stay ahead in a competitive industry, ListoBet has focused on several key strategic areas. The company has
+                    leveraged cutting-edge technology to create a secure and dynamic platform that meets the high demands of the
+                    gaming industry. By integrating advanced security measures, including data encryption, multi-factor authentication,
+                    and fraud detection systems, ListoBet ensures a safe environment for its users. This commitment to security not
+                    only protects players but also reinforces trust in the platform.</p>
+                <p>ListoBet has successfully established itself as a secure, innovative, and automated platform for online gaming
+                    enthusiasts. Its strategic focus on technology, automation, responsible gaming, and customer satisfaction has
+                    allowed the company to differentiate itself in a highly competitive market. By continuously optimizing financial transactions,
+                    enhancing security measures, and leveraging automation, ListoBet has set a new standard of excellence in the online
+                    gaming industry. Moving forward, the company remains committed to further innovation, ensuring that users enjoy a
+                    seamless and engaging gaming experience with the highest levels of efficiency and security.</p>
             </div>
         ),
     }
