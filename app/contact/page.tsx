@@ -1,6 +1,5 @@
 import ContactForm from "./components/contact-form";
 import SupportInformation from "./components/support-information";
-import OfficeLocation from "./components/office-location";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +12,6 @@ export default function Contact() {
     <>
       <ContactForm />
       <SupportInformation />
-      <OfficeLocation />
     </>
   );
 }

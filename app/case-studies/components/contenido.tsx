@@ -343,13 +343,14 @@ export default function Contenido() {
                 animate="visible"
                 variants={variants}
                 transition={{ duration: 0.5 }}>
-                <h3 className="text-5xl font-bold text-transparent m-10 p-10 bg-clip-text bg-gradient-to-r from-[#1c5a6c] to-[#5ca9b1]">Case Studies</h3>
+                <h3 className="text-5xl font-bold text-transparent m-10 p-10 bg-clip-text bg-gradient-to-r from-[#03a7b3] 
+                to-[#345d87]">Case Studies</h3>
             </motion.div>
             <div className="w-full lg:p-10">
                 {caseStudies.map(study => (
                     <div key={study.id} className="mb-4 p-5">
                         <div className="flex items-center" onClick={() => toggleContent(study.id)}>
-                            <h2 className="text-2xl font-bold cursor-pointer text-[#1c5a6c] select-none">
+                            <h2 className="text-2xl font-bold cursor-pointer text-[#345d87] select-none">
                                 {study.title}
                             </h2>
                             <span className="ml-2 transform transition-transform duration-300">

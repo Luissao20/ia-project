@@ -1,11 +1,11 @@
 export default function Comparison() {
     return (
-        <section className="py-20 px-5 flex flex-col items-center justify-center">
+        <section className="pb-20 px-5 flex flex-col items-center justify-center">
             <div className="lg:max-w-7xl mx-auto overflow-hidden">
-                <h2 className="lg:text-4xl text-xl font-bold text-center pb-16 text-[#1c5a6c]"> Why Agentify? Quick Comparison </h2>
+                <h2 className="lg:text-4xl text-xl font-bold text-center pb-16 text-[#03a7b3]"> Why Agentify? Quick Comparison </h2>
                 <div className="overflow-x-auto no-scrollbar">
                     <table className="lg:w-[500px] bg-white overflow-hidden">
-                        <thead className="text-[#1c5a6c] font-bold lg:text-xl text-md">
+                        <thead className="text-[#03a7b3] font-bold lg:text-xl text-md">
                             <tr>
                                 <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="100">Feature</th>
                                 <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="200">Agentify</th>
