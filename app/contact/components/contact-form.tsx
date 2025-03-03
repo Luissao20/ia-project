@@ -50,7 +50,7 @@ export default function ContactForm() {
   return (
     <section className="pb-20 pt-64 px-5" data-aos="fade-up" data-aos-delay="200">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-600 to-sky-800 text-transparent bg-clip-text lg:text-6xl">
+        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-[#03a7b3] to-[#345d87] text-transparent bg-clip-text lg:text-6xl">
           Get in Touch
         </h2>
 
@@ -69,7 +69,7 @@ export default function ContactForm() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all outline-none"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#03a7b3] focus:border-transparent transition-all outline-none"
               placeholder="Your name"
             />
           </div>
@@ -88,7 +88,7 @@ export default function ContactForm() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all outline-none"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#03a7b3] focus:border-transparent transition-all outline-none"
               placeholder="your@email.com"
             />
           </div>
@@ -107,7 +107,7 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               rows={6}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all outline-none resize-none"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#03a7b3] focus:border-transparent transition-all outline-none resize-none"
               placeholder="How can we help you?"
             />
           </div>
@@ -116,14 +116,14 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status.submitting}
-            className="w-full bg-cyan-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-cyan-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+            className="w-full bg-[#03a7b3] text-white py-3 rounded-lg text-lg font-semibold hover:bg-cyan-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
           >
             {status.submitting ? "Sending..." : "Send Message"}
           </button>
 
           {/* Status Messages */}
           {status.submitted && (
-            <p className="text-sky-600 text-center">
+            <p className="text-[#03a7b3] text-center">
               Thank you for your message! We&apos;ll get back to you soon.
             </p>
           )}

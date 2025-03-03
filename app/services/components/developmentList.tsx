@@ -3,7 +3,7 @@ import DevelopmentListItem from "./developmentListItem";
 
 const list = [
   "Web Development",
-  "CRM & Pipeline Management",
+  "CRM & Workflow Management",
   "Scheduling Integration",
 ];
 
