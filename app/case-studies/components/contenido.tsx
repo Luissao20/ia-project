@@ -6,7 +6,6 @@ import { useSearchParams } from 'next/navigation';
 import Image from "next/image";
 import CaseHeader from "./case-header";
 import Gallery from "./gallery";
-import { title } from "process";
 
 export default function Contenido() {
     const caseStudies = [{
