@@ -6,6 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import Image from "next/image";
 import CaseHeader from "./case-header";
 import Gallery from "./gallery";
+import { title } from "process";
 
 export default function Contenido() {
     const caseStudies = [{
@@ -565,6 +566,176 @@ export default function Contenido() {
                     with patients positioned FINO PT as a leader in tech-driven healthcare. This case highlights how automation 
                     is not just a convenience but a necessity for sustainable growth in the modern healthcare industry.</p>
             </div>
+        ),
+    },
+    {
+        id: 5,
+        title: "How Automation Transformed Operations at uBreakiFix",
+        content: (
+            <div className="flex flex-col items-center text-justify w-[1300px] gap-10">
+                <p>uBreakiFix struggled to handle rising service requests, inventory complexity, and customer contacts 
+                    across several sites as demand for quick and dependable electronics repair expanded. Scaling a repair 
+                    company calls for efficiency, accuracy, and flawless operations—not only for knowledgeable professionals. 
+                    AgentifyNow, an uBreakiFix franchisee, used intelligent automation to change its workflow in order to 
+                    keep ahead in a crowded industry. The organization improved customer interaction, inventory control, 
+                    and repair monitoring by using AI-driven solutions, thereby accelerating service delivery and increasing 
+                    operational efficiency.</p>
+                
+                <ul className="list-decimal list-inside flex flex-col gap-5">
+                    <p>Before implementing AI-powered automation, AgentifyNow, a uBreakiFix franchisee, faced several challenges 
+                        that impacted operational efficiency and customer satisfaction:</p>
+                    <li><span className="font-bold">Repair Tracking & Diagnostics</span>
+                        <ul className="list-disc list-inside">
+                            <li>Technicians manually checked devices and documented repairs on paper or spreadsheets.</li>
+                            <li>Customers had to call for updates, leading to high call volumes and slow responses.</li>
+                            <li>Diagnosing reports took 2-4 hours per device as technicians had to do it manually.</li>
+                            <li>Delays in communication between front desk and technicians slowed repair turnaround times.</li>
+                        </ul>
+                    </li>
+                    <li><span className="font-bold">Inventory Management & Ordering</span>
+                        <ul className="list-disc list-inside">
+                            <li>Inventory was tracked manually using spreadsheets and physical stock counts.</li>
+                            <li>Employees spent 3-5 hours per location daily verifying available stock.</li>
+                            <li>Parts frequently went out of stock due to mismanagement and human error.</li>
+                            <li>Ordering new stock was reactive, leading to delays in repairs.</li>
+                        </ul>
+                    </li>
+                    <li><span className="font-bold">Customer Inquiries & Scheduling</span>
+                        <ul className="list-disc list-inside">
+                            <li>Customers had to call or visit the store for repair status updates.</li>
+                            <li>Support staff manually scheduled appointments and repair requests.</li>
+                            <li>Response times to customer inquiries were 24-48 hours due to backlog.</li>
+                            <li>High call volumes overwhelmed staff, leading to poor customer experience.</li>
+                        </ul>
+                    </li>
+                    <li><span className="font-bold">Payment Processing & Invoicing</span>
+                        <ul className="list-disc list-inside">
+                            <li>Staff manually created invoices, processed payments, and tracked pending balances.</li>
+                            <li>Payment processing took 2-3 hours per transaction, leading to delays.</li>
+                            <li>Late payments and human errors in invoices created cash flow issues.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <Gallery images={["/graphics/ubif 4.png"]} />
+                
+                <ul className="list-decimal list-inside flex flex-col gap-5 pt-10">
+                    <h4 className="font-bold">After Automation:</h4>
+                    <li><span className="font-bold">Repair Tracking & Diagnostics</span>
+                        <ul className="list-disc list-inside">
+                            <li>AI-driven repair tracking system provides real-time updates to customers.</li>
+                            <li>AI-assisted diagnostics analyze issues instantly, suggesting the best solutions.</li>
+                            <li>The improvement with AI is through a WhatsApp audio; an AI agent converts the audio into a report, making the service faster.</li>
+                            <li>Service completion time reduced by up to 40%, leading to faster repairs.</li>
+                        </ul>
+                    </li>
+                    <li><span className="font-bold">Inventory Management & Ordering</span>
+                        <ul className="list-disc list-inside">
+                            <li>AI-powered real-time inventory tracking ensures stock is always updated.</li>
+                            <li>AI predicts demand and automates reordering, preventing stock shortages.</li>
+                            <li>Employees no longer need to manually check inventory daily.</li>
+                            <li>Repair turnaround time improves as parts are always available when needed.</li>
+                        </ul>
+                    </li>
+                    <li><span className="font-bold">Customer Inquiries & Scheduling</span>
+                        <ul className="list-disc list-inside">
+                            <li>AI-powered chatbots provide instant repair status updates, reducing call volumes.</li>
+                            <li>Customers can self-schedule repairs online, reducing manual scheduling tasks.</li>
+                            <li>AI-powered virtual assistants handle common inquiries, ensuring instant responses.</li>
+                            <li>Customer engagement increased by 30% due to faster service and real-time updates.</li>
+                        </ul>
+                    </li>
+                    <li><span className="font-bold">Payment Processing & Invoicing</span>
+                        <ul className="list-disc list-inside">
+                            <li>AI automatically generates invoices when repairs are completed.</li>
+                            <li>Customers receive automated payment reminders, reducing overdue balances.</li>
+                            <li>AI-powered chatbots handle billing inquiries and payment confirmations.</li>
+                            <li>Cash flow improved as payments are processed instantly with fewer errors.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <Gallery images={["/graphics/ubif 2.png"]} />
+                <p>Before and after implementing AI-driven automation, uBreakIfix saw dramatic
+                    improvements in efficiency, productivity and cost savings:</p>
+
+                <div className="overflow-x-auto no-scrollbar pb-10">
+                    <table className="lg:w-[1200px] bg-white overflow-hidden table-auto">
+                        <thead className="text-[#1c5a6c] font-bold lg:text-xl text-md">
+                            <tr>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="100">Process</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="200">Time Before AI</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Time After AI</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Time Saved Per Task</th>
+                            </tr>
+                        </thead>
+                        <tbody className="text-[#273950] lg:text-lg text-md">
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Repair Tracking & Diagnostics</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">2-4 hours per device</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">30 minutes per device</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">Up to 3.5 hours saved</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Inventory Management & Ordering</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">3-5 hours per location daily</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">Real-time updates</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">Up to 5 hours saved daily</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Customer Inquiries & Scheduling</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">24-48 hours response time</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">Instant AI chatbot replies</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">Up to 48 hours saved per inquiry</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Payment Processing & Invoicing</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">2-3 hours per transaction</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">Instant processing</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">Up to 3 hours saved per payment</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className="overflow-x-auto no-scrollbar pb-10">
+                    <table className="lg:w-[1200px] bg-white overflow-hidden table-fixed">
+                        <thead className="text-[#1c5a6c] font-bold lg:text-xl text-md">
+                            <tr>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="100">Metric</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="200">Before Automation</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">After Automation</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Saving</th>
+                            </tr>
+                        </thead>
+                        <tbody className="text-[#273950] lg:text-lg text-md">
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Monthly Inefficiency Cost</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">$49,000</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">$9,500</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">$39,500</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Annual Inefficiency Cost</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">$588,000</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">$114,000</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">$474,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>The AI-driven automation at AgentifyNow (a uBreakiFix franchisee) significantly reduced time spent on manual tasks, 
+                    improved operational efficiency, and optimized financial workflows. By automating repair tracking, inventory management, 
+                    customer engagement, and payment processing, the company experienced:</p>
+
+                <Gallery images={["/graphics/ubif 3.png"]} />
+
+                <p>By automating repair tracking, inventory management, customer service, and payment processing, AgentifyNow 
+                    <span className="font-bold"> (a uBreakiFix franchisee)</span> saved <span className="font-bold">$39,500</span> per 
+                    month ($474,000 annually) while enhancing operational efficiency, 
+                    customer engagement, and cash flow.</p>
+            </div>
+
+            
         ),
     }
         // Agrega más casos de estudio según sea necesario 
