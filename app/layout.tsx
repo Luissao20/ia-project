@@ -5,6 +5,7 @@ import ClientComponent from "./clientComponent";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Head from "next/head";
+import Chatbot from "./chat/chatbot";
 
 const geistSans = Rubik({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({
         <ClientComponent />
         <Navbar />
         {children}
+        <Chatbot />
         <Footer />
       </body>
     </html>

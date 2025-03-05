@@ -14,6 +14,7 @@
     "framer-motion": "^11.15.0",
     "lightgallery": "^2.8.2",
     "next": "15.1.2",
+    "openai": "^4.86.1",
     "particles.js": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
