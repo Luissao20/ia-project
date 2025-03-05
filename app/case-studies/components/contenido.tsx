@@ -317,13 +317,13 @@ export default function Contenido() {
 
                 <p>Before the implementation of automation, financial operations were time-consuming and required significant manual input. The following breakdown illustrates the impact of automation on efficiency:</p>
                 <div className="overflow-x-auto no-scrollbar pb-10 pt-10">
-                    <table className="lg:w-[1200px] bg-white overflow-hidden table-auto">
+                    <table className="lg:w-[1200px] bg-white overflow-hidden table-fixed">
                         <thead className="text-[#1c5a6c] font-bold lg:text-xl text-md">
                             <tr>
                                 <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="100">Operations</th>
                                 <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="200">Before Automation</th>
                                 <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">After Automation</th>
-                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Cost Analysis</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Improvement</th>
                             </tr>
                         </thead>
                         <tbody className="text-[#273950] lg:text-lg text-md">
@@ -342,13 +342,11 @@ export default function Contenido() {
                                         <li>Payments are processed in real time (&lt;30 seconds per transaction).</li>
                                         <li>AI-driven fraud detection instantly flags suspicious transactions.</li>
                                         <li>Automated reconciliation reduces errors and speeds up financial reporting.</li>
-                                        <li>Transaction processing time reduced by up to 90%, improving user experience.</li>
                                     </ul>
                                 </td>
                                 <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
                                     <ul className="list-disc list-inside">
-                                        <li></li>
-                                        <li></li>
+                                        <li>Transaction processing time reduced by up to 90%, improving user experience.</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -366,14 +364,11 @@ export default function Contenido() {
                                     <ul className="list-disc list-inside">
                                         <li>AI automatically generates, verifies, and sends invoices within 1-2 minutes.</li>
                                         <li>Compliance audits are streamlined with automated record-keeping.</li>
-                                        <li>Faster invoicing improves cash flow and eliminates compliance fines.</li>
-                                        <li>Invoice errors reduced by up to 95%, ensuring accuracy.</li>
-                                    </ul>
+                                        <li>Faster invoicing improves cash flow and eliminates compliance fines.</li>                                    </ul>
                                 </td>
                                 <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
                                     <ul className="list-disc list-inside">
-                                        <li></li>
-                                        <li></li>
+                                        <li>Invoice errors reduced by up to 95%, ensuring accuracy.</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -392,10 +387,13 @@ export default function Contenido() {
                                         <li>AI-powered chatbots provide instant responses to customer inquiries.</li>
                                         <li>Customers can check transaction statuses in real time without contacting support.</li>
                                         <li>AI automates account verification, reducing fraud risk.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
+                                    <ul className="list-disc list-inside">
                                         <li>Customer support workload reduced by up to 60%, improving efficiency.</li>
                                     </ul>
                                 </td>
-                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300"></td>
                             </tr>
                             <tr>
                                 <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Security & Fraud Prevention</td>
@@ -411,14 +409,61 @@ export default function Contenido() {
                                         <li>AI scans transactions in real time, identifying fraud instantly.</li>
                                         <li>Automated data encryption enhances user security and regulatory compliance.</li>
                                         <li>AI-driven multi-factor authentication improves login security without delays.</li>
+                                    </ul>
+                                </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">
+                                    <ul className="list-disc list-inside">
                                         <li>Security breach risks reduced by up to 80%, boosting platform trust.</li>
                                     </ul>
                                 </td>
-                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <Gallery images={["/graphics/ListoBet 1.png", "/graphics/ListoBet 2.png"]} />
+
+                <h4>A detailed cost analysis before and after automation shows a significant reduction in operational expenses:</h4>
+                <div className="overflow-x-auto no-scrollbar pb-10 pt-10">
+                    <table className="lg:w-[1200px] bg-white overflow-hidden table-auto">
+                        <thead className="text-[#1c5a6c] font-bold lg:text-xl text-md">
+                            <tr>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="100">Pre-Automation</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="200">Costs</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Post-Automation</th>
+                                <th className="px-4 py-2" data-aos="fade-down" data-aos-delay="300">Costs</th>
+                            </tr>
+                        </thead>
+                        <tbody className="text-[#273950] lg:text-lg text-md">
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Labor costs for manual processing</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">$50,000 per year</td>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-up" data-aos-delay="300">Automation software and integration</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">$15,000 per year</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Compliance risk-related fines</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">$10,000 per year</td>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-up" data-aos-delay="300">Minimal labor costs for supervision</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">$10,000 per year</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Delayed transaction losses</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">$15,000 per year</td>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-up" data-aos-delay="300">Improved compliance, eliminating fines</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">$0 per year</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-right" data-aos-delay="100">Total Estimated </td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="200">$75,000 per year</td>
+                                <td className="border px-4 py-2 font-bold" data-aos="fade-up" data-aos-delay="300">Total Estimated</td>
+                                <td className="border px-4 py-2" data-aos="fade-up" data-aos-delay="300">$25,000 per year</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Total Annual Savings: <span className="font-bold">$50,000</span> per year, representing a <span className="font-bold">66% reduction</span> in operational costs while improving efficiency and security.</p>
 
                 <p>To stay ahead in a competitive industry, ListoBet has focused on several key strategic areas. The company has
                     leveraged cutting-edge technology to create a secure and dynamic platform that meets the high demands of the
@@ -431,6 +476,94 @@ export default function Contenido() {
                     enhancing security measures, and leveraging automation, ListoBet has set a new standard of excellence in the online
                     gaming industry. Moving forward, the company remains committed to further innovation, ensuring that users enjoy a
                     seamless and engaging gaming experience with the highest levels of efficiency and security.</p>
+            </div>
+        ),
+    },
+    {
+        id: 4,
+        title: "Revolutionizing Healthcare: How Automation Transformed FINO PT",
+        content: (
+            <div className="flex flex-col items-center text-justify w-[1300px] gap-10">
+                <Image 
+                    alt="Fino PT"
+                    src="/logos/FinoPT.png"
+                    width={400}
+                    height={300}
+                />
+                <p>In the fast-evolving healthcare industry, efficiency and precision are essential for delivering quality patient care. 
+                However, as demand for physical therapy and acupuncture treatments grew, FINO PT faced mounting operational challenges 
+                that hindered its ability to scale. Managing patient inquiries, processing documents, and tracking appointments became 
+                increasingly time-consuming, pulling valuable resources away from patient care. </p>
+                <p>To overcome these inefficiencies and accelerate growth, FINO PT turned to intelligent automation, leveraging AI-driven 
+                solutions to streamline lead generation, automate document processing, and enhance overall workflow efficiency. 
+                The result was a significant transformation that not only optimized daily operations but also positioned the clinic for 
+                long-term success in a competitive healthcare market.</p>
+
+                <div className="flex gap-10 items-center justify-center">
+                    <h4>FINO PT faced several key difficulties before implementing AI automation:</h4>
+                    <Gallery images={["/graphics/FINO 4.png"]} />
+                </div>
+
+                <ul className="list-decimal flex flex-col gap-5">
+                    <h4 className="font-bold">After Automation</h4>
+                    <li>Automated lead management
+                        <ul className="list-disc list-inside">
+                            <li>HubSpot CRM connection with social media tracks and arranges searches automatically.</li>
+                            <li>Automated follow-ups and replies motivated by artificial intelligence raise conversion rates.</li>
+                            <li>Instant appointment confirmations from patients help to lower no-shows.</li>
+                        </ul>
+                    </li>
+                    <li>Document Processing Powered by Artificial Intelligence 
+                        <ul className="list-disc list-inside">
+                            <li>Make.com automates patient paperwork and insurance validation in real-time.</li>
+                            <li>Digital records created automatically lower mistakes and increase accessibility.</li>
+                            <li>Instant document retrieval replaces labor-intensive searches.</li>
+                        </ul>
+                    </li>
+                    <li>Scheduling Appointments & Following Up
+                        <ul className="list-disc list-inside">
+                            <li>Automated SMS and email alerts generated by artificial intelligence remember appointments.</li>
+                            <li>Personalized follow-ups given to patients increase involvement.</li>
+                            <li>Less paperwork will free employees to concentrate on patient care.</li>
+                        </ul>
+                    </li>
+                    <li>Automated Payment Processing & Billing
+                        <ul>
+                            <li>Electronic invoicing systems driven by artificial intelligence create and transmit invoices automatically.</li>
+                            <li>Online payments and reminders of payments help to simplify the procedure.</li>
+                            <li>40% less billing mistakes help to increase financial accuracy.</li>
+                        </ul>
+                    </li>
+                    <li>AI Chatbots for Customer Support
+                        <ul>
+                            <li>AI chatbots instantly respond to patient questions on treatments, insurance, and payments.</li>
+                            <li>Virtual support available 24/7 helps administrative workers to be under less burden.</li>
+                            <li>Higher patient involvement with real-time help and satisfaction.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <Gallery images={["/graphics/FINO 1.png"]} />
+                
+                <ul className="list-disc list-inside flex flex-col gap-5 pt-10 pb-10">
+                    <h4 className="font-bold">What does Automation do?</h4>
+                    <li>A 70% decrease in document processing time frees personnel to concentrate on patient care.</li>
+                    <li>Faster response times for new patient questions — 62.5% — which drives more appointment reservations.</li>
+                    <li>50% less hand-made administrative work will liberate resources for company expansion.</li>
+                    <li>Improved clinic cash flow and financial stability by higher rates of payment collecting.</li>
+                </ul>
+
+                <Gallery images={["/graphics/FINO 3.png"]} />
+
+                <p className="pt-10">By integrating AI automation, FINO PT achieved a total monthly time savings of 
+                    <span className="font-bold"> 198 hours</span>, leading to an estimated cost reduction of 
+                    <span className="font-bold"> $4,950</span> per month. Annually, this translated into 
+                    <span className="font-bold"> $59,400</span> in savings, funds that 
+                    could be reinvested into expanding clinic services and improving patient engagement initiatives. The adoption 
+                    of automation not only reduced operational costs but also significantly enhanced the patient experience by 
+                    ensuring faster, more accurate service delivery. </p>
+                <p>The ability to process leads efficiently, verify documents seamlessly, and maintain consistent communication 
+                    with patients positioned FINO PT as a leader in tech-driven healthcare. This case highlights how automation 
+                    is not just a convenience but a necessity for sustainable growth in the modern healthcare industry.</p>
             </div>
         ),
     }
