@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
           <div>
             <h2 className="text-lg font-bold">AgentifyNow.AI</h2>
-            <p className="text-sm">© 2024 AgentifyNow.AI | All rights reserved.</p>
+            <p className="text-sm">© 2025 AgentifyNow.AI | All rights reserved.</p>
           </div>
         </div>
       </div >
