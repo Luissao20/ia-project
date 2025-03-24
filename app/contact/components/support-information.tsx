@@ -70,7 +70,7 @@ export default function SupportInformation() {
 
         {/* FAQ Quick Link */}
         <div className="mt-16 text-center">
-          <p className="text-gray-600">
+          <p className="text-white">
             Looking for quick answers? Check our{' '}
             <a href="/faq" className="text-[#03a7b3] hover:text-cyan-800 font-semibold">
               Frequently Asked Questions

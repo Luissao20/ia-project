@@ -15,7 +15,7 @@ export default function Tasks() {
                         <div>
                             <AnimatedList />
                         </div>
-                        <Link href="/contact">
+                        <Link href="https://calendly.com/elazambs/agentify-book-a-meeting" target="_blank">
                             <button className="bg-[#03a7b3] lg:transition lg:duration-300 lg:hover:scale-110 lg:hover:easy-in-out text-white text-xl p-5 rounded-2xl w-[200px]">Book a call</button>
                         </Link>
                     </div>
