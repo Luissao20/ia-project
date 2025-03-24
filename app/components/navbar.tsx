@@ -85,7 +85,7 @@ export default function Navbar() {
         <li>
           <Link href="/contact">
             <button className="lg:p-3 lg:text-[#010817] lg:text-xl lg:border-2 lg:rounded-2xl lg:border-[#010817] lg:transition lg:duration-500 lg:hover:scale-[1.1] lg:hover:bg-[#03A7B3] lg:hover:text-white hidden lg:block lg:w-[240px]">
-              Book a Discovery Call
+              Contact Us
             </button>
           </Link>
         </li>
