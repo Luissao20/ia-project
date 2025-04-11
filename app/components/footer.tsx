@@ -2,25 +2,25 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#010817] text-white p-5 text-white">
+    <footer className="bg-[#010817] text-white p-4 md:p-5">
       <div className="container mx-auto">
         <div className="flex flex-col gap-5">
-          <div className="flex gap-20">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-20">
             <div className="flex flex-col">
               <h3 className="font-semibold mb-2">Company</h3>
-              <Link href="/why-agentify">Why Agentify Now?</Link>
-              <Link href="/services">Our Services</Link>
-              <Link href="/resources">Resources</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/why-agentify" className="mb-1">Why Agentify Now?</Link>
+              <Link href="/services" className="mb-1">Our Services</Link>
+              <Link href="/resources" className="mb-1">Resources</Link>
+              <Link href="/contact" className="mb-1">Contact</Link>
             </div>
             <div className="flex flex-col">
               <h3 className="font-semibold mb-2">Legal</h3>
-              <Link href="/">Privacy Policy</Link>
-              <Link href="/">Terms of Service</Link>
-              <Link href="/">Cookie Policy</Link>
+              <Link href="/" className="mb-1">Privacy Policy</Link>
+              <Link href="/" className="mb-1">Terms of Service</Link>
+              <Link href="/" className="mb-1">Cookie Policy</Link>
             </div>
             <div>
-              <h3>Connect:</h3>
+              <h3 className="font-semibold mb-2">Connect:</h3>
               <ul className="flex gap-2">
                 {/* Facebook */}
                 <Link href="https://www.facebook.com/profile.php?id=61573024104430">
@@ -91,12 +91,12 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div>
+          <div className="mt-4 text-center md:text-left">
             <h2 className="text-lg font-bold">AgentifyNow.AI</h2>
             <p className="text-sm">© 2025 AgentifyNow.AI | All rights reserved.</p>
           </div>
         </div>
-      </div >
-    </footer >
+      </div>
+    </footer>
   );
 }
