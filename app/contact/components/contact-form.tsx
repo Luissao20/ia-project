@@ -21,7 +21,7 @@ export default function ContactForm() {
 
     try {
       // Send data to n8n webhook
-      const response = await fetch("https://elazambs.app.n8n.cloud/webhook-test/6eecf182-6f89-4c98-b888-66a48579d254", {
+      const response = await fetch("https://elazambs.app.n8n.cloud/webhook/6eecf182-6f89-4c98-b888-66a48579d254", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
