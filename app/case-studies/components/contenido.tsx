@@ -479,7 +479,7 @@ export default function Contenido() {
             </div>
         ),
     },
-    {
+    /* {
         id: 4,
         title: "Revolutionizing Healthcare: How Automation Transformed FINO PT",
         content: (
@@ -566,9 +566,9 @@ export default function Contenido() {
                     is not just a convenience but a necessity for sustainable growth in the modern healthcare industry.</p>
             </div>
         ),
-    },
+    }, */
     {
-        id: 5,
+        id: 4,
         title: "How Automation Transformed Operations at uBreakiFix",
         content: (
             <div className="flex flex-col items-center text-justify w-[1300px] gap-10">

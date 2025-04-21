@@ -25,14 +25,14 @@ const caseStudies = [
     image: "/logos/listobet3.png",
     description: "Innovation and Security in Online Gaming"
   },
-  {
+  /* {
     id: 4,
     title: "FINO PT",
     image: "/casestudy4.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
-  },
+  }, */
   {
-    id: 5,
+    id: 4,
     title: "Construcciones Vanguard",
     image: "/casestudy5.png",
     description: "Optimizing the Loan Approval Process for a Financial Institution"
