@@ -6,9 +6,10 @@ const logos = [
     "/logos/ChatGPT-Logo.png",
     "/logos/hubspot-1.svg",
     "/logos/Airtable-Emblem.png",
-    "/logos/ClickUp-Logo.png",
     "/logos/slack.svg",
     "/logos/make-emblem.png",
+    "/logos/eleven.png",
+    "/logos/n8n.png",
 ];
 
 export default function Carousel() {
