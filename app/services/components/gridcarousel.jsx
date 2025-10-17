@@ -20,8 +20,9 @@ const logos = [
     "/logos/facebook.svg",
     "/logos/messenger.svg",
     "/logos/Instagram-Logo.png",
-    "/logos/TikTok_Logo.png",
     "/logos/google-calendar.svg",
+    "/logos/elevenLabs.png",
+    "/logos/N8n-logo-new.svg"
 ];
 
 export default function SequentialCarousel() {
