@@ -67,7 +67,7 @@ export default function Development() {
                         />
                         <Image
                             alt="squarespace"
-                            src="/logos/Squarespace-logo.png"
+                            src="/logos/Squarespace-Logo.png"
                             width={80}
                             height={80}
                         />
@@ -120,6 +120,12 @@ export default function Development() {
                         <Image
                             alt="make"
                             src="/logos/make-logo.svg"
+                            width={100}
+                            height={100}
+                        />
+                        <Image
+                            alt="n8n"
+                            src="/logos/N8n-logo-new.svg"
                             width={100}
                             height={100}
                         />
