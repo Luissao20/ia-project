@@ -15,9 +15,8 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
               <h3 className="font-semibold mb-2">Legal</h3>
-              <Link href="/" className="mb-1">Privacy Policy</Link>
-              <Link href="/" className="mb-1">Terms of Service</Link>
-              <Link href="/" className="mb-1">Cookie Policy</Link>
+              <Link href="/privacy" className="mb-1">Privacy Policy</Link>
+              <Link href="/terms" className="mb-1">Terms of Service</Link>
             </div>
             <div>
               <h3 className="font-semibold mb-2">Connect:</h3>
