@@ -9,7 +9,7 @@ export default function Cta() {
             <motion.div animate={{ x: [0, 10, -10, 10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
                 <Image src="/arrow_r.svg" alt="arrow_right" width={30} height={20} />
             </motion.div>
-            <Link href="https://calendly.com/elazambs/agentify-book-a-meeting" target="_blank">
+            <Link href="https://calendar.app.google/cmpGP179FXygENzN6" target="_blank">
                 <button className="border-2 border-[#345d87] lg:transition lg:duration-300 lg:hover:scale-110 lg:hover:easy-in-out lg:hover:border-2 lg:hover:border-[#345d87] text-white lg:text-xl text-lg lg:p-2 rounded-2xl lg:w-[150px] lg:h-[60px] w-[110px] h-[50px]">Book a call</button>
             </Link>
         </div>
