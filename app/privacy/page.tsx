@@ -97,7 +97,7 @@ export default function PrivacyPage() {
                     <h2 className="text-2xl font-semibold mb-4">6. International Data Transfers</h2>
                     <p>
                         We may transfer your data internationally to service providers located in other countries (for example, cloud hosting, AI processing, or automation infrastructure).
-                        Whenever we do, we ensure these providers apply equivalent levels of protection and comply with Ecuador's data transfer requirements under the LOPDP.
+                        Whenever we do, we ensure these providers apply equivalent levels of protection and comply with Ecuador&apos;s data transfer requirements under the LOPDP.
                     </p>
                 </section>
 
@@ -149,7 +149,7 @@ export default function PrivacyPage() {
                 <section className="mb-8">
                     <h2 className="text-2xl font-semibold mb-4">10. Your Rights</h2>
                     <p className="mb-4">
-                        Under Ecuador's Ley Orgánica de Protección de Datos Personales, and comparable global standards (GDPR, CCPA), you have the right to:
+                        Under Ecuador&apos;s Ley Orgánica de Protección de Datos Personales, and comparable global standards (GDPR, CCPA), you have the right to:
                     </p>
                     <ul className="list-disc pl-6 space-y-1 mb-4">
                         <li>Access and obtain a copy of your data.</li>
@@ -166,7 +166,7 @@ export default function PrivacyPage() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold mb-4">11. Children's Privacy</h2>
+                    <h2 className="text-2xl font-semibold mb-4">11. Children&apos;s Privacy</h2>
                     <p>
                         Our website and services are not directed at individuals under the age of 18. We do not knowingly collect personal information from children. 
                         If you believe a minor has provided us with information, please contact us to request its deletion.
